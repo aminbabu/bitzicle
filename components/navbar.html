@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar - Bitzicle</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.res.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid navbar-container">
+          <!-- brand logo -->
+          <a class="navbar-brand" href="/">
+            <img
+              class="img-fluid"
+              src="../assets/images/logo-dark.png"
+              alt="brand logo"
+            />
+          </a>
+          <!-- navbar toggler -->
+          <button
+            class="navbar-toggler custom-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="../assets/icons/toggler.svg" alt="toggler" />
+          </button>
+          <!-- collapsible -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- menu links -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Freelancers
+                  <img src="../assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Business
+                  <img src="../assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Explore </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Bitzicle</a>
+              </li>
+            </ul>
+            <!-- search bar -->
+            <form class="d-none d-lg-flex search-top" role="search">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a class="search-icon" type="submit">
+                <img src="../assets/icons/search.svg" alt="search icon" />
+              </a>
+            </form>
+            <!-- login button -->
+            <button class="bz-btn-primary" type="submit">Login</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- bootstrap js -->
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

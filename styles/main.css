@@ -1,0 +1,99 @@
+:root {
+  /* fonts  */
+  --open-sans: "Open Sans", sans-serif;
+  --red-hat: "Red Hat Text", sans-serif;
+  --work-sans: "Work Sans", sans-serif;
+
+  /* colors */
+  --primary: #272727;
+  --white: #ffffff;
+  --middle-blue: #72d9d4;
+  --mulberry: #cc4faf;
+  --outer-space: #48494b;
+  --dark-gray: #a8a8a8;
+  --light-silver: #d9d9d9;
+  --silver-sand: #c5c5c5;
+  --davys-gray: #535353;
+  --orange-yellow: #f0b61e;
+}
+
+/* common styles */
+.body {
+  font-family: var(--red-hat);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary);
+}
+
+.nav-link {
+  font-family: var(--red-hat);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--primary);
+  line-height: 21.17px;
+  padding-inline: 0;
+}
+
+.bz-btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+/* ---------- custom styles ----------- */
+
+/* navbar */
+
+.navbar-container {
+  padding-inline: 0;
+}
+
+.navbar-brand {
+  transition: all 0.3s ease-out;
+  width: 200px;
+}
+
+.custom-toggler.navbar-toggler,
+.custom-toggler.navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar {
+  max-height: 71px;
+  transition: all 0.3s ease-out;
+}
+
+.search-bar {
+  width: 150px;
+  border-radius: 50px;
+  transition: all 0.3s ease-out;
+}
+
+.search-top {
+  position: relative;
+}
+
+.search-bar {
+  padding-left: 45px;
+}
+
+.search-bar::placeholder {
+  font-family: var(--red-hat);
+  color: var(--primary);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  padding-left: 1rem;
+  transform: translateY(-50%);
+  display: flex;
+}

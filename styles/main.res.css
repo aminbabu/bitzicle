@@ -1,0 +1,26 @@
+@media only screen and (max-width: 575px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (min-width: 1025px) {
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    padding-inline: 0;
+  }
+
+  .navbar-brand {
+    width: 225px;
+  }
+
+  .navbar-nav {
+    gap: 1.5rem;
+  }
+
+  .search-bar {
+    width: 245px;
+  }
+}
