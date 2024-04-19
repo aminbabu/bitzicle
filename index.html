@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bitzicle</title>
+    <title>Bizticle</title>
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
     <!-- google fonts -->
@@ -21,12 +21,11 @@
     <link rel="stylesheet" href="./styles/main.res.css" />
   </head>
   <body>
-    <!-- header -->
-    <header class="container">
+    <!-- header starts -->
+    <header>
       <!-- navbar -->
-      <!-- <div class="container"> -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid navbar-container">
+        <div class="container-fluid container">
           <!-- brand logo -->
           <a class="navbar-brand" href="./components/navbar.html">
             <img
@@ -100,7 +99,7 @@
                 <a class="nav-link" href="#"> Explore </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Why Bitzicle</a>
+                <a class="nav-link" href="#">Why Bizticle</a>
               </li>
             </ul>
             <!-- search bar -->
@@ -116,12 +115,39 @@
               </a>
             </form>
             <!-- login button -->
-            <button class="bz-btn-primary" type="submit">Login</button>
+            <a class="bz-btn-primary" type="submit">Login</a>
           </div>
         </div>
       </nav>
-      <!-- </div> -->
     </header>
+    <!-- header ends -->
+
+    <!-- main starts -->
+    <main>
+      <!-- hero section starts -->
+      <div class="hero">
+        <div class="hero-content container h-100">
+          <div
+            class="mw-50 d-flex flex-column justify-content-center align-item-start text-center text-md-start h-100 gap-4"
+          >
+            <h1 class="hero-slogan">
+              Delivering solutions <br />
+              for <span class="text-blue blue-underline">Businesses</span>
+            </h1>
+            <p class="hero-text">
+              Solutions tailored for businesses to find and manage top people
+              and talent
+            </p>
+            <a href="#" class="bz-btn-secondary"
+              >Get Started
+              <img src="./assets/icons/arrow-right.svg" alt="arrow right"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- hero section ends -->
+    </main>
+    <!-- main ends -->
     <!-- bootstrap js -->
     <script src="./vendor/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
