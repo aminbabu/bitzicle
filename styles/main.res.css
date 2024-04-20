@@ -1,16 +1,112 @@
-@media only screen and (max-width: 575px) {
+@media only screen and (min-width: 575px) {
+  /* hero  */
+  .hero-text-container {
+    gap: 2.5rem;
+  }
+  .hero-slogan {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+
+  .hero-text {
+    font-size: 1.125rem;
+    width: 80%;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
+  /* common styles */
+  .section-text {
+    width: 80%;
+  }
+
+  /* hero  */
+  .hero-text-container {
+    gap: 2.75rem;
+  }
+  .hero-slogan {
+    font-size: 2.875rem;
+  }
+
+  .hero-text {
+    font-size: 1.125rem;
+    width: 65%;
+  }
+
+  /* category section */
+  .category-card-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .category-card {
+    height: 20rem;
+    padding: 1.75rem;
+  }
+
+  .card-text {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
+  /* common styles */
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 55px;
+  }
+
+  .section-text {
+    font-size: 1.25rem;
+  }
+
+  /* hero  */
+  .hero-slogan {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+    width: 50%;
+  }
+
+  /* category section */
+
+  .category-card {
+    height: 25.875rem;
+    padding: 2.375rem;
+  }
+
+  .card-text {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1199px) {
+  /* hero  */
+  .hero-slogan {
+    font-size: 3.125rem;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+    width: 44%;
+  }
+
+  /* category section */
+
+  .category-card {
+    height: 27.875rem;
+  }
 }
 @media only screen and (min-width: 1400px) {
+  /* common styles */
+
   .container {
     max-width: 1200px;
     padding-inline: 0;
   }
+
+  /* navbar */
 
   .navbar-brand {
     width: 225px;
@@ -22,5 +118,11 @@
 
   .search-bar {
     width: 245px;
+  }
+
+  /* hero  */
+
+  .hero-text {
+    width: 40%;
   }
 }
