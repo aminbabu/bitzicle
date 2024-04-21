@@ -63,6 +63,44 @@
     font-size: 2.5rem;
     line-height: 75px;
   }
+
+  /* footer */
+
+  .footer-text-social {
+    text-align: left;
+  }
+
+  .footer-text {
+    margin: 0;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-list {
+    text-align: left;
+  }
+
+  .newsletter-text {
+    text-align: left;
+  }
+
+  .newsletter-input {
+    margin: 0 0 1.25rem;
+  }
+
+  .terms-and-conditions,
+  .footer-bottom {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .fb-text {
+    padding-bottom: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
@@ -158,8 +196,17 @@
 
   /* contact us section */
 
+  .footer-container {
+    gap: 2rem;
+  }
+
   .contact-us-title {
     font-size: 3rem;
+  }
+
+  .terms-and-conditions,
+  .footer-bottom {
+    gap: 2.5rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -260,6 +307,26 @@
   .contact-us-title {
     font-size: 3.75rem;
   }
+
+  /* footer */
+
+  .footer-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .footer-text-social {
+    width: 40%;
+  }
+
+  .newsletter {
+    width: 30%;
+  }
+
+  .menu-container {
+    width: 15%;
+  }
 }
 @media only screen and (min-width: 1199px) {
   /* hero  */
@@ -323,5 +390,25 @@
 
   .wcu-card {
     padding-inline: 2.5rem;
+  }
+
+  /* footer */
+
+  .footer-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .footer-text-social {
+    width: 45%;
+  }
+
+  .newsletter {
+    width: 25%;
+  }
+
+  .menu-container {
+    width: 10%;
   }
 }
