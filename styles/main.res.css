@@ -36,6 +36,14 @@
     grid-template-columns: repeat(2, 1fr);
     /* gap: 1.5rem; */
   }
+
+  /* review banner section */
+
+  .review-container {
+    padding: 1.875rem 1.5rem 1.75rem;
+    width: 60%;
+    left: 1rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
@@ -120,6 +128,14 @@
   .wcu-cards-container {
     gap: 2.5rem;
   }
+
+  /* review banner section */
+
+  .review-container {
+    padding: 2rem 1.625rem 1.875rem;
+    width: 55%;
+    left: 1.5rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   /* common styles */
@@ -196,6 +212,23 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
   }
+
+  .review-container {
+    padding: 2.25rem 3.125rem 1.875rem 2.5rem;
+    width: 55%;
+    left: 5rem;
+  }
+
+  .review-text {
+    padding: 1.25rem 0 2.125rem;
+    color: var(--outer-space);
+    font-weight: 500;
+    font-family: var(--work-sans);
+  }
+
+  .slick-dots {
+    padding-top: 1.25rem;
+  }
 }
 @media only screen and (min-width: 1199px) {
   /* hero  */
@@ -253,5 +286,11 @@
 
   .hero-text {
     width: 40%;
+  }
+
+  /* why choose us section */
+
+  .wcu-card {
+    padding-inline: 2.5rem;
   }
 }

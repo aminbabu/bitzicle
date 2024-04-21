@@ -51,6 +51,10 @@ small {
   padding: 0;
 }
 
+section {
+  margin-block: 2rem;
+}
+
 .nav-link {
   font-family: var(--red-hat);
   font-weight: 500;
@@ -536,4 +540,86 @@ small {
 
 .wcu-card:hover .wcu-card-content {
   color: var(--white);
+}
+
+/* review banner section */
+
+.review-banner-container {
+  background-image: url(../assets/images/review-banner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: var(--white);
+  width: 100%;
+  height: auto;
+  max-height: 534px;
+  aspect-ratio: 1/1;
+  border-radius: 1.25rem;
+}
+
+.review-container {
+  background-color: var(--white);
+  opacity: 0.9;
+  padding: 1rem;
+  width: 80%;
+  max-width: 421px;
+  position: relative;
+  left: 1.5rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+  margin: 0;
+}
+
+.review-card {
+  color: var(--primary);
+}
+
+.review-card .section-title {
+  width: 100%;
+}
+
+.review-text {
+  padding-block: 1rem;
+  color: var(--outer-space);
+  font-weight: 500;
+  font-family: var(--work-sans);
+}
+
+.ratings {
+  display: flex;
+}
+
+.reviewer-name {
+  font-weight: 500;
+}
+
+.slick-dots {
+  position: static;
+  padding-top: 1rem;
+}
+
+.slick-dots li {
+  height: 11px;
+  width: 11px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5rem;
+}
+
+.slick-dots li button {
+  height: 11px;
+  width: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -1px;
+}
+
+li.slick-active {
+  background-color: var(--mulberry);
+  border-radius: 5rem;
+  border: 1px solid var(--mulberry);
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: transparent;
 }
