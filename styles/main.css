@@ -51,7 +51,7 @@ small {
   padding: 0;
 }
 
-section {
+.section {
   margin-block: 2rem;
 }
 
@@ -544,6 +544,25 @@ section {
 
 /* review banner section */
 
+.review-banner {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.review-overlay {
+  background: #f0f7f8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 50%;
+}
+
 .review-banner-container {
   background-image: url(../assets/images/review-banner.png);
   background-repeat: no-repeat;
@@ -555,6 +574,8 @@ section {
   max-height: 534px;
   aspect-ratio: 1/1;
   border-radius: 1.25rem;
+  position: relative;
+  z-index: 1000;
 }
 
 .review-container {
@@ -564,8 +585,13 @@ section {
   width: 80%;
   max-width: 421px;
   position: relative;
-  left: 1.5rem;
+  top: 0;
+  left: 1rem;
+  bottom: 1rem;
   border-radius: 0 0 1.25rem 1.25rem;
+  z-index: 1000;
+}
+.slick-dotted.slick-slider {
   margin: 0;
 }
 
@@ -575,13 +601,15 @@ section {
 
 .review-card .section-title {
   width: 100%;
+  font-size: 1.75rem;
 }
 
 .review-text {
-  padding-block: 1rem;
+  padding-block: 0.5rem;
   color: var(--outer-space);
   font-weight: 500;
   font-family: var(--work-sans);
+  font-size: 1rem;
 }
 
 .ratings {
@@ -590,11 +618,11 @@ section {
 
 .reviewer-name {
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .slick-dots {
   position: static;
-  padding-top: 1rem;
 }
 
 .slick-dots li {
@@ -622,4 +650,23 @@ li.slick-active {
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
   color: transparent;
+}
+
+/* contact us section */
+
+.contact-us {
+  background-color: #f0f7f8;
+  padding-block: 2rem;
+}
+
+.contact-us-title {
+  font-family: var(--somar-sans);
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 55px;
+  padding-bottom: 1.25rem;
+}
+
+.contact-us .contact-btn {
+  gap: 0.875rem;
 }

@@ -3,7 +3,8 @@ $(".review-container").slick({
   arrows: false,
   infinite: true,
   speed: 300,
-  autoPlay: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
   slidesToShow: 1,
   slidesToScroll: 1,
 });

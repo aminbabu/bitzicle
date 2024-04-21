@@ -40,9 +40,28 @@
   /* review banner section */
 
   .review-container {
-    padding: 1.875rem 1.5rem 1.75rem;
+    padding: 2rem 1.5rem 1.875rem;
     width: 60%;
     left: 1rem;
+  }
+
+  .review-text {
+    padding-block: 1rem;
+  }
+  .reviewer-name,
+  .review-text {
+    font-size: 1.25rem;
+  }
+
+  .slick-dots {
+    padding-top: 1rem;
+  }
+
+  /* contact us section */
+
+  .contact-us-title {
+    font-size: 2.5rem;
+    line-height: 75px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -136,6 +155,12 @@
     width: 55%;
     left: 1.5rem;
   }
+
+  /* contact us section */
+
+  .contact-us-title {
+    font-size: 3rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   /* common styles */
@@ -228,6 +253,12 @@
 
   .slick-dots {
     padding-top: 1.25rem;
+  }
+
+  /* contact us section */
+
+  .contact-us-title {
+    font-size: 3.75rem;
   }
 }
 @media only screen and (min-width: 1199px) {
