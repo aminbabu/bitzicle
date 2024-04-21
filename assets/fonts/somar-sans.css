@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Somar Sans";
+  src: url("./Somar Sans/SomarSans-Black.ttf") format("woff2"),
+    url("./Somar Sans/SomarSans-Bold.ttf") format("woff"),
+    url("./Somar Sans/SomarSans-ExtraBold.ttf") format("woff"),
+    url("./Somar Sans/SomarSans-ExtraLight.ttf") format("woff"),
+    url("./Somar Sans/SomarSans-Light.ttf") format("woff"),
+    url("./Somar Sans/SomarSans-Thin.ttf") format("woff"),
+    url("./Somar Sans/SomarSans-Regular.ttf") format("woff"),
+    url("./Somar Sans/SomarSans-Medium.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

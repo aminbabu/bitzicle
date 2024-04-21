@@ -3,6 +3,7 @@
   --open-sans: "Open Sans", sans-serif;
   --red-hat: "Red Hat Text", sans-serif;
   --work-sans: "Work Sans", sans-serif;
+  --somar-sans: "Somar Sans", sans-serif;
 
   /* colors */
   --primary: #272727;
@@ -94,6 +95,7 @@ small {
 }
 
 .section-title {
+  font-family: var(--somar-sans);
   font-size: 2.125rem;
   font-weight: 600;
   line-height: 2.5rem;
@@ -134,6 +136,7 @@ small {
 .navbar {
   height: 4.4275rem;
   transition: all 0.3s ease-out;
+  background-color: var(--white);
 }
 
 .search-bar {
@@ -376,6 +379,7 @@ small {
 
 .get-started-banner {
   margin-block: 2rem;
+  font-family: var(--somar-sans);
 }
 
 .get-started-banner-content {
@@ -385,8 +389,8 @@ small {
   background-size: cover;
   width: 100%;
   height: auto;
-  max-height: 628px;
-  aspect-ratio: 1/1;
+  /* min-height: 616px; */
+  /* aspect-ratio: 1/1; */
   border-radius: 1.25rem;
   padding: 1rem;
   position: relative;
@@ -396,6 +400,10 @@ small {
 .get-started-text-content {
   position: relative;
   z-index: 100;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .get-started-overlay {
@@ -413,4 +421,48 @@ small {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detailed-option {
+  background-color: var(--white);
+  opacity: 0.9;
+  color: var(--primary);
+  padding: 1rem;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.get-started-title {
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 75px;
+}
+
+.intro-text {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  line-height: 26px;
+}
+
+.starting-option {
+  background: #00000054;
+  padding: 6px 18px 6px 16px;
+  border-radius: 0.625rem;
+}
+
+.starting-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--somar-sans);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }

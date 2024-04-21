@@ -18,6 +18,17 @@
   .counter-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* get started banner content */
+
+  .get-started-text-content {
+    width: 60%;
+  }
+
+  .get-started-title {
+    text-align: left;
+    font-size: 2.75rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
@@ -73,6 +84,29 @@
   .count {
     margin: 0;
   }
+
+  /* get started banner content */
+
+  .get-started-banner-content {
+    padding: 1.5rem;
+  }
+
+  .get-started-text-content {
+    width: 60%;
+  }
+
+  .get-started-title {
+    font-size: 3.375rem;
+  }
+
+  .detailed-option {
+    gap: 0.75rem;
+  }
+
+  .intro-title {
+    font-size: 1.375rem;
+    line-height: 42px;
+  }
 }
 @media only screen and (min-width: 992px) {
   /* common styles */
@@ -106,6 +140,42 @@
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
+
+  /* businesses section */
+  .businesses-text-container {
+    width: 45%;
+  }
+
+  /* get started banner content */
+
+  .get-started-banner-content {
+    padding: 2rem;
+  }
+
+  .get-started-text-content {
+    width: 45%;
+  }
+
+  .get-started-title {
+    padding-bottom: 2rem;
+  }
+
+  .get-started-title {
+    font-size: 3.75rem;
+  }
+
+  .detailed-option {
+    gap: 1rem;
+    padding: 1.625rem;
+  }
+
+  .starting-option {
+    padding: 0.375rem 1.125rem 0.375rem 1.625rem;
+  }
+
+  .intro-title {
+    font-size: 1.625rem;
+  }
 }
 @media only screen and (min-width: 1199px) {
   /* hero  */
@@ -122,6 +192,13 @@
 
   .category-card {
     height: 27.875rem;
+  }
+
+  /* businesses section */
+
+  .get-started-title {
+    width: 80%;
+    padding-left: 1.75rem;
   }
 }
 @media only screen and (min-width: 1400px) {
