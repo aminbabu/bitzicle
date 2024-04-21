@@ -36,7 +36,6 @@
     <!-- header starts -->
     <header>
       <!-- navbar -->
-      <!-- navbar -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid container">
           <!-- brand logo -->
@@ -59,8 +58,10 @@
           >
             <img src="./assets/icons/toggler.svg" alt="toggler" />
           </button>
-          <!-- collapsible -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- collapsible for large devices -->
+          <div
+            class="collapse navbar-collapse navbar-show-content d-none d-lg-block"
+          >
             <!-- menu links -->
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
@@ -126,6 +127,81 @@
             </form>
             <!-- login button -->
             <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+          </div>
+        </div>
+        <!-- collapsible for small devices-->
+        <div
+          class="collapse navbar-collapse navbar-show-content navbar-sm"
+          id="navbarSupportedContent"
+        >
+          <div class="container">
+            <!-- menu links -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Freelancers
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Business
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Explore </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Bizticle</a>
+              </li>
+            </ul>
+            <!-- search bar -->
+            <form class="d-none d-lg-flex search-top" role="search">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a class="search-icon" type="submit">
+                <img src="./assets/icons/search.svg" alt="search icon" />
+              </a>
+            </form>
+            <!-- login button -->
+            <div class="btn-container">
+              <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+            </div>
           </div>
         </div>
       </nav>

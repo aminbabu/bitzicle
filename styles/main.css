@@ -152,6 +152,11 @@ a {
   background-color: var(--white);
 }
 
+.navbar-show-content {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
 .search-bar {
   width: 9.375rem;
   border-radius: 3.125rem;
