@@ -388,9 +388,6 @@ small {
   background-position: center center;
   background-size: cover;
   width: 100%;
-  height: auto;
-  /* min-height: 616px; */
-  /* aspect-ratio: 1/1; */
   border-radius: 1.25rem;
   padding: 1rem;
   position: relative;
@@ -465,4 +462,78 @@ small {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 2.5rem;
+}
+
+/* why choose us section */
+
+.why-choose-us {
+  margin-block: 2rem;
+}
+
+.wcu-cards-container {
+  padding-top: 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+.wcu-card,
+.wcu-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wcu-card {
+  height: 220px;
+  background: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(to bottom, #e8e8e8, #e8e8e8) border-box;
+  border: 1px solid transparent;
+  border-radius: 0.625rem;
+  position: relative;
+  padding: 1.875rem;
+  z-index: 100;
+  transition: all 0.3s ease-out;
+  color: var(--primary);
+  font-weight: 500;
+  line-height: 1.625rem;
+  cursor: pointer;
+}
+
+.wcu-card-content {
+  position: relative;
+  z-index: 100;
+  gap: 1.625rem;
+  text-align: center;
+}
+.wcu-overlay {
+  position: absolute;
+  border-radius: 0.625rem;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: all 0.3s ease-out;
+}
+
+.wcu-card:hover {
+  background: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(to bottom, #9c20aa, #fb3570) border-box;
+}
+.wcu-card:hover .wcu-overlay {
+  background-image: linear-gradient(
+      90deg,
+      #000000 5%,
+      #272727 30%,
+      #652a7c8f 100%,
+      #72d9d43b 23%
+    ),
+    url(../assets/images/wcu-overlay-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wcu-card:hover .wcu-card-content {
+  color: var(--white);
 }

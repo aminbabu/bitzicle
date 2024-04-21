@@ -29,6 +29,13 @@
     text-align: left;
     font-size: 2.75rem;
   }
+
+  /* why choose us section */
+
+  .wcu-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1.5rem; */
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
@@ -107,6 +114,12 @@
     font-size: 1.375rem;
     line-height: 42px;
   }
+
+  /* why choose us section */
+
+  .wcu-cards-container {
+    gap: 2.5rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   /* common styles */
@@ -176,6 +189,13 @@
   .intro-title {
     font-size: 1.625rem;
   }
+
+  /* why choose us section */
+
+  .wcu-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
 }
 @media only screen and (min-width: 1199px) {
   /* hero  */
@@ -199,6 +219,12 @@
   .get-started-title {
     width: 80%;
     padding-left: 1.75rem;
+  }
+
+  /* why choose us section */
+
+  .wcu-cards-container {
+    gap: 3rem;
   }
 }
 @media only screen and (min-width: 1400px) {
