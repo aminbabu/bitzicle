@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizticle - selection</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+
+    <!-- slick carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick-theme.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.res.css" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid container">
+          <!-- brand logo -->
+          <a class="navbar-brand" href="./components/accordion.html">
+            <img
+              class="img-fluid"
+              src="./assets/images/logo-dark.png"
+              alt="brand logo"
+            />
+          </a>
+          <!-- navbar toggler -->
+          <button
+            class="navbar-toggler custom-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="./assets/icons/toggler.svg" alt="toggler" />
+          </button>
+          <!-- collapsible for large devices -->
+          <div
+            class="collapse navbar-collapse navbar-show-content d-none d-lg-block"
+          >
+            <!-- menu links -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Freelancers
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Business
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Explore </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Bizticle</a>
+              </li>
+            </ul>
+            <!-- search bar -->
+            <form class="d-none d-lg-flex search-top" role="search">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a class="search-icon" type="submit">
+                <img src="./assets/icons/search.svg" alt="search icon" />
+              </a>
+            </form>
+            <!-- login button -->
+            <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+          </div>
+        </div>
+        <!-- collapsible for small devices-->
+        <div
+          class="collapse navbar-collapse navbar-show-content navbar-sm"
+          id="navbarSupportedContent"
+        >
+          <div class="container">
+            <!-- menu links -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Freelancers
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Business
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Explore </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Bizticle</a>
+              </li>
+            </ul>
+            <!-- search bar -->
+            <form class="d-none d-lg-flex search-top" role="search">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a class="search-icon" type="submit">
+                <img src="./assets/icons/search.svg" alt="search icon" />
+              </a>
+            </form>
+            <!-- login button -->
+            <div class="btn-container">
+              <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header ends -->
+
+    <!-- main starts -->
+    <main>
+      <!-- selection page starts -->
+      <section class="selection">
+        <div class="container">
+          <div class="selection-container">
+            <!-- section headings -->
+            <div class="section-headings text-center">
+              <h2 class="section-title m-auto">What are You Looking for?</h2>
+            </div>
+
+            <!-- selection card container -->
+            <ul class="selection-card-container">
+              <li class="select-card select-card-1">
+                <label class="checkbox-control" for="card">
+                  <input id="card" name="cards" type="radio" class="checkbox" />
+                  <span class="checkbox-control__target">Card Label</span>
+                </label>
+
+                <div class="card__content">
+                  <svg
+                    width="45"
+                    height="40"
+                    viewBox="0 0 63 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_807_896)">
+                      <path
+                        d="M31.5926 0.460449C33.0704 0.550887 34.0661 1.29171 34.6485 2.62711C36.8249 7.63004 39.0248 12.6137 41.1795 17.6205C41.5514 18.4845 41.943 18.929 43.045 19.0098C48.659 19.4235 54.2612 19.9719 59.8694 20.4914C61.2665 20.6184 62.2779 21.3496 62.76 22.6215C63.2913 24.0243 62.9194 25.2808 61.7761 26.2775C59.1524 28.5519 56.517 30.8167 53.8697 33.0719C52.1203 34.5728 50.3847 36.091 48.6059 37.5572C48.1277 37.9421 48.1651 38.3269 48.2793 38.8253C49.5426 44.24 50.7862 49.6605 52.0554 55.0752C52.4115 56.5876 52.1636 57.9076 50.8275 58.837C49.4914 59.7664 48.1336 59.5817 46.7798 58.787C41.9549 55.9507 37.1122 53.1452 32.297 50.2955C31.7067 49.9472 31.2994 49.9414 30.7051 50.2955C25.8631 53.16 21.0093 56.0033 16.1437 58.8255C14.5872 59.7318 13.1212 59.674 11.9562 58.6869C10.8464 57.746 10.6005 56.5453 10.9114 55.1964C12.1648 49.7779 13.4026 44.3554 14.6974 38.9465C14.8784 38.1999 14.6796 37.792 14.1208 37.3225C9.81531 33.6652 5.52624 29.9887 1.25356 26.2929C0.137837 25.3308 -0.267516 24.1474 0.20278 22.7485C0.641592 21.4362 1.63137 20.6993 2.99897 20.5126C4.26424 20.3394 5.54132 20.2586 6.8125 20.147C11.4092 19.7448 16.0099 19.3619 20.6026 18.9174C20.9371 18.8847 21.374 18.4922 21.5196 18.1631C23.818 13.0088 26.0907 7.84299 28.3379 2.66559C28.9479 1.23014 29.9948 0.487388 31.5926 0.460449ZM15.0122 54.9443C15.6025 54.623 15.9115 54.4614 16.2145 54.2843C20.5672 51.7405 24.9376 49.2217 29.2628 46.6356C30.8114 45.7101 32.2026 45.7235 33.7453 46.6356C38.0744 49.2237 42.4409 51.7425 46.7936 54.2863C47.1045 54.4671 47.4272 54.6288 47.9172 54.8924C47.8148 54.3401 47.7676 54.0284 47.6987 53.7225C46.5574 48.7715 45.4378 43.8167 44.2532 38.8753C43.8911 37.3648 44.265 36.1814 45.4338 35.1731C49.4271 31.7519 53.4184 28.3287 57.4077 24.9036C57.6476 24.7447 57.9067 24.6154 58.1791 24.5188L57.9095 24.1859C56.292 24.0377 54.6745 23.8877 53.055 23.7453C49.1195 23.397 45.1643 23.0603 41.2209 22.7004C39.7136 22.5638 38.7297 21.7845 38.1334 20.3914C36.1086 15.679 34.0307 10.9897 31.9724 6.29079C31.8405 5.99254 31.6929 5.70007 31.4863 5.26327C31.2443 5.77511 31.0928 6.08683 30.9472 6.41779C28.9164 11.0571 26.864 15.6886 24.8707 20.3452C24.2449 21.8057 23.206 22.583 21.6199 22.7216C18.3928 23.0038 15.1657 23.2886 11.9385 23.5759C9.64216 23.778 7.34577 23.9858 4.85458 24.209C5.22649 24.5554 5.4449 24.7863 5.683 24.9787C9.64608 28.3845 13.6105 31.7891 17.5762 35.1924C18.5916 36.0621 19.115 37.1377 18.8237 38.4404C18.0504 41.904 17.2161 45.3502 16.4132 48.8042C15.9626 50.763 15.5218 52.72 15.0142 54.9386L15.0122 54.9443Z"
+                        fill="url(#paint0_linear_807_896)"
+                        stroke="transparent"
+                      />
+                    </g>
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_807_896"
+                        x1="31.5039"
+                        y1="0.460449"
+                        x2="31.5039"
+                        y2="59.4681"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#CC4FAF" />
+                        <stop offset="1" stop-color="#72D9D4" />
+                      </linearGradient>
+                      <clipPath id="clip0_807_896">
+                        <rect
+                          width="63"
+                          height="59"
+                          fill="transparent"
+                          transform="translate(0 0.45459)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <h4 class="select-card-title">Talent</h4>
+                </div>
+              </li>
+              <!-- End Card 1 -->
+
+              <!-- Start Card 2 -->
+              <li class="select-card select-card-2">
+                <label class="checkbox-control" for="card1">
+                  <input
+                    id="card1"
+                    name="cards"
+                    type="radio"
+                    class="checkbox"
+                  />
+                  <span class="checkbox-control__target">Card Label</span>
+                </label>
+
+                <div class="card__content">
+                  <svg
+                    width="45"
+                    height="40"
+                    viewBox="0 0 45 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.1932 6.50849C14.1932 5.56789 14.1932 4.62729 14.1932 3.68669C14.208 1.42373 15.5468 0.112735 17.832 0.112735C21.2394 0.112735 24.6468 0.110029 28.0542 0.104614C30.4498 0.104614 31.7787 1.40423 31.7903 3.76142C31.7903 4.67603 31.7903 5.59064 31.7903 6.56698C32.1398 6.58485 32.4036 6.60921 32.6674 6.60921C34.8915 6.60921 37.119 6.59784 39.3415 6.60921C42.5681 6.63033 44.9472 8.88355 44.9637 12.0692C45 19.241 45 26.4127 44.9637 33.5845C44.9489 36.8465 42.5598 39.0981 39.2294 39.0981C28.3806 39.0981 17.5319 39.0981 6.68319 39.0981C3.46155 39.0981 1.04944 36.8579 1.02635 33.6787C0.976892 26.4225 0.976892 19.17 1.02635 11.9214C1.04449 8.92904 3.43187 6.65957 6.46721 6.61571C8.96505 6.57997 11.4645 6.59459 13.9624 6.58647C14.041 6.56555 14.1181 6.5395 14.1932 6.50849ZM3.25711 20.741C3.23238 21.0919 3.206 21.2982 3.206 21.5029C3.206 25.4299 3.206 29.3553 3.206 33.2791C3.206 35.6671 4.49366 36.9245 6.9305 36.9261C10.4478 36.9261 13.9651 36.9261 17.4825 36.9261C24.7072 36.9261 31.932 36.9261 39.1568 36.9261C41.4651 36.9261 42.7676 35.607 42.7692 33.3294C42.7692 29.4046 42.7692 25.4797 42.7692 21.5549C42.7692 21.3242 42.7395 21.0951 42.7165 20.7426C41.4189 21.6085 40.0686 21.8034 38.6408 21.7888C35.2345 21.7547 31.8282 21.8034 28.4186 21.7612C27.5942 21.7514 27.3452 21.9512 27.3436 22.7911C27.3436 24.8169 25.9422 26.0987 23.8812 26.1117C23.3322 26.1117 22.7832 26.1117 22.2325 26.1117C19.9622 26.1117 18.625 24.8559 18.6052 22.6189C18.6052 21.9171 18.3464 21.7628 17.6918 21.7693C14.834 21.7964 11.9762 21.7964 9.11839 21.7693C7.15144 21.7482 5.107 22.0747 3.25711 20.741ZM23.0305 8.77471H20.3925C15.8859 8.77471 11.3832 8.77471 6.88434 8.77471C4.49531 8.77471 3.20764 10.0467 3.20105 12.3763C3.20105 13.7295 3.18291 15.0827 3.20105 16.4376C3.21347 17.2732 3.55678 18.0709 4.15772 18.6606C4.75866 19.2503 5.56967 19.5852 6.41775 19.5941C10.344 19.6146 14.2702 19.6108 18.1964 19.5827C18.3538 19.5651 18.5056 19.5147 18.6418 19.4348C18.7779 19.355 18.8953 19.2476 18.9861 19.1197C19.6192 18.132 20.4865 17.5325 21.6637 17.4627C22.5662 17.405 23.4716 17.405 24.3742 17.4627C24.9005 17.4841 25.4116 17.6431 25.8549 17.9235C26.2982 18.2038 26.6578 18.5954 26.8968 19.058C27.1309 19.495 27.3914 19.607 27.8415 19.6054C31.6864 19.5908 35.5296 19.6054 39.3728 19.5924C41.3266 19.5924 42.7428 18.1888 42.761 16.2719C42.7742 14.9463 42.7725 13.6207 42.761 12.2951C42.7478 10.0727 41.442 8.77633 39.1618 8.77146C33.788 8.76604 28.4109 8.76713 23.0305 8.77471ZM16.3976 6.54749H29.5776C29.5776 5.45093 29.5974 4.42585 29.5776 3.4024C29.5611 2.69086 29.1275 2.29447 28.4235 2.29122C24.8029 2.27498 21.1822 2.27498 17.5616 2.29122C16.8609 2.29122 16.4223 2.67786 16.4075 3.39915C16.3828 4.4226 16.3976 5.44768 16.3976 6.54749ZM25.1903 21.7855C25.1903 21.5419 25.1903 21.2982 25.1903 21.0545C25.1656 19.9514 24.7666 19.5664 23.629 19.5567C23.108 19.5567 22.5853 19.5437 22.0643 19.5567C21.2812 19.5859 20.831 19.9888 20.7882 20.7507C20.7503 21.4233 20.7569 22.1023 20.7882 22.7765C20.8179 23.475 21.2152 23.8812 21.9308 23.9137C22.615 23.9429 23.3009 23.9364 23.9851 23.9137C24.7402 23.8958 25.1392 23.488 25.1837 22.7489C25.2134 22.4337 25.1903 22.1088 25.1903 21.7855Z"
+                      fill="url(#paint0_linear_837_78)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_837_78"
+                        x1="22.9901"
+                        y1="0.104614"
+                        x2="22.9901"
+                        y2="39.0981"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#CC4FAF" />
+                        <stop offset="1" stop-color="#72D9D4" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <h4 class="select-card-title">Businesses</h4>
+                </div>
+              </li>
+              <!-- End Card 2 -->
+            </ul>
+
+            <!-- button container -->
+            <div class="btn-container pt-4 text-center">
+              <a href="#" class="bz-btn bz-btn-secondary d-inline-flex gap-2">
+                Continue
+                <img src="./assets/icons/arrow-right.svg" alt="arrow right"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- selection page ends -->
+    </main>
+    <!-- main ends -->
+
+    <!-- javscripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+      integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- slick carousel -->
+    <script
+      type="text/javascript"
+      src="./libs/slick-carousel/slick.min.js"
+    ></script>
+    <script src="./scripts/slick-carousel.js"></script>
+  </body>
+</html>
