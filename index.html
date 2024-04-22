@@ -39,7 +39,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid container">
           <!-- brand logo -->
-          <a class="navbar-brand" href="./components/navbar.html">
+          <a class="navbar-brand" href="./components/accordion.html">
             <img
               class="img-fluid"
               src="./assets/images/logo-dark.png"
@@ -410,46 +410,135 @@
             <div class="get-started-text-content">
               <h2 class="get-started-title">Get Started With Us</h2>
               <!-- starting options list -->
-              <ul class="starting-option-list">
-                <!-- detailed option  -->
-                <li class="detailed-option">
-                  <h5 class="intro-title">I am a Freelancer</h5>
-                  <p class="intro-text bz-text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s
-                  </p>
-                  <div class="btn-container">
-                    <a
-                      href="#"
-                      class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="starting-btn"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
                     >
-                      Get Started
+                      I am a Freelancer
                       <img
-                        src="./assets/icons/arrow-right.svg"
+                        class="accordion-arrow"
+                        src="../assets/icons/arrow-right.svg"
                         alt="arrow right"
-                    /></a>
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="detailed-option">
+                      <p class="intro-text bz-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="btn-container">
+                        <a
+                          href="#"
+                          class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                        >
+                          Get Started
+                          <img
+                            src="../assets/icons/arrow-right.svg"
+                            alt="arrow right"
+                        /></a>
+                      </div>
+                    </div>
                   </div>
-                </li>
-                <li class="starting-option">
-                  <a class="starting-btn" href="#"
-                    >I have a Business
-                    <img
-                      src="./assets/icons/arrow-right.svg"
-                      alt="arrow right"
-                    />
-                  </a>
-                </li>
-                <li class="starting-option">
-                  <a class="starting-btn" href="#"
-                    >I have a Business
-                    <img
-                      src="./assets/icons/arrow-right.svg"
-                      alt="arrow right"
-                    />
-                  </a>
-                </li>
-              </ul>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="starting-btn collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      I have a Business
+                      <img
+                        src="../assets/icons/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="detailed-option">
+                      <p class="intro-text bz-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="btn-container">
+                        <a
+                          href="#"
+                          class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                        >
+                          Get Started
+                          <img
+                            src="../assets/icons/arrow-right.svg"
+                            alt="arrow right"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="starting-btn collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      I want to Explore
+                      <img
+                        src="../assets/icons/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="detailed-option">
+                      <p class="intro-text bz-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s
+                      </p>
+                      <div class="btn-container">
+                        <a
+                          href="#"
+                          class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                        >
+                          Get Started
+                          <img
+                            src="../assets/icons/arrow-right.svg"
+                            alt="arrow right"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

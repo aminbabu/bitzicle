@@ -163,6 +163,10 @@ a {
   transition: all 0.3s ease-out;
 }
 
+.accordion .card-header::before {
+  content: none;
+}
+
 .search-top {
   position: relative;
 }
@@ -217,6 +221,7 @@ a {
 }
 
 .hero-slogan {
+  font-family: var(--somar-sans);
   font-size: 1.875rem;
   font-weight: 600;
   line-height: 2.5rem;
@@ -326,21 +331,12 @@ a {
   width: 100%;
   max-width: 17.5rem;
   line-height: 1.5rem;
-  display: none;
-  opacity: 0;
-  transition: all 0.5s ease-out;
+  padding-bottom: 1rem;
 }
 
 .card-btn {
-  display: none;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--white);
   font-weight: 600;
-  padding-top: 1rem;
-  transition: all 0.3s ease-out;
 }
 
 .card-btn-text {
@@ -368,6 +364,7 @@ a {
 }
 
 .businesses-title {
+  font-family: var(--somar-sans);
   width: 100%;
 }
 
@@ -378,6 +375,7 @@ a {
 }
 
 .count {
+  font-family: var(--somar-sans);
   font-size: 1.875rem;
   font-weight: 600;
   line-height: 55px;
@@ -435,11 +433,15 @@ a {
   gap: 0.5rem;
 }
 
+.accordion-button::after {
+  width: 0;
+}
+
 .detailed-option {
   background-color: var(--white);
   opacity: 0.9;
   color: var(--primary);
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
@@ -459,20 +461,62 @@ a {
 }
 
 .starting-option {
-  background: #00000054;
   padding: 6px 18px 6px 16px;
   border-radius: 0.625rem;
 }
 
+.accordion {
+  display: grid;
+  gap: 0.5rem;
+  background-color: transparent;
+}
+
+.accordion,
+.accordion-item {
+  border-radius: 0.625rem !important;
+  border: none;
+  background: transparent;
+}
+
+.accordion-item:not(.collapsed) {
+  background-color: var(--white);
+}
+
+.accordion-item:has(.collapsed) {
+  background-color: transparent;
+}
+
+.accordion-arrow {
+  display: none;
+}
+
+.collapsed .accordion-arrow {
+  display: block;
+}
+
+.starting-btn.collapsed {
+  background: #00000054;
+  color: var(--white);
+}
+
+.starting-btn:not(.collapsed) {
+  background: var(--white);
+}
+
 .starting-btn {
+  background: transparent;
+  padding: 6px 18px 6px 16px;
+  border-radius: 0.625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--white);
+  color: var(--primary);
+  width: 100%;
   font-family: var(--somar-sans);
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 2.5rem;
+  border: 0;
 }
 
 /* why choose us section */
@@ -497,15 +541,18 @@ a {
 
 .wcu-card {
   height: 220px;
+  /* background: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(to bottom, #e8e8e8, #e8e8e8) border-box; */
+
   background: linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(to bottom, #e8e8e8, #e8e8e8) border-box;
+    linear-gradient(to bottom, #9c20aa, #fb3570) border-box;
   border: 1px solid transparent;
   border-radius: 0.625rem;
   position: relative;
   padding: 1.875rem;
   z-index: 100;
   transition: all 0.3s ease-out;
-  color: var(--primary);
+  color: var(--white);
   font-weight: 500;
   line-height: 1.625rem;
   cursor: pointer;
@@ -524,6 +571,17 @@ a {
   height: 100%;
   z-index: 100;
   transition: all 0.3s ease-out;
+  background-image: linear-gradient(
+      90deg,
+      #000000 5%,
+      #272727 30%,
+      #652a7c8f 100%,
+      #72d9d43b 23%
+    ),
+    url(../assets/images/wcu-overlay-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .wcu-card:hover {
