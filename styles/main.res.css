@@ -107,6 +107,13 @@
   .price-filter-menu.show {
     inset: 7px auto auto 0 !important;
   }
+
+  .business-title {
+    font-family: var(--somar-sans);
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 55px;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */

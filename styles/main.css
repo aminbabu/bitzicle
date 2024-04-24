@@ -1025,6 +1025,7 @@ footer {
 
 .filter-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
 }
 
@@ -1165,20 +1166,27 @@ footer {
 
 /* price filter  */
 
+.category-filter-btn,
 .price-filter-btn {
-  gap: 2.25rem;
   transition: all 0.3s;
   padding: 0.5rem 1rem 0.75rem 1rem;
 }
 
-.price-filter-btn.show {
+.price-filter-btn {
+  gap: 2.25rem;
+}
+
+.price-filter-btn.show,
+.category-filter-btn.show {
   border: 1px solid #72d9d4;
   background: #f0fffe;
 }
 
-.price-filter-menu {
+.price-filter-menu,
+.category-filter-menu {
   padding: 1rem;
   box-shadow: 0px 4px 10px 0px #00000026;
+  width: 217px;
 }
 
 /* price filter radio button */
@@ -1237,6 +1245,7 @@ footer {
   transform: scale(1);
 }
 
+.category-filter-menu hr,
 .price-filter-menu hr {
   border-top: 1px solid #f1f1f1;
 }
@@ -1256,4 +1265,61 @@ footer {
 
 .apply-price-btn {
   color: var(--mulberry);
+}
+
+/* category filter */
+
+.category-filter-btn {
+  gap: 1.125rem;
+}
+
+.cateogory-item .filter-item-container {
+  padding-left: 21px;
+}
+
+.cateogory-item label {
+  font-family: var(--work-sans);
+  font-size: 0.875rem;
+  color: var(--davys-gray);
+}
+
+.cateogory-item:has(input:checked) label {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.category-filter-menu .filter-item-container .filter-item-checkmark {
+  border-radius: 8rem;
+}
+
+.category-filter-menu .filter-item-input:checked ~ .filter-item-checkmark {
+  background-color: var(--middle-blue);
+  border: none;
+}
+
+/* filtered results counter */
+
+.filtered-result-container {
+  gap: 1.875rem;
+}
+
+.back-btn {
+  padding-top: 0.625rem;
+}
+
+.business-title {
+  font-family: var(--somar-sans);
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 55px;
+}
+
+.filtered-result-count {
+  font-family: var(--work-sans);
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.searched-category {
+  font-weight: 600;
 }

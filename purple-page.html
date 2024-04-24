@@ -704,6 +704,7 @@
                 </svg>
               </button>
 
+              <!-- price dropdown menu -->
               <div class="dropdown-menu price-filter-menu">
                 <div class="radio-list">
                   <!-- 1 -->
@@ -741,8 +742,8 @@
                       <span class="price-limit">$1000</span>
                     </label>
                   </div>
-
-                  <div class="d-flex justify-content-between pt-4 mt-2">
+                  <!-- filter clear and apply -->
+                  <div class="d-flex justify-content-between pt-4 mt-2 mb-1">
                     <a class="clear-all-btn">Clear all</a>
                     <a class="apply-price-btn" href="#">Apply</a>
                   </div>
@@ -750,10 +751,119 @@
               </div>
             </div>
             <!-- price dropdown ends -->
+
+            <!-- category filter starts -->
+            <div class="btn-group category-dropdown">
+              <button
+                class="filter-btn category-filter-btn"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                Category
+                <svg
+                  width="11"
+                  height="7"
+                  viewBox="0 0 11 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.73315 1.69904L5.48315 5.44904L9.23315 1.69904"
+                    stroke="#272727"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <!-- category dropdown menu -->
+              <div class="dropdown-menu category-filter-menu">
+                <div class="category-list">
+                  <!-- 1 -->
+                  <div class="cateogory-item">
+                    <label class="filter-item-container">
+                      Agriculture
+                      <input class="filter-item-input" type="checkbox" />
+                      <span class="filter-item-checkmark"></span>
+                    </label>
+                  </div>
+                  <hr class="my-1" />
+                  <!-- 2 -->
+                  <div class="cateogory-item">
+                    <label class="filter-item-container">
+                      Science
+                      <input
+                        class="filter-item-input"
+                        type="checkbox"
+                        checked
+                      />
+                      <span class="filter-item-checkmark"></span>
+                    </label>
+                  </div>
+                  <hr class="my-1" />
+                  <!-- 3 -->
+                  <div class="cateogory-item">
+                    <label class="filter-item-container category-item-label">
+                      Web Design
+                      <input class="filter-item-input" type="checkbox" />
+                      <span class="filter-item-checkmark"></span>
+                    </label>
+                  </div>
+                  <hr class="my-1" />
+                  <!-- 4 -->
+                  <div class="cateogory-item">
+                    <label class="filter-item-container">
+                      AI
+                      <input class="filter-item-input" type="checkbox" />
+                      <span class="filter-item-checkmark"></span>
+                    </label>
+                  </div>
+                  <!-- filter clear and apply -->
+                  <div class="d-flex justify-content-between pt-4 mt-2">
+                    <a class="clear-all-btn">Clear all</a>
+                    <a class="apply-price-btn" href="#">Apply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- category filter ends -->
           </div>
         </div>
       </section>
       <!-- filter section ends -->
+
+      <!-- filtered text and result count section starts -->
+      <section class="filtered-result-counter section">
+        <div class="container">
+          <div class="filtered-result-container d-flex">
+            <a type="button" class="back-btn">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 9C21.5523 9 22 8.55228 22 8C22 7.44772 21.5523 7 21 7V9ZM0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM21 7L1 7V9L21 9V7Z"
+                  fill="#272727"
+                />
+              </svg>
+            </a>
+            <div>
+              <h3 class="business-title">Selected Business Name</h3>
+              <p class="filtered-result-count">
+                400 results found for
+                <span class="searched-category">Category</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- filtered text and result count section ends -->
     </main>
     <!-- main ends -->
 
