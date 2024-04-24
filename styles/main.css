@@ -16,6 +16,7 @@
   --silver-sand: #c5c5c5;
   --davys-gray: #535353;
   --orange-yellow: #f0b61e;
+  --phillipine-gray: #8e8e8e;
 }
 
 /* common styles */
@@ -101,7 +102,6 @@ a {
   font-weight: 500;
   border: 1px solid var(--light-silver);
   border-radius: 0.5rem;
-  padding: 0.5rem 1.125rem 0.75rem 1.125rem;
   background: var(--white);
   display: flex;
   justify-content: space-between;
@@ -1023,6 +1023,11 @@ footer {
 
 /* filter section */
 
+.filter-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
 /* all filters */
 
 .offcanvas.offcanvas-start {
@@ -1034,6 +1039,7 @@ footer {
 
 .all-filter-btn {
   gap: 13px;
+  padding: 0.5rem 1.125rem 0.75rem 1.125rem;
 }
 
 .filter-btn-close {
@@ -1151,4 +1157,103 @@ footer {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.all-filter-offcanvas-btn {
+  width: 100%;
+}
+
+/* price filter  */
+
+.price-filter-btn {
+  gap: 2.25rem;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem 0.75rem 1rem;
+}
+
+.price-filter-btn.show {
+  border: 1px solid #72d9d4;
+  background: #f0fffe;
+}
+
+.price-filter-menu {
+  padding: 1rem;
+  box-shadow: 0px 4px 10px 0px #00000026;
+}
+
+/* price filter radio button */
+
+.radio-item [type="radio"] {
+  display: none;
+}
+.radio-item + .radio-item {
+  margin-top: 15px;
+}
+.radio-item label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--work-sans);
+  font-size: 14px;
+  font-weight: 400;
+  min-width: 183px;
+  white-space: nowrap;
+  position: relative;
+  transition: 0.4s ease-in-out 0s;
+  line-height: 1;
+  color: var(--davys-gray);
+}
+.radio-item label:after,
+.radio-item label:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.radio-item label:after {
+  height: 12px;
+  width: 12px;
+  border: 1px solid var(--davys-gray);
+  left: 0px;
+  top: calc(50% - 6px);
+}
+.radio-item label:before {
+  background: #72d9d4;
+  height: 7px;
+  width: 7px;
+  left: 2.5px;
+  top: 13.8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out 0s;
+}
+.radio-item [type="radio"]:checked ~ label {
+  border-color: #524eee;
+}
+.radio-item [type="radio"]:checked ~ label::before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.price-filter-menu hr {
+  border-top: 1px solid #f1f1f1;
+}
+
+.price-limit {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.clear-all-btn,
+.apply-price-btn {
+  font-size: 0.875rem;
+}
+.clear-all-btn {
+  color: var(--phillipine-gray);
+}
+
+.apply-price-btn {
+  color: var(--mulberry);
 }

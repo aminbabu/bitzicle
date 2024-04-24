@@ -101,6 +101,12 @@
   .fb-text {
     padding-bottom: 0;
   }
+
+  /* filter section */
+
+  .price-filter-menu.show {
+    inset: 7px auto auto 0 !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
