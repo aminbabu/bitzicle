@@ -114,6 +114,12 @@
     font-size: 1.875rem;
     line-height: 55px;
   }
+
+  /* business cards */
+
+  .business-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
@@ -372,6 +378,12 @@
 
   .menu-container {
     width: 15%;
+  }
+
+  /* business cards */
+
+  .business-card-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media only screen and (min-width: 1199px) {
