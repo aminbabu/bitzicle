@@ -1149,9 +1149,9 @@ footer {
 }
 
 .filter-item-container .filter-item-checkmark:after {
-  left: 5px;
+  left: 4px;
   top: 1px;
-  width: 4px;
+  width: 5px;
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
@@ -1290,6 +1290,10 @@ footer {
 
 .category-filter-menu .filter-item-container .filter-item-checkmark {
   border-radius: 8rem;
+}
+
+.category-dropdown .filter-item-container .filter-item-checkmark::after {
+  /* top: 2px; */
 }
 
 .category-filter-menu .filter-item-input:checked ~ .filter-item-checkmark {
