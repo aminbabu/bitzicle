@@ -1,11 +1,16 @@
 @media only screen and (min-width: 575px) {
+  /* navbar  */
+
+  .navbar {
+    padding-block: 0.65rem;
+  }
+
   /* hero  */
   .hero-text-container {
     gap: 2.5rem;
   }
   .hero-slogan {
     font-size: 2.5rem;
-    line-height: 3.25rem;
   }
 
   .hero-text {
@@ -34,7 +39,6 @@
 
   .wcu-cards-container {
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 1.5rem; */
   }
 
   /* review banner section */
@@ -50,7 +54,7 @@
   }
   .reviewer-name,
   .review-text {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .slick-dots {
@@ -61,7 +65,6 @@
 
   .contact-us-title {
     font-size: 2.5rem;
-    line-height: 75px;
   }
 
   /* footer */
@@ -112,7 +115,6 @@
     font-family: var(--somar-sans);
     font-weight: 600;
     font-size: 1.875rem;
-    line-height: 55px;
   }
 
   /* business cards */
@@ -171,7 +173,7 @@
   }
 
   .businesses-img-container {
-    width: 40%;
+    width: 39.43%;
   }
 
   .businesses-text-container {
@@ -180,6 +182,7 @@
 
   .count {
     margin: 0;
+    font-size: 1.5rem;
   }
 
   /* get started banner content */
@@ -198,11 +201,6 @@
 
   .detailed-option {
     gap: 0.75rem;
-  }
-
-  .intro-title {
-    font-size: 1.375rem;
-    line-height: 42px;
   }
 
   /* why choose us section */
@@ -244,7 +242,6 @@
   /* common styles */
   .section-title {
     font-size: 2.5rem;
-    line-height: 55px;
   }
 
   .section-text {
@@ -284,8 +281,18 @@
   }
 
   /* businesses section */
+
   .businesses-text-container {
-    width: 45%;
+    width: 46.1%;
+  }
+
+  .count {
+    margin: 0;
+    font-size: 1.875rem;
+  }
+
+  .count-name {
+    font-size: 1.125rem;
   }
 
   /* get started banner content */
@@ -295,11 +302,11 @@
   }
 
   .get-started-text-content {
-    width: 45%;
+    width: 44.55%;
   }
 
   .get-started-title {
-    padding-bottom: 2rem;
+    padding-bottom: 1.9375rem;
   }
 
   .get-started-title {
@@ -308,11 +315,12 @@
 
   .detailed-option {
     gap: 2rem;
-    padding: 0.25rem 1.625rem 1.625rem;
+    padding: 0.25rem 1.625rem 1.5625rem;
   }
 
   .starting-btn {
     padding: 0.43755rem 1.125rem 0.4375rem 1.625rem;
+    /* padding: 0.75rem 1.6875rem 0.4375rem 1.6875rem; */
     font-size: 1.625rem;
   }
 
@@ -337,21 +345,24 @@
     background: white;
   }
 
+  /* review banner section */
+
   .review-container {
-    padding: 2.25rem 3.125rem 1.875rem 2.5rem;
+    padding: 2.3125rem 2.4375rem 1.875rem 2.5rem;
     width: 55%;
     left: 5rem;
   }
 
+  .review-banner .review-banner-title {
+    font-size: 2.5rem;
+  }
+
   .review-text {
-    padding: 1.25rem 0 2.125rem;
-    color: var(--outer-space);
-    font-weight: 500;
-    font-family: var(--work-sans);
+    padding: 1.1875rem 0 1.6875rem;
   }
 
   .slick-dots {
-    padding-top: 1.25rem;
+    padding-top: 1.9375rem;
   }
 
   /* contact us section */
@@ -390,7 +401,6 @@
   /* hero  */
   .hero-slogan {
     font-size: 3.125rem;
-    line-height: 3.75rem;
   }
 
   .hero-text {
@@ -417,18 +427,23 @@
     gap: 3rem;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1369px) {
   /* common styles */
 
   .container {
-    max-width: 1200px;
+    max-width: 75rem;
     padding-inline: 0;
   }
 
   /* navbar */
 
   .navbar-brand {
-    width: 225px;
+    width: 14.0625rem;
+    height: 3.165rem;
+  }
+
+  .navbar-brand img {
+    height: 100%;
   }
 
   .navbar-nav {
@@ -443,6 +458,13 @@
 
   .hero-text {
     width: 40%;
+  }
+
+  /* businessed section */
+
+  .counter-container {
+    row-gap: 1.5rem;
+    column-gap: 6rem;
   }
 
   /* why choose us section */

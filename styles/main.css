@@ -80,7 +80,7 @@ a {
   border: none;
   border-radius: 5rem;
   font-size: 1rem;
-  line-height: 1.375rem;
+  line-height: 1.375;
 }
 
 .bz-btn-primary {
@@ -124,13 +124,13 @@ a {
   font-family: var(--somar-sans);
   font-size: 2.125rem;
   font-weight: 600;
-  line-height: 2.5rem;
+  line-height: 1.375;
   width: 80%;
 }
 
 .section-text {
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.4;
   max-width: 658px;
   margin: 0 auto;
 }
@@ -150,6 +150,7 @@ a {
 .navbar-brand {
   transition: all 0.3s ease-out;
   width: 12.5rem;
+  padding: 0;
 }
 
 .custom-toggler.navbar-toggler,
@@ -160,11 +161,21 @@ a {
 }
 
 .navbar {
-  height: 4.4275rem;
+  padding-block: 0.78125rem;
   transition: all 0.3s ease-out;
-  background-color: var(--white);
-  z-index: 10000;
+  background: var(--white) !important;
   box-shadow: 0px 4px 4px 0px #00000012;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1111111;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .navbar-show-content {
@@ -239,11 +250,12 @@ a {
   font-family: var(--somar-sans);
   font-size: 1.875rem;
   font-weight: 600;
-  line-height: 2.5rem;
+  line-height: 1.2;
 }
 
 .hero-text {
   width: 80%;
+  line-height: 1.323;
 }
 
 /* category section */
@@ -255,7 +267,7 @@ a {
 .category-card-content {
   display: grid;
   gap: 1.625rem;
-  padding-block: 1.25rem;
+  padding-top: 1.1875rem;
 }
 
 .category-card {
@@ -386,14 +398,18 @@ a {
 .counter-container {
   padding-top: 0.875rem;
   display: grid;
+  justify-content: space-between;
   gap: 1.5rem;
+}
+.counter {
+  width: 100%;
 }
 
 .count {
   font-family: var(--somar-sans);
   font-size: 1.875rem;
   font-weight: 600;
-  line-height: 55px;
+  line-height: 1.83;
   margin: 0 auto;
   width: fit-content;
   background: linear-gradient(90.44deg, #cc4faf 0.45%, #72d9d4 142.95%);
@@ -401,6 +417,10 @@ a {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+.count-name {
+  line-height: 1.44;
 }
 
 /* get started banner content */
@@ -466,13 +486,15 @@ a {
 .get-started-title {
   text-align: center;
   font-size: 1.75rem;
-  line-height: 75px;
+  line-height: 1.25;
+  padding-bottom: 1rem;
+  line-height: 1.25;
 }
 
 .intro-text {
   font-size: 1rem;
-  font-family: var(--open-sans);
-  line-height: 26px;
+  font-family: var(--red-hat);
+  line-height: 1.44;
 }
 
 .starting-option {
@@ -530,7 +552,7 @@ a {
   font-family: var(--somar-sans);
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 2.5rem;
+  line-height: 1.65;
   border: 0;
 }
 
@@ -548,7 +570,7 @@ a {
 
 .wcu-card,
 .wcu-card-content {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -561,7 +583,7 @@ a {
   border: 1px solid transparent;
   border-radius: 0.625rem;
   position: relative;
-  padding: 1.875rem;
+  padding: 1.9375rem;
   z-index: 100;
   transition: all 0.3s ease-out;
   color: var(--white);
@@ -573,9 +595,10 @@ a {
 .wcu-card-content {
   position: relative;
   z-index: 100;
-  gap: 1.625rem;
+  gap: 1.9375rem;
   text-align: center;
 }
+
 .wcu-overlay {
   position: absolute;
   border-radius: 0.625rem;
@@ -618,6 +641,10 @@ a {
   color: var(--white);
 }
 
+.wcu-card-text {
+  line-height: 1.4;
+}
+
 /* review banner section */
 
 .review-banner {
@@ -658,7 +685,7 @@ a {
   background-color: var(--white);
   opacity: 0.9;
   padding: 1rem;
-  width: 80%;
+  width: 90%;
   max-width: 421px;
   position: relative;
   top: 0;
@@ -680,12 +707,17 @@ a {
   font-size: 1.75rem;
 }
 
+.review-banner-title {
+  line-height: 1.375;
+}
+
 .review-text {
   padding-block: 0.5rem;
   color: var(--outer-space);
   font-weight: 500;
   font-family: var(--work-sans);
-  font-size: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.44;
 }
 
 .ratings {
@@ -695,6 +727,7 @@ a {
 .reviewer-name {
   font-weight: 500;
   font-size: 1rem;
+  line-height: 1.6;
 }
 
 .slick-dots {
@@ -739,8 +772,8 @@ li.slick-active {
   font-family: var(--somar-sans);
   font-weight: 500;
   font-size: 1.75rem;
-  line-height: 55px;
-  padding-bottom: 1.25rem;
+  line-height: 1.25;
+  padding-bottom: 1.1875rem;
 }
 
 .contact-us .contact-btn {
@@ -772,6 +805,7 @@ footer {
   max-width: 302px;
   margin: 0 auto;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .social-icon-container {
@@ -788,11 +822,13 @@ footer {
 .newsletter-text {
   color: var(--white);
   font-weight: 500;
+  line-height: 1.3;
 }
 
 .newsletter-text {
-  padding-bottom: 1rem;
+  padding-bottom: 1.0625rem;
   text-align: center;
+  line-height: 1.3;
 }
 
 .newsletter-input {
@@ -809,6 +845,7 @@ footer {
 }
 .newsletter-input::placeholder {
   color: var(--light-silver);
+  line-height: 1.625;
 }
 
 .footer-bottom {
@@ -825,6 +862,7 @@ footer {
 .fb-text {
   padding-bottom: 1rem;
   color: var(--dark-gray);
+  line-height: 1.25;
 }
 
 /* selection section */
@@ -1315,7 +1353,7 @@ footer {
   font-family: var(--somar-sans);
   font-weight: 600;
   font-size: 1.625rem;
-  line-height: 55px;
+  line-height: 1.375;
 }
 
 .filtered-result-count {
