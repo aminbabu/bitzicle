@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizticle</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css" />
+
+    <!-- slick carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick-theme.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.res.css" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header>
+      <!-- navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary sticky">
+        <div class="container-fluid container">
+          <!-- brand logo -->
+          <a class="navbar-brand" href="./selection-page.html">
+            <img
+              class="img-fluid"
+              src="./assets/images/logo.png"
+              alt="brand logo"
+            />
+          </a>
+          <!-- navbar toggler -->
+          <button
+            class="navbar-toggler custom-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="./assets/icons/toggler.svg" alt="toggler" />
+          </button>
+          <!-- collapsible for large devices -->
+          <div
+            class="collapse navbar-collapse navbar-show-content d-none d-lg-block"
+          >
+            <!-- menu links -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Freelancers
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Business
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Explore </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Bizticle</a>
+              </li>
+            </ul>
+            <!-- search bar -->
+            <form class="d-none d-lg-flex search-top" role="search">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a class="search-icon" type="submit">
+                <img src="./assets/icons/search.svg" alt="search icon" />
+              </a>
+            </form>
+            <!-- login button -->
+            <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+          </div>
+        </div>
+        <!-- collapsible for small devices-->
+        <div
+          class="collapse navbar-collapse navbar-show-content navbar-sm"
+          id="navbarSupportedContent"
+        >
+          <div class="container">
+            <!-- menu links -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Freelancers
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  For Business
+                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Explore </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Bizticle</a>
+              </li>
+            </ul>
+            <!-- search bar -->
+            <form class="d-none d-lg-flex search-top" role="search">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a class="search-icon" type="submit">
+                <img src="./assets/icons/search.svg" alt="search icon" />
+              </a>
+            </form>
+            <!-- login button -->
+            <div class="btn-container">
+              <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header ends -->
+
+    <!-- main starts -->
+    <main>
+      <!-- purple hero section starts -->
+      <section class="purple-hero">
+        <div class="purple-hero-content h-100">
+          <div class="purple-hero-banner-overlay"></div>
+          <div class="hero-search-container container">
+            <p class="purple-hero-text section-text">
+              Select Business your are looking for
+            </p>
+            <!-- search bar -->
+            <form class="purple-hero-form">
+              <input
+                class="purple-input"
+                type="text"
+                placeholder="Search Business"
+              />
+              <button
+                class="purple-hero-search-btn d-flex justify-content-center align-items-center"
+                type="submit"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                    stroke="#272727"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.75 15.75L12.4875 12.4875"
+                    stroke="#272727"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- purple hero section ends -->
+
+      <!-- filtered text and result count section starts -->
+      <section class="filtered-result-counter section">
+        <div class="container">
+          <div class="filtered-result-container d-flex">
+            <a type="button" class="back-btn">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 9C21.5523 9 22 8.55228 22 8C22 7.44772 21.5523 7 21 7V9ZM0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM21 7L1 7V9L21 9V7Z"
+                  fill="#272727"
+                />
+              </svg>
+            </a>
+            <div>
+              <h3 class="business-title">Selected Business Name</h3>
+              <p class="filtered-result-count">
+                400 results found for
+                <span class="searched-category">Category</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- filtered text and result count section ends -->
+
+      <!-- business cards section starts -->
+      <section class="business-cards">
+        <div class="container">
+          <!-- business card container -->
+          <div class="business-card-container">
+            <!-- business card 1 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 409.png"
+                  alt="card 1"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 <span class="rating-count">(1k)</span>
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+
+            <!-- business card 2 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 416.png"
+                  alt="card 2"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 (<span class="rating-count">1k</span>)
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+
+            <!-- business card 3 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 413.png"
+                  alt="card 3"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 (<span class="rating-count">1k</span>)
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+
+            <!-- business card 4 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 417.png"
+                  alt="card 4"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 (<span class="rating-count">1k</span>)
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+
+            <!-- business card 5 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 426.png"
+                  alt="card 5"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 (<span class="rating-count">1k</span>)
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+
+            <!-- business card 6 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 427.png"
+                  alt="card 6"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 (<span class="rating-count">1k</span>)
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+
+            <!-- business card 7 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 424.png"
+                  alt="card 7"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 (<span class="rating-count">1k</span>)
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+
+            <!-- business card 8 -->
+            <div class="business-card">
+              <!-- business card img container -->
+              <div class="business-card-img-container">
+                <img
+                  src="./assets/images/Rectangle 425.png"
+                  alt="card 8"
+                  class="business-card-img"
+                />
+              </div>
+              <!-- business card info container -->
+              <div class="business-card-info-container">
+                <div class="business-card-ratings">
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                      fill="#F0B61E"
+                    />
+                  </svg>
+                  4.7 (<span class="rating-count">1k</span>)
+                </div>
+                <h6 class="business-card-title">Lorem Ipsum</h6>
+                <p class="business-card-text">
+                  Lorem Ipsum is simply dummy text of the printing industry
+                </p>
+                <div class="business-card-badge">Website Design</div>
+                <ul class="business-card-features-list">
+                  <li class="business-card-feature-item">Lorem ipsum</li>
+                  <li class="business-card-feature-item">Lorem ipsum dummy</li>
+                </ul>
+                <h6 class="business-card-price">From $70</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- business cards section ends -->
+
+      <!-- pagination section starts -->
+      <section class="pagination section">
+        <div class="container">
+          <div class="pagination-container">
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a href="#" class="pagination-prev-btn">
+                  <svg
+                    width="13"
+                    height="8"
+                    viewBox="0 0 13 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3.5C12.2761 3.5 12.5 3.72386 12.5 4C12.5 4.27614 12.2761 4.5 12 4.5L12 3.5ZM0.646446 4.35355C0.451184 4.15829 0.451184 3.84171 0.646446 3.64645L3.82843 0.464467C4.02369 0.269205 4.34027 0.269205 4.53553 0.464467C4.7308 0.659729 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM12 4.5L1 4.5L1 3.5L12 3.5L12 4.5Z"
+                      fill="#272727"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="active" type="button">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" type="button">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" type="button">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" type="button">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" type="button">5</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" type="button">6</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-next-btn">
+                  <svg
+                    width="11"
+                    height="8"
+                    viewBox="0 0 13 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM12.3536 4.35355C12.5488 4.15829 12.5488 3.84171 12.3536 3.64645L9.17157 0.464467C8.97631 0.269205 8.65973 0.269205 8.46447 0.464467C8.2692 0.659729 8.2692 0.976311 8.46447 1.17157L11.2929 4L8.46447 6.82843C8.2692 7.02369 8.2692 7.34027 8.46447 7.53553C8.65973 7.7308 8.97631 7.7308 9.17157 7.53553L12.3536 4.35355ZM1 4.5L12 4.5L12 3.5L1 3.5L1 4.5Z"
+                      fill="#272727"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- pagination section ends -->
+    </main>
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="container">
+        <!-- footer logo -->
+        <div class="d-flex justify-content-center justify-content-sm-start">
+          <a href="#">
+            <img
+              class="footer-logo"
+              src="./assets/images/logo-dark.png"
+              alt="footer logo"
+            />
+          </a>
+        </div>
+        <!-- footer.container -->
+        <div class="footer-container">
+          <!-- social icons with footer text  -->
+          <div class="footer-text-social">
+            <p class="footer-text bz-text">
+              Solutions tailored for businesses to find and manage top people
+              and talent
+            </p>
+            <ul
+              class="social-icon-container d-flex justify-content-center justify-content-sm-start"
+            >
+              <!-- facebook  -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="13"
+                    height="24"
+                    viewBox="0 0 13 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.3876 4.4171H12.575V0.758961C11.5167 0.647501 10.4527 0.593547 9.38804 0.597356C6.23409 0.597356 4.07377 2.50158 4.07377 6.00263V9.22455H0.592529V13.3133H4.07377V23.5972H8.34143V13.3133H11.6814L12.2112 9.22455H8.34026V6.40834C8.34143 5.23077 8.67225 4.4171 10.3876 4.4171Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- twitter -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8679 3.10754C23.0005 3.48634 22.083 3.73807 21.1439 3.85497C22.1339 3.267 22.8741 2.33581 23.2243 1.23783C22.2974 1.78713 21.2834 2.17365 20.2264 2.38068C19.5779 1.68721 18.7361 1.20515 17.8104 0.997166C16.8848 0.789185 15.918 0.864908 15.0359 1.21449C14.1537 1.56406 13.397 2.17133 12.864 2.95734C12.3311 3.74335 12.0466 4.67174 12.0475 5.62183C12.0453 5.98496 12.0836 6.34721 12.1617 6.70183C10.2808 6.60935 8.44068 6.12036 6.7615 5.26683C5.08231 4.41331 3.60192 3.21447 2.4171 1.74869C1.80788 2.78985 1.6185 4.02465 1.88764 5.20092C2.15679 6.37719 2.86414 7.4062 3.86526 8.07783C3.11679 8.05791 2.38409 7.858 1.72896 7.49497V7.5464C1.72994 8.63991 2.10711 9.69969 2.79698 10.5473C3.48685 11.3949 4.44727 11.9786 5.51655 12.2001C5.11215 12.3067 4.69539 12.359 4.27722 12.3555C3.97695 12.3608 3.67699 12.3335 3.38254 12.2744C3.68822 13.2139 4.27714 14.0354 5.06824 14.6258C5.85934 15.2163 6.81373 15.5467 7.80006 15.5715C6.12646 16.8823 4.0624 17.5933 1.9378 17.591C1.55985 17.5938 1.1821 17.5725 0.806885 17.527C2.96858 18.9219 5.48752 19.6599 8.05911 19.6515C9.82956 19.664 11.5848 19.324 13.223 18.6513C14.8611 17.9786 16.3494 16.9866 17.6015 15.7329C18.8535 14.4793 19.8443 12.9889 20.5163 11.3485C21.1883 9.70811 21.5281 7.95031 21.5159 6.17726C21.5159 5.96812 21.5091 5.76583 21.4988 5.56469C22.4311 4.89662 23.2339 4.06396 23.8679 3.10754Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- instagram -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.8631 7.15117C21.8451 6.24885 21.6742 5.35616 21.3576 4.51117C21.0784 3.78496 20.6507 3.12517 20.102 2.57412C19.5533 2.02306 18.8958 1.59289 18.1714 1.31117C17.3255 0.99504 16.4322 0.825005 15.5296 0.808318C14.3644 0.752318 13.9935 0.739746 11.0379 0.739746C8.08219 0.739746 7.71131 0.752318 6.54958 0.803746C5.64698 0.821673 4.75401 0.993264 3.90888 1.31117C3.18081 1.58366 2.5213 2.0128 1.97686 2.56832C1.42396 3.11326 0.995678 3.77183 0.721556 4.4986C0.404483 5.34622 0.233535 6.24163 0.216012 7.1466C0.161235 8.3146 0.148682 8.68489 0.148682 11.646C0.148682 14.6072 0.161235 14.9775 0.206882 16.1397C0.22607 17.0443 0.398959 17.939 0.718132 18.7855C0.998367 19.51 1.42648 20.1681 1.97511 20.7175C2.52374 21.2669 3.18081 21.6957 3.90432 21.9763C4.7499 22.294 5.64321 22.4656 6.54616 22.4837C7.70674 22.5352 8.07763 22.5477 11.0333 22.5477C13.989 22.5477 14.3598 22.5352 15.5204 22.4837C16.4234 22.466 17.3168 22.2944 18.1623 21.9763C18.886 21.696 19.5432 21.2674 20.0919 20.7179C20.6406 20.1685 21.0686 19.5102 21.3485 18.7855C21.6655 17.9386 21.8368 17.044 21.8551 16.1397C21.9065 14.9763 21.919 14.606 21.919 11.6449C21.919 8.68375 21.919 8.31346 21.8643 7.15003L21.8631 7.15117ZM19.9026 16.054C19.8956 16.7453 19.769 17.4301 19.5283 18.078C19.3468 18.5485 19.0691 18.9758 18.713 19.3324C18.3569 19.689 17.9302 19.9672 17.4604 20.1489C16.8134 20.3895 16.1296 20.5164 15.4394 20.5237C14.2914 20.5752 13.9467 20.5877 11.0413 20.5877C8.13583 20.5877 7.78662 20.5752 6.64316 20.5237C5.9529 20.5168 5.26907 20.39 4.62212 20.1489C4.14782 19.9758 3.7187 19.6977 3.36682 19.3352C3.00581 18.982 2.7282 18.5525 2.5543 18.078C2.31598 17.4296 2.19128 16.7449 2.18569 16.054C2.13434 14.9112 2.12179 14.5683 2.12179 11.654C2.12179 8.73975 2.13434 8.39689 2.18569 7.25403C2.19261 6.56276 2.31925 5.87793 2.56 5.23003C2.73285 4.75396 3.01237 4.32389 3.37709 3.97289C3.72962 3.6112 4.15855 3.33316 4.63239 3.15917C5.27949 2.91861 5.96322 2.79179 6.65343 2.78432C7.7969 2.73403 8.14153 2.72032 11.0481 2.72032C13.9547 2.72032 14.3028 2.73289 15.4463 2.78432C16.1365 2.79128 16.8203 2.91812 17.4673 3.15917C17.9416 3.33217 18.3708 3.61035 18.7226 3.97289C19.0836 4.32603 19.3612 4.75556 19.5351 5.23003C19.773 5.87849 19.8973 6.56321 19.9026 7.25403C19.9494 8.39689 19.9665 8.73975 19.9665 11.654C19.9665 14.5683 19.9539 14.9043 19.9026 16.0552V16.054Z"
+                    />
+                    <path
+                      d="M11.0386 6.04346C9.93263 6.04346 8.85151 6.37189 7.93195 6.98723C7.01238 7.60256 6.29566 8.47716 5.87243 9.50043C5.4492 10.5237 5.33846 11.6497 5.55422 12.736C5.76999 13.8223 6.30255 14.8201 7.08458 15.6033C7.86661 16.3864 8.86296 16.9198 9.94767 17.1358C11.0324 17.3519 12.1567 17.241 13.1785 16.8172C14.2002 16.3933 15.0736 15.6756 15.688 14.7547C16.3024 13.8337 16.6304 12.751 16.6304 11.6434C16.6304 10.1582 16.0413 8.73386 14.9926 7.68365C13.9439 6.63345 12.5216 6.04346 11.0386 6.04346ZM11.0386 15.28C10.3208 15.28 9.61922 15.0669 9.02244 14.6675C8.42566 14.2682 7.96052 13.7006 7.68586 13.0365C7.41119 12.3724 7.33932 11.6417 7.47935 10.9367C7.61937 10.2318 7.965 9.58418 8.47252 9.07592C8.98004 8.56765 9.62665 8.22152 10.3306 8.08129C11.0345 7.94106 11.7642 8.01303 12.4273 8.2881C13.0904 8.56317 13.6572 9.02898 14.056 9.62664C14.4547 10.2243 14.6676 10.9269 14.6676 11.6457C14.6676 12.6096 14.2852 13.534 13.6046 14.2156C12.9241 14.8971 12.001 15.28 11.0386 15.28Z"
+                    />
+                    <path
+                      d="M18.1591 5.82159C18.1591 6.08018 18.0826 6.33295 17.9391 6.54796C17.7956 6.76296 17.5918 6.93054 17.3532 7.0295C17.1147 7.12845 16.8522 7.15435 16.5989 7.1039C16.3457 7.05345 16.113 6.92893 15.9305 6.74608C15.7479 6.56324 15.6236 6.33028 15.5732 6.07666C15.5228 5.82304 15.5487 5.56016 15.6475 5.32126C15.7463 5.08236 15.9136 4.87817 16.1283 4.73451C16.343 4.59084 16.5954 4.51416 16.8536 4.51416C17.1998 4.51416 17.5319 4.65191 17.7767 4.8971C18.0216 5.14229 18.1591 5.47484 18.1591 5.82159Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- youtube -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="29"
+                    height="21"
+                    viewBox="0 0 29 21"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.839 3.96964C27.6784 3.37638 27.3655 2.83554 26.9315 2.40089C26.4975 1.96624 25.9574 1.6529 25.365 1.49202C23.1702 0.889272 14.3839 0.889272 14.3839 0.889272C10.7144 0.845836 7.04598 1.03943 3.40138 1.46883C2.80969 1.63833 2.27147 1.95738 1.83846 2.39534C1.40545 2.8333 1.09221 3.37544 0.928828 3.96964C0.530179 6.20075 0.336465 8.46374 0.350114 10.7302C0.335699 12.9968 0.529419 15.2598 0.928828 17.4908C1.08947 18.0841 1.40235 18.6249 1.83637 19.0596C2.27039 19.4942 2.81043 19.8076 3.40283 19.9685C5.6222 20.5698 14.3854 20.5698 14.3854 20.5698C18.0548 20.6132 21.7233 20.4196 25.3679 19.9902C25.9596 19.829 26.4989 19.5157 26.9324 19.0813C27.3659 18.647 27.6784 18.1067 27.839 17.514C28.2377 15.2829 28.4314 13.0199 28.4177 10.7534C28.444 8.47875 28.2502 6.20688 27.839 3.96964Z"
+                    />
+                    <path
+                      d="M11.5857 14.9439L18.892 10.729L11.5857 6.51416V14.9439Z"
+                      fill="#262626"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- links -->
+          <div class="menu-container">
+            <ul class="menu-list">
+              <li>
+                <a class="bz-text" href="#">Home</a>
+              </li>
+              <li>
+                <a class="bz-text" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="bz-text" class="bz-text" href="#">Solutions</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- links -->
+          <div class="menu-container">
+            <ul class="menu-list">
+              <li>
+                <a class="bz-text" href="#">Purple Page</a>
+              </li>
+              <li>
+                <a class="bz-text" href="#">Collab</a>
+              </li>
+              <li>
+                <a class="bz-text" href="#">Library</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- newsletter -->
+          <div class="newsletter">
+            <p class="bz-text newsletter-text">Subscribe to our Newsletter</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Name*"
+              />
+              <div class="btn-container text-center text-sm-start">
+                <button
+                  type="submit"
+                  class="bz-btn bz-btn-secondary d-inline-flex align-items-center gap-2"
+                >
+                  Subscribe
+                  <img
+                    class="bz-secondary-btn-arrow"
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow right"
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- footer bottom -->
+        <div class="footer-bottom">
+          <p class="fb-text">All Rights Reserved @Bizticle 2023</p>
+          <div class="terms-and-conditions">
+            <a href="#">
+              <p class="fb-text">Terms & Conditions</p>
+            </a>
+            <a href="#">
+              <p class="fb-text">Privacy Policy</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    <!-- javscripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+      integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- slick carousel -->
+    <script
+      type="text/javascript"
+      src="./libs/slick-carousel/slick.min.js"
+    ></script>
+    <script src="./scripts/slick-carousel.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
