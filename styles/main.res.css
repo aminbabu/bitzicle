@@ -131,8 +131,22 @@
   }
 
   /* hero  */
+
+  .hero-bg-video {
+    inset: 0;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    aspect-ratio: 16/9;
+  }
+
   .hero-text-container {
     gap: 2.75rem;
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
   .hero-slogan {
     font-size: 2.875rem;
@@ -263,6 +277,12 @@
   }
 
   /* hero  */
+
+  .hero-text-container {
+    padding-top: 100px;
+    padding-bottom: 104px;
+  }
+
   .hero-slogan {
     font-size: 3rem;
   }
@@ -462,6 +482,11 @@
   }
 
   /* hero  */
+
+  .hero-text-container {
+    padding-top: 122px;
+    padding-bottom: 200px;
+  }
 
   .hero-text {
     width: 40%;
