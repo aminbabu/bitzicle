@@ -107,7 +107,8 @@
 
   /* filter section */
 
-  .price-filter-menu.show {
+  .price-filter-menu,
+  .category-filter-menu {
     inset: 7px auto auto 0 !important;
   }
 
@@ -164,7 +165,6 @@
   }
 
   .category-card {
-    height: 20rem;
     padding: 1.75rem;
   }
 
@@ -205,11 +205,8 @@
 
   /* get started banner content */
 
-  .get-started-banner-content {
-    padding: 1.5rem;
-  }
-
   .get-started-text-content {
+    padding: 1.5rem;
     width: 60%;
   }
 
@@ -320,12 +317,10 @@
 
   /* get started banner content */
 
-  .get-started-banner-content {
-    padding: 2rem;
-  }
-
   .get-started-text-content {
     width: 44.55%;
+    padding: 2rem;
+    min-height: 616px;
   }
 
   .get-started-title {
@@ -359,13 +354,21 @@
   }
 
   .wcu-card {
-    background: linear-gradient(#fff 0 0) padding-box,
-      linear-gradient(to bottom, #e8e8e8, #e8e8e8) border-box;
     color: var(--primary);
   }
 
   .wcu-overlay {
-    background: white;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .wcu-card:hover .wcu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .wcu-card:hover .wcu-card-content {
+    color: var(--white);
   }
 
   /* review banner section */
@@ -419,6 +422,24 @@
   .business-card-container,
   .category-cards-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* category filter */
+  .category-item-arrow {
+    transform: rotate(0deg);
+  }
+
+  .sub-category-item-list {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    margin-left: 248px;
+    height: 393px;
+    width: 250px;
+    border: 1px solid var(--light-silver);
+    border-radius: 0 0.5rem 0.5rem 0;
+    filter: drop-shadow(#00000015 0px 4px 10px);
+    padding-block: 0.635rem;
   }
 }
 @media only screen and (min-width: 1199px) {
@@ -508,7 +529,7 @@
 
   /* footer */
 
-  footer {
+  .footer-container {
     background-color: #262626;
     padding: 3.5rem 0 4.8125rem;
     color: var(--white);

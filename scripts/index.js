@@ -11,15 +11,28 @@ document
     });
   });
 
-// Clear all checked category filter
+// hide other sub-category when one is open
 
-document
-  .querySelector(".clear-all-btn-category")
-  .addEventListener("click", function () {
-    var checkboxes = document.querySelectorAll(
-      '.category-list input[type="checkbox"]'
-    );
-    checkboxes.forEach(function (checkbox) {
-      checkbox.checked = false;
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all category items
+  const categoryItems = document.querySelectorAll(".cateogory-item");
+
+  // Iterate through each category item
+  categoryItems.forEach(function (item) {
+    // Add click event listener to category item's link
+    item
+      .querySelector(".category-item-content")
+      .addEventListener("click", function () {
+        // Get the collapse element associated with this category item
+        const collapse = item.querySelector(".collapse");
+        console.log(collapse);
+
+        // Close all collapse elements except this one
+        document.querySelectorAll(".collapse").forEach(function (c) {
+          if (c !== collapse) {
+            c.classList.remove("show");
+          }
+        });
+      });
   });
+});
