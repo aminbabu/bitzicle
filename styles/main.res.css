@@ -429,6 +429,10 @@
     transform: rotate(0deg);
   }
 
+  .category-list {
+    height: 392px;
+  }
+
   .sub-category-item-list {
     position: absolute;
     left: 0;

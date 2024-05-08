@@ -1444,16 +1444,16 @@ footer {
   filter: drop-shadow(#00000015 0px 4px 10px);
   min-width: 250px;
   padding: 0;
-  border: 1px solid var(--light-silver);
-  border-radius: 0 0 0.5rem 0.5rem;
   font-family: var(--work-sans);
+  border: 1px solid var(--light-silver);
 }
 
 .category-list {
+  border-radius: 0 0 0.5rem 0.5rem;
   overflow-y: scroll;
   min-width: 248px;
   width: fit-content;
-  height: 392px;
+  height: 300px;
 }
 
 .category-item {
