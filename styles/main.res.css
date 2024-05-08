@@ -311,14 +311,10 @@
     font-size: 1.875rem;
   }
 
-  .count-name {
-    font-size: 1.125rem;
-  }
-
   /* get started banner content */
 
   .get-started-text-content {
-    width: 44.55%;
+    width: 47.5%;
     padding: 2rem;
     min-height: 616px;
   }
@@ -332,7 +328,7 @@
   }
 
   .detailed-option {
-    gap: 2rem;
+    gap: 1.375rem;
     padding: 0.25rem 1.625rem 1.5625rem;
   }
 
@@ -340,10 +336,6 @@
     padding: 0.43755rem 1.125rem 0.4375rem 1.625rem;
     /* padding: 0.75rem 1.6875rem 0.4375rem 1.6875rem; */
     font-size: 1.625rem;
-  }
-
-  .intro-text {
-    font-size: 1.125rem;
   }
 
   /* why choose us section */
@@ -421,6 +413,11 @@
 
   .menu-container {
     width: 15%;
+  }
+
+  .menu-list,
+  .newsletter-text {
+    font-size: 1.125rem;
   }
 
   /* business cards */
