@@ -619,20 +619,82 @@ a {
 
 .wcu-card {
   height: 220px;
-  background: linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(to bottom, #e8e8e8, #e8e8e8) border-box;
-  /* background: linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(to bottom, #9c20aa, #fb3570) border-box; */
+  background: linear-gradient(#272727 0 0) padding-box,
+    linear-gradient(to bottom, #9c20aa, #fb3570) border-box;
   border: 1px solid transparent;
   border-radius: 0.625rem;
   position: relative;
   padding: 1.9375rem;
-  z-index: 100;
-  transition: all 0.3s ease-out;
+  z-index: 0;
   color: var(--white);
   font-weight: 500;
   line-height: 1.625rem;
   cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.wcu-overlay {
+  background-image: url(../assets/images/wcu-overlay-img.svg);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.625rem;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s ease-out;
+}
+
+.wcu-pink-ellipse {
+  background: rgb(101, 42, 124);
+  background: radial-gradient(
+    circle,
+    rgba(101, 42, 124, 0.56) 1%,
+    rgba(39, 39, 39, 1) 100%
+  );
+  filter: blur(40px);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  bottom: -0.5rem;
+  right: 0;
+  border-radius: 100%;
+  transition: all 0.3s ease-out;
+}
+
+.wcu-blue-ellipse {
+  background: rgb(114, 217, 212);
+  background: radial-gradient(
+    circle,
+    rgba(114, 217, 212, 0.23) 1%,
+    rgba(39, 39, 39, 1) 100%
+  );
+  filter: blur(40px);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  left: 0;
+  top: -0.5rem;
+  transition: all 0.3s ease-out;
+}
+
+.wcu-card:hover {
+  background: linear-gradient(#272727 0 0) padding-box,
+    linear-gradient(to bottom, #9c20aa, #fb3570) border-box;
+}
+
+.wcu-card-text {
+  line-height: 1.4;
 }
 
 .wcu-card-content {
@@ -641,34 +703,6 @@ a {
   gap: 1.9375rem;
   text-align: center;
   transition: all 0.3s;
-}
-
-.wcu-overlay {
-  position: absolute;
-  inset: 0;
-  border-radius: 0.625rem;
-  z-index: -1;
-  transition: all 0.3s ease-out;
-  background: linear-gradient(
-      90deg,
-      #000000 5%,
-      #272727 30%,
-      #652a7c8f 100%,
-      #72d9d43b 23%
-    ),
-    url(../assets/images/wcu-overlay-img.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.wcu-card:hover {
-  background: linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(to bottom, #9c20aa, #fb3570) border-box;
-}
-
-.wcu-card-text {
-  line-height: 1.4;
 }
 
 /* review banner section */
@@ -811,21 +845,13 @@ li.slick-active {
 footer {
   position: relative;
   overflow: hidden;
+  background: #262626;
+  z-index: 0;
+  padding-block: 2.5rem;
 }
 
-/* .footer-prop-container {
-  position: absolute;
-  border: 1px solid red;
-  width: 474px;
-  height: 474px;
-  top: 10%;
-  left: 20%;
-  overflow: hidden;
-  border-radius: 50rem;
-} */
-
 .footer-bg-prop {
-  background: url(../assets/images/footer-bg-prop.png);
+  background: url(../assets/images/footer-bg-prop.svg);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -833,7 +859,7 @@ footer {
   background-size: contain;
   background-position: left bottom;
   bottom: 0;
-  z-index: 11;
+  z-index: -1;
 }
 
 .footer-blue-ellipse {
@@ -843,15 +869,15 @@ footer {
     rgba(114, 217, 212, 0.23) 1%,
     rgba(38, 38, 38, 1) 100%
   );
-  filter: blur(30px);
+  filter: blur(80px);
   width: 343px;
   height: 343px;
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 1;
-  bottom: 0;
+  z-index: -1;
+  top: 91px;
   left: 20%;
 }
 
@@ -862,22 +888,20 @@ footer {
     rgba(101, 42, 124, 0.56) 1%,
     rgba(38, 38, 38, 1) 100%
   );
-  filter: blur(20px);
+  filter: blur(80px);
   width: 343px;
   height: 343px;
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 1;
+  z-index: -1;
   border-radius: 100%;
-  left: 30%;
-  bottom: -2rem;
+  left: 28%;
+  top: 206px;
 }
 
 .footer-container {
-  background: #262626;
-  padding-block: 2.5rem;
   color: var(--white);
 }
 
@@ -962,7 +986,7 @@ footer {
 }
 
 .footer-bottom {
-  margin-top: 4rem;
+  margin-top: 5.625rem;
   text-align: center;
 }
 
@@ -1458,24 +1482,25 @@ footer {
 
 .category-item {
   cursor: pointer;
-  font-size: 0.875rem;
   line-height: 1.25;
   transition: all 0.3s;
 }
 
 .category-item-content {
+  font-size: 0.875rem;
   padding: 9px 23px 9px 27px;
-  transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: var(--davys-gray);
+  transition: color 0.3s ease-out;
 }
 
 .cateogory-item:has(.collapse.show) .category-item-content,
 .cateogory-item:hover .category-item-content {
   background: var(--white);
   border-radius: 0.375rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--primary);
 }
@@ -1487,13 +1512,11 @@ footer {
 
 .category-item-arrow {
   transform: rotate(90deg);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-out;
 }
 
 .sub-category-item-list {
   background: var(--white);
+  border-radius: 0.375rem;
 }
 
 .sub-category-item {

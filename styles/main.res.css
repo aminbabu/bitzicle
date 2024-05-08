@@ -355,14 +355,20 @@
 
   .wcu-card {
     color: var(--primary);
+    background: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(to bottom, #e8e8e8, #e8e8e8) border-box;
   }
 
-  .wcu-overlay {
+  .wcu-overlay,
+  .wcu-blue-ellipse,
+  .wcu-pink-ellipse {
     opacity: 0;
     visibility: hidden;
   }
 
-  .wcu-card:hover .wcu-overlay {
+  .wcu-card:hover .wcu-overlay,
+  .wcu-card:hover .wcu-blue-ellipse,
+  .wcu-card:hover .wcu-pink-ellipse {
     opacity: 1;
     visibility: visible;
   }
@@ -427,6 +433,8 @@
   /* category filter */
   .category-item-arrow {
     transform: rotate(0deg);
+    opacity: 0;
+    visibility: hidden;
   }
 
   .category-list {
@@ -533,9 +541,11 @@
 
   /* footer */
 
+  footer {
+    padding: 3.5rem 0 4.875rem;
+  }
+
   .footer-container {
-    background-color: #262626;
-    padding: 3.5rem 0 4.8125rem;
     color: var(--white);
   }
 
