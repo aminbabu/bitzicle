@@ -52,6 +52,7 @@
   .review-text {
     padding-block: 1rem;
   }
+
   .reviewer-name,
   .review-text {
     font-size: 1.125rem;
@@ -230,6 +231,11 @@
     padding: 2rem 1.625rem 1.875rem;
     width: 55%;
     left: 1.5rem;
+  }
+
+  .review-banner-container {
+    background-position: center center;
+    background-size: cover;
   }
 
   /* contact us section */

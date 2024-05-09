@@ -735,8 +735,8 @@ a {
 .review-banner-container {
   background-image: url(../assets/images/review-banner.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center top;
+  background-size: 300%;
   color: var(--white);
   width: 100%;
   height: auto;
@@ -1464,8 +1464,11 @@ footer {
 .apply-price-btn {
   font-size: 0.875rem;
 }
+
 .clear-all-btn {
   color: var(--phillipine-gray);
+  border: none;
+  background: transparent;
 }
 
 .apply-price-btn {
