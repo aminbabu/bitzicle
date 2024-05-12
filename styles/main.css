@@ -1,9 +1,9 @@
 :root {
   /* font family */
-  --open-sans: "Open Sans", sans-serif;
-  --red-hat: "Red Hat Text", sans-serif;
-  --work-sans: "Work Sans", sans-serif;
-  --somar-sans: "Somar Sans", sans-serif;
+  --open-sans: "Open Sans";
+  --red-hat: "Red Hat Text";
+  --work-sans: "Work Sans";
+  --somar-sans: "Somar Sans";
 
   /* colors */
   --primary: #272727;
@@ -68,7 +68,7 @@ a {
 }
 
 .nav-link {
-  font-family: var(--red-hat);
+  font-family: var(--open-sans);
   font-weight: 500;
   font-size: 1rem;
   color: var(--primary);

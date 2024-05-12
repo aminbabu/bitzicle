@@ -1,13 +1,28 @@
 @font-face {
-  font-family: "Somar Sans";
-  src: url("./Somar Sans/SomarSans-Black.ttf") format("woff2"),
-    url("./Somar Sans/SomarSans-Bold.ttf") format("woff"),
-    url("./Somar Sans/SomarSans-ExtraBold.ttf") format("woff"),
-    url("./Somar Sans/SomarSans-ExtraLight.ttf") format("woff"),
-    url("./Somar Sans/SomarSans-Light.ttf") format("woff"),
-    url("./Somar Sans/SomarSans-Thin.ttf") format("woff"),
-    url("./Somar Sans/SomarSans-Regular.ttf") format("woff"),
-    url("./Somar Sans/SomarSans-Medium.ttf") format("woff");
-  font-weight: normal;
+  font-family: 'Somar Sans';
+  src: url('./somar-sans/SomarSans-Regular.ttf');
+  font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Somar Sans';
+  src: url('./somar-sans/SomarSans-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Somar Sans';
+  src: url('./somar-sans/SomarSans-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Somar Sans';
+  src: url('./somar-sans/SomarSans-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
