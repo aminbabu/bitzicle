@@ -273,6 +273,7 @@ a {
   font-size: 1.875rem;
   font-weight: 600;
   line-height: 1.2;
+  text-transform: capitalize;
 }
 
 .hero-text {
@@ -385,6 +386,7 @@ a {
   font-size: 1.625rem;
   font-weight: 600;
   line-height: 2.3;
+  text-transform: capitalize;
 }
 
 .card-text {
