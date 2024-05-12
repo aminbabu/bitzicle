@@ -63,6 +63,16 @@ a {
   text-decoration: none;
 }
 
+.bg-holder {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .section {
   margin-block: 2rem;
 }
@@ -1807,4 +1817,13 @@ footer {
 .category-card-badge-item:hover .category-badge-arrow {
   opacity: 1;
   display: block;
+}
+
+
+.home-bg-curve-holder {
+  inset: 300px auto auto -23%;
+  width: 1044px;
+  height: 1333px;
+  background-size: 100% 100%;
+  background-position: center center;
 }
