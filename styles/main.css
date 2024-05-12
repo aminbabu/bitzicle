@@ -1841,3 +1841,9 @@ footer {
 inset: -130px 43% auto auto;
 background-size: 100% auto;
 }
+
+#chart-globe {
+  width: 473px;
+  aspect-ratio: 1/1;
+  max-width: 100%;
+}
