@@ -63,6 +63,14 @@ a {
   text-decoration: none;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
 .bg-holder {
   background-repeat: no-repeat;
   background-position: center;
@@ -1820,10 +1828,16 @@ footer {
 }
 
 
-.home-bg-curve-holder {
+.home-bg-curve-holder ,
+.selection-bg-curve-holder {
   inset: 300px auto auto -23%;
   width: 1044px;
   height: 1333px;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-position: center center;
+}
+
+.selection-bg-curve-holder {
+inset: -130px 43% auto auto;
+background-size: 100% auto;
 }

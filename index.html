@@ -35,983 +35,987 @@
     <link rel="stylesheet" href="./styles/main.res.css" />
   </head>
   <body>
-    <!-- background holder starts -->
-    <div class="bg-holder home-bg-curve-holder" style="background-image: url('./assets/images/home-bg-curves.svg');"></div>
-    <!-- background holder ends -->
+    <!-- app starts -->
+    <div id="app">
+      <!-- background holder starts -->
+      <div class="bg-holder home-bg-curve-holder" style="background-image: url('./assets/images/home-bg-curves.svg');"></div>
+      <!-- background holder ends -->
 
-    <!-- header starts -->
-    <header>
-      <!-- navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary sticky">
-        <div class="container-fluid container">
-          <!-- brand logo -->
-          <a class="navbar-brand" href="/">
-            <img
-              class="img-fluid"
-              src="./assets/images/logo.png"
-              alt="brand logo"
-            />
-          </a>
-
-          <!-- navbar toggler -->
-          <button
-            class="navbar-toggler custom-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="./assets/icons/toggler.svg" alt="toggler" />
-          </button>
-
-          <!-- collapsible for large devices -->
-          <div
-            class="collapse navbar-collapse navbar-show-content d-none d-lg-block"
-          >
-            <!-- menu links -->
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  For Freelancers
-                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
-                </a>
-                <ul class="dropdown-menu border-0">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  For Business
-                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
-                </a>
-                <ul class="dropdown-menu border-0">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Explore </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Why Bizticle</a>
-              </li>
-            </ul>
-            <!-- search bar -->
-            <form class="d-none d-lg-flex search-top" role="search">
-              <input
-                class="form-control me-2 search-bar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <a href="#" class="search-icon" type="submit">
-                <img src="./assets/icons/search.svg" alt="search icon" />
-              </a>
-            </form>
-            <!-- login button -->
-            <a href="#" class="bz-btn bz-btn-primary" type="submit">Login</a>
-          </div>
-        </div>
-
-        <!-- collapsible for small devices-->
-        <div
-          class="collapse navbar-collapse navbar-show-content navbar-sm"
-          id="navbarSupportedContent"
-        >
-          <div class="container">
-            <!-- menu links -->
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  For Freelancers
-                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
-                </a>
-                <ul class="dropdown-menu border-0">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  For Business
-                  <img src="./assets/icons/arrow-down.svg" alt="arrow" />
-                </a>
-                <ul class="dropdown-menu border-0">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Explore </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Why Bizticle</a>
-              </li>
-            </ul>
-            <!-- search bar -->
-            <form class="d-none d-lg-flex search-top" role="search">
-              <input
-                class="form-control me-2 search-bar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <a class="search-icon" type="submit">
-                <img src="./assets/icons/search.svg" alt="search icon" />
-              </a>
-            </form>
-            <!-- login button -->
-            <div class="btn-container">
-              <a class="bz-btn bz-btn-primary" type="submit">Login</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- header ends -->
-
-    <!-- main starts -->
-    <main>
-      <!-- hero section starts -->
-      <section class="hero">
-        <video autoplay muted loop class="hero-bg-video">
-          <source src="./assets/videos/Sequence 06.mp4" type="video/mp4" />
-        </video>
-        <div class="hero-content container h-100">
-          <div class="hero-text-container">
-            <h1 class="hero-slogan">
-              Delivering solutions <br />
-              for
-              <span class="text-blue blue-underline">Businesses</span>
-            </h1>
-            <p class="hero-text">
-              Solutions tailored for businesses to find and manage top people
-              and talent
-            </p>
-            <div class="btn-container">
-              <a
-                href="./selection-page.html"
-                class="bz-btn bz-btn-secondary d-inline-flex gap-2"
-              >
-                Get Started
-                <img
-                  class="bz-secondary-btn-arrow"
-                  src="./assets/icons/arrow-right.svg"
-                  alt="arrow right"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- hero section ends -->
-
-      <!-- category section starts -->
-      <section class="categories">
-        <div class="container">
-          <!-- section headings -->
-          <div class="section-headings text-center">
-            <h2 class="section-title m-auto pb-1">Find Solution You Need</h2>
-            <p class="section-text">
-              Work with the largest network of independent professionals and get
-              things done—from quick turnarounds to big transformations.
-            </p>
-          </div>
-          <div class="category-card-content">
-            <!-- card 1 -->
-            <div class="category-card category-card-1">
-              <div class="card-text-container">
-                <h4 class="category-card-title">Purple Page</h4>
-                <p class="bz-text card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
-                <a class="card-btn" href="#">
-                  <span class="card-btn-text">Get Started</span>
-                  <svg
-                    class="card-btn-arrow"
-                    width="14"
-                    height="12"
-                    viewBox="0 0 16 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 7.65576L14 7.65576"
-                      stroke="#cc4faf"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 1.65576L15 7.65576L9 13.6558"
-                      stroke="#cc4faf"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- card 2 -->
-            <div class="category-card category-card-2">
-              <div class="card-text-container">
-                <h4 class="category-card-title">Collab</h4>
-                <p class="bz-text card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
-                <a class="card-btn" href="#">
-                  <span class="card-btn-text">Get Started</span>
-                  <svg
-                    class="card-btn-arrow"
-                    width="14"
-                    height="12"
-                    viewBox="0 0 16 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 7.65576L14 7.65576"
-                      stroke="#cc4faf"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 1.65576L15 7.65576L9 13.6558"
-                      stroke="#cc4faf"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <!-- card 3 -->
-            <div class="category-card category-card-3">
-              <div class="card-text-container">
-                <h4 class="category-card-title">Library</h4>
-                <p class="bz-text card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
-                </p>
-                <a class="card-btn" href="#">
-                  <span class="card-btn-text">Get Started</span>
-                  <svg
-                    class="card-btn-arrow"
-                    width="14"
-                    height="12"
-                    viewBox="0 0 16 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 7.65576L14 7.65576"
-                      stroke="#cc4faf"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M9 1.65576L15 7.65576L9 13.6558"
-                      stroke="#cc4faf"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- category section ends -->
-
-      <!-- businesses section starts -->
-      <section class="businesses">
-        <div class="container">
-          <div class="businesses-container">
-            <!-- businesses img container -->
-            <div class="businesses-img-container">
+      <!-- header starts -->
+      <header>
+        <!-- navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary sticky">
+          <div class="container-fluid container">
+            <!-- brand logo -->
+            <a class="navbar-brand" href="/">
               <img
-                src="./assets/images/globe.png"
-                alt="globe"
-                class="businesses-img img-fluid"
+                class="img-fluid"
+                src="./assets/images/logo.png"
+                alt="brand logo"
               />
+            </a>
+
+            <!-- navbar toggler -->
+            <button
+              class="navbar-toggler custom-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img src="./assets/icons/toggler.svg" alt="toggler" />
+            </button>
+
+            <!-- collapsible for large devices -->
+            <div
+              class="collapse navbar-collapse navbar-show-content d-none d-lg-block"
+            >
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="d-none d-lg-flex search-top" role="search">
+                <input
+                  class="form-control me-2 search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a href="#" class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <a href="#" class="bz-btn bz-btn-primary" type="submit">Login</a>
             </div>
-            <!-- businesses text container  -->
-            <div class="businesses-text-container">
-              <h2 class="section-title businesses-title">
-                Discover the Millions of Freelancers and Businesses Chose
-                Bizticle for their Business
-              </h2>
-              <!-- counter container -->
-              <div class="counter-container">
-                <div class="counter">
-                  <h4 class="count">5+Millions</h4>
-                  <p class="count-name bz-text">people uses Bizticle</p>
-                </div>
-                <div class="counter">
-                  <h4 class="count">10000+</h4>
-                  <p class="count-name bz-text">freelancers using Bizticle</p>
-                </div>
-                <div class="counter">
-                  <h4 class="count">10+Countries</h4>
-                  <p class="count-name bz-text">
-                    businesses working with Bizticle
+          </div>
+
+          <!-- collapsible for small devices-->
+          <div
+            class="collapse navbar-collapse navbar-show-content navbar-sm"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="d-none d-lg-flex search-top" role="search">
+                <input
+                  class="form-control me-2 search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <div class="btn-container">
+                <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header ends -->
+
+      <!-- main starts -->
+      <main>
+        <!-- hero section starts -->
+        <section class="hero">
+          <video autoplay muted loop class="hero-bg-video">
+            <source src="./assets/videos/Sequence 06.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-content container h-100">
+            <div class="hero-text-container">
+              <h1 class="hero-slogan">
+                Delivering solutions <br />
+                for
+                <span class="text-blue blue-underline">Businesses</span>
+              </h1>
+              <p class="hero-text">
+                Solutions tailored for businesses to find and manage top people
+                and talent
+              </p>
+              <div class="btn-container">
+                <a
+                  href="./selection-page.html"
+                  class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                >
+                  Get Started
+                  <img
+                    class="bz-secondary-btn-arrow"
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow right"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- hero section ends -->
+
+        <!-- category section starts -->
+        <section class="categories">
+          <div class="container">
+            <!-- section headings -->
+            <div class="section-headings text-center">
+              <h2 class="section-title m-auto pb-1">Find Solution You Need</h2>
+              <p class="section-text">
+                Work with the largest network of independent professionals and get
+                things done—from quick turnarounds to big transformations.
+              </p>
+            </div>
+            <div class="category-card-content">
+              <!-- card 1 -->
+              <div class="category-card category-card-1">
+                <div class="card-text-container">
+                  <h4 class="category-card-title">Purple Page</h4>
+                  <p class="bz-text card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
                   </p>
+                  <a class="card-btn" href="#">
+                    <span class="card-btn-text">Get Started</span>
+                    <svg
+                      class="card-btn-arrow"
+                      width="14"
+                      height="12"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 7.65576L14 7.65576"
+                        stroke="#cc4faf"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 1.65576L15 7.65576L9 13.6558"
+                        stroke="#cc4faf"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
                 </div>
-                <div class="counter">
-                  <h4 class="count">5000+</h4>
-                  <p class="count-name bz-text">businesses using Bizticle</p>
+              </div>
+              <!-- card 2 -->
+              <div class="category-card category-card-2">
+                <div class="card-text-container">
+                  <h4 class="category-card-title">Collab</h4>
+                  <p class="bz-text card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                  <a class="card-btn" href="#">
+                    <span class="card-btn-text">Get Started</span>
+                    <svg
+                      class="card-btn-arrow"
+                      width="14"
+                      height="12"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 7.65576L14 7.65576"
+                        stroke="#cc4faf"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 1.65576L15 7.65576L9 13.6558"
+                        stroke="#cc4faf"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="category-card category-card-3">
+                <div class="card-text-container">
+                  <h4 class="category-card-title">Library</h4>
+                  <p class="bz-text card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                  <a class="card-btn" href="#">
+                    <span class="card-btn-text">Get Started</span>
+                    <svg
+                      class="card-btn-arrow"
+                      width="14"
+                      height="12"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 7.65576L14 7.65576"
+                        stroke="#cc4faf"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9 1.65576L15 7.65576L9 13.6558"
+                        stroke="#cc4faf"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- businesses section ends -->
+        </section>
+        <!-- category section ends -->
 
-      <!-- get started banner starts -->
-      <section class="get-started-banner">
-        <div class="container">
-          <div class="get-started-banner-content">
-            <!-- background overlay  -->
-            <div class="get-started-overlay"></div>
-            <!-- get started text content -->
-            <div class="get-started-text-content">
-              <h2 class="get-started-title">Get Started With Us</h2>
-              <!-- starting options list -->
-              <div class="accordion starting-accordion" id="accordionExample">
-                <!-- 1 -->
-                <div class="accordion-item starting-item">
-                  <h2 class="accordion-header starting-header">
-                    <button
-                      class="starting-btn"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
+        <!-- businesses section starts -->
+        <section class="businesses">
+          <div class="container">
+            <div class="businesses-container">
+              <!-- businesses img container -->
+              <div class="businesses-img-container">
+                <img
+                  src="./assets/images/globe.png"
+                  alt="globe"
+                  class="businesses-img img-fluid"
+                />
+              </div>
+              <!-- businesses text container  -->
+              <div class="businesses-text-container">
+                <h2 class="section-title businesses-title">
+                  Discover the Millions of Freelancers and Businesses Chose
+                  Bizticle for their Business
+                </h2>
+                <!-- counter container -->
+                <div class="counter-container">
+                  <div class="counter">
+                    <h4 class="count">5+Millions</h4>
+                    <p class="count-name bz-text">people uses Bizticle</p>
+                  </div>
+                  <div class="counter">
+                    <h4 class="count">10000+</h4>
+                    <p class="count-name bz-text">freelancers using Bizticle</p>
+                  </div>
+                  <div class="counter">
+                    <h4 class="count">10+Countries</h4>
+                    <p class="count-name bz-text">
+                      businesses working with Bizticle
+                    </p>
+                  </div>
+                  <div class="counter">
+                    <h4 class="count">5000+</h4>
+                    <p class="count-name bz-text">businesses using Bizticle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- businesses section ends -->
+
+        <!-- get started banner starts -->
+        <section class="get-started-banner">
+          <div class="container">
+            <div class="get-started-banner-content">
+              <!-- background overlay  -->
+              <div class="get-started-overlay"></div>
+              <!-- get started text content -->
+              <div class="get-started-text-content">
+                <h2 class="get-started-title">Get Started With Us</h2>
+                <!-- starting options list -->
+                <div class="accordion starting-accordion" id="accordionExample">
+                  <!-- 1 -->
+                  <div class="accordion-item starting-item">
+                    <h2 class="accordion-header starting-header">
+                      <button
+                        class="starting-btn"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        I am a Freelancer
+                        <img
+                          class="start-accordion-arrow"
+                          src="./assets/icons/arrow-right.svg"
+                          alt="arrow right"
+                        />
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample"
                     >
-                      I am a Freelancer
-                      <img
-                        class="start-accordion-arrow"
-                        src="./assets/icons/arrow-right.svg"
-                        alt="arrow right"
-                      />
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="detailed-option">
-                      <p class="intro-text bz-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s
-                      </p>
-                      <div class="btn-container">
-                        <a
-                          href="#"
-                          class="bz-btn bz-btn-secondary d-inline-flex gap-2"
-                        >
-                          Get Started
-                          <img
-                            class="bz-secondary-btn-arrow"
-                            src="./assets/icons/arrow-right.svg"
-                            alt="arrow right"
-                        /></a>
+                      <div class="detailed-option">
+                        <p class="intro-text bz-text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s
+                        </p>
+                        <div class="btn-container">
+                          <a
+                            href="#"
+                            class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                          >
+                            Get Started
+                            <img
+                              class="bz-secondary-btn-arrow"
+                              src="./assets/icons/arrow-right.svg"
+                              alt="arrow right"
+                          /></a>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="accordion-item starting-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="starting-btn collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        I have a Business
+                        <img
+                          class="start-accordion-arrow"
+                          src="./assets/icons/arrow-right.svg"
+                          alt="arrow right"
+                        />
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="detailed-option">
+                        <p class="intro-text bz-text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s
+                        </p>
+                        <div class="btn-container">
+                          <a
+                            href="#"
+                            class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                          >
+                            Get Started
+                            <img
+                              class="bz-secondary-btn-arrow"
+                              src="./assets/icons/arrow-right.svg"
+                              alt="arrow right"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="accordion-item starting-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="starting-btn collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        I want to Explore
+                        <img
+                          class="start-accordion-arrow"
+                          src="./assets/icons/arrow-right.svg"
+                          alt="arrow right"
+                        />
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="detailed-option">
+                        <p class="intro-text bz-text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s
+                        </p>
+                        <div class="btn-container">
+                          <a
+                            href="#"
+                            class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                          >
+                            Get Started
+                            <img
+                              class="bz-secondary-btn-arrow"
+                              src="./assets/icons/arrow-right.svg"
+                              alt="arrow right"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- get started banner ends -->
+
+        <!-- why choose us section starts -->
+        <section class="why-choose-us">
+          <div class="container">
+            <div class="why-choose-us-container">
+              <!-- section headings -->
+              <div class="section-headings text-center">
+                <h2 class="section-title m-auto">Why Choose Bizticle</h2>
+                <p class="bz-text">
+                  Solutions tailored for businesses to find and manage top people
+                  and talent.
+                </p>
+              </div>
+
+              <!-- why choose us cards container -->
+              <div class="wcu-cards-container">
+                <!-- card 1 -->
+                <div class="wcu-card">
+                  <div class="wcu-overlay"></div>
+                  <div class="wcu-blue-ellipse"></div>
+                  <div class="wcu-pink-ellipse"></div>
+                  <div class="wcu-card-content">
+                    <img
+                      class="wcu-card-icon"
+                      src="./assets/icons/star.svg"
+                      alt="star"
+                    />
+                    <p class="bz-text wcu-card-text">Quality and Excellence</p>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="wcu-card">
+                  <div class="wcu-overlay"></div>
+                  <div class="wcu-pink-ellipse"></div>
+                  <div class="wcu-blue-ellipse"></div>
+                  <div class="wcu-card-content">
+                    <img
+                      class="wcu-card-icon"
+                      src="./assets/icons/no-extra-cost.svg"
+                      alt="no extra cost"
+                    />
+                    <p class="bz-text wcu-card-text">
+                      No extra cost until you are hired
+                    </p>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="wcu-card">
+                  <div class="wcu-overlay"></div>
+                  <div class="wcu-pink-ellipse"></div>
+                  <div class="wcu-blue-ellipse"></div>
+                  <div class="wcu-card-content">
+                    <img
+                      class="wcu-card-icon"
+                      src="./assets/icons/star.svg"
+                      alt="star"
+                    />
+                    <p class="bz-text wcu-card-text">2000+ Customers Served</p>
+                  </div>
+                </div>
+                <!-- card 4 -->
+                <div class="wcu-card">
+                  <div class="wcu-overlay"></div>
+                  <div class="wcu-pink-ellipse"></div>
+                  <div class="wcu-blue-ellipse"></div>
+                  <div class="wcu-card-content">
+                    <img
+                      class="wcu-card-icon"
+                      src="./assets/icons/partners.svg"
+                      alt="partners"
+                    />
+                    <p class="bz-text wcu-card-text">Some of the best partners</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- why choose us section ends -->
+
+        <!-- review banner section starts -->
+        <section class="review-banner">
+          <div class="review-overlay"></div>
+          <div class="container">
+            <div class="review-banner-container">
+              <div class="review-container">
+                <!-- 1 -->
+                <div class="review-card">
+                  <div class="section-headings">
+                    <h2 class="section-title review-banner-title">
+                      People Trust Us
+                    </h2>
+                    <p class="bz-text review-text">
+                      "We've used Bizticle for Business development, graphic
+                      design, and backend web development. Working with Bizticle
+                      makes my job a little easier every day."
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="ratings">
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                      </div>
+                      <p class="bz-text reviewer-name">Sania Williams</p>
                     </div>
                   </div>
                 </div>
                 <!-- 2 -->
-                <div class="accordion-item starting-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="starting-btn collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
+                <div class="review-card">
+                  <div class="section-headings">
+                    <h2 class="section-title review-banner-title">
+                      People Trust Us
+                    </h2>
+                    <p class="bz-text review-text">
+                      "We've used Bizticle for Business development, graphic
+                      design, and backend web development. Working with Bizticle
+                      makes my job a little easier every day."
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      I have a Business
-                      <img
-                        class="start-accordion-arrow"
-                        src="./assets/icons/arrow-right.svg"
-                        alt="arrow right"
-                      />
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="detailed-option">
-                      <p class="intro-text bz-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s
-                      </p>
-                      <div class="btn-container">
-                        <a
-                          href="#"
-                          class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                      <div class="ratings">
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          Get Started
-                          <img
-                            class="bz-secondary-btn-arrow"
-                            src="./assets/icons/arrow-right.svg"
-                            alt="arrow right"
-                        /></a>
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
                       </div>
+                      <p class="bz-text reviewer-name">Sania Williams</p>
                     </div>
                   </div>
                 </div>
                 <!-- 3 -->
-                <div class="accordion-item starting-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="starting-btn collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
+                <div class="review-card">
+                  <div class="section-headings">
+                    <h2 class="section-title review-banner-title">
+                      People Trust Us
+                    </h2>
+                    <p class="bz-text review-text">
+                      "We've used Bizticle for Business development, graphic
+                      design, and backend web development. Working with Bizticle
+                      makes my job a little easier every day."
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      I want to Explore
-                      <img
-                        class="start-accordion-arrow"
-                        src="./assets/icons/arrow-right.svg"
-                        alt="arrow right"
-                      />
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="detailed-option">
-                      <p class="intro-text bz-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s
-                      </p>
-                      <div class="btn-container">
-                        <a
-                          href="#"
-                          class="bz-btn bz-btn-secondary d-inline-flex gap-2"
+                      <div class="ratings">
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                         >
-                          Get Started
-                          <img
-                            class="bz-secondary-btn-arrow"
-                            src="./assets/icons/arrow-right.svg"
-                            alt="arrow right"
-                        /></a>
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
                       </div>
+                      <p class="bz-text reviewer-name">Sania Williams</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="review-card">
+                  <div class="section-headings">
+                    <h2 class="section-title review-banner-title">
+                      People Trust Us
+                    </h2>
+                    <p class="bz-text review-text">
+                      "We've used Bizticle for Business development, graphic
+                      design, and backend web development. Working with Bizticle
+                      makes my job a little easier every day."
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="ratings">
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="16"
+                          viewBox="0 0 17 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
+                            fill="#F0B61E"
+                          />
+                        </svg>
+                      </div>
+                      <p class="bz-text reviewer-name">Sania Williams</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- get started banner ends -->
+        </section>
+        <!-- review banner section ends -->
 
-      <!-- why choose us section starts -->
-      <section class="why-choose-us">
-        <div class="container">
-          <div class="why-choose-us-container">
-            <!-- section headings -->
-            <div class="section-headings text-center">
-              <h2 class="section-title m-auto">Why Choose Bizticle</h2>
-              <p class="bz-text">
-                Solutions tailored for businesses to find and manage top people
-                and talent.
-              </p>
-            </div>
-
-            <!-- why choose us cards container -->
-            <div class="wcu-cards-container">
-              <!-- card 1 -->
-              <div class="wcu-card">
-                <div class="wcu-overlay"></div>
-                <div class="wcu-blue-ellipse"></div>
-                <div class="wcu-pink-ellipse"></div>
-                <div class="wcu-card-content">
+        <!-- contact section starts -->
+        <section class="contact-us">
+          <div class="container">
+            <div class="contact-us-container text-center">
+              <h3 class="contact-us-title">
+                Have Questions in Mind? <br />
+                Lets Chat!
+              </h3>
+              <div class="btn-container">
+                <a
+                  href="#"
+                  class="bz-btn contact-btn bz-btn-secondary d-inline-flex"
+                >
+                  Contact Us
                   <img
-                    class="wcu-card-icon"
-                    src="./assets/icons/star.svg"
-                    alt="star"
-                  />
-                  <p class="bz-text wcu-card-text">Quality and Excellence</p>
-                </div>
-              </div>
-              <!-- card 2 -->
-              <div class="wcu-card">
-                <div class="wcu-overlay"></div>
-                <div class="wcu-pink-ellipse"></div>
-                <div class="wcu-blue-ellipse"></div>
-                <div class="wcu-card-content">
-                  <img
-                    class="wcu-card-icon"
-                    src="./assets/icons/no-extra-cost.svg"
-                    alt="no extra cost"
-                  />
-                  <p class="bz-text wcu-card-text">
-                    No extra cost until you are hired
-                  </p>
-                </div>
-              </div>
-              <!-- card 3 -->
-              <div class="wcu-card">
-                <div class="wcu-overlay"></div>
-                <div class="wcu-pink-ellipse"></div>
-                <div class="wcu-blue-ellipse"></div>
-                <div class="wcu-card-content">
-                  <img
-                    class="wcu-card-icon"
-                    src="./assets/icons/star.svg"
-                    alt="star"
-                  />
-                  <p class="bz-text wcu-card-text">2000+ Customers Served</p>
-                </div>
-              </div>
-              <!-- card 4 -->
-              <div class="wcu-card">
-                <div class="wcu-overlay"></div>
-                <div class="wcu-pink-ellipse"></div>
-                <div class="wcu-blue-ellipse"></div>
-                <div class="wcu-card-content">
-                  <img
-                    class="wcu-card-icon"
-                    src="./assets/icons/partners.svg"
-                    alt="partners"
-                  />
-                  <p class="bz-text wcu-card-text">Some of the best partners</p>
-                </div>
+                    class="bz-secondary-btn-arrow"
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow right"
+                /></a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- why choose us section ends -->
-
-      <!-- review banner section starts -->
-      <section class="review-banner">
-        <div class="review-overlay"></div>
-        <div class="container">
-          <div class="review-banner-container">
-            <div class="review-container">
-              <!-- 1 -->
-              <div class="review-card">
-                <div class="section-headings">
-                  <h2 class="section-title review-banner-title">
-                    People Trust Us
-                  </h2>
-                  <p class="bz-text review-text">
-                    "We've used Bizticle for Business development, graphic
-                    design, and backend web development. Working with Bizticle
-                    makes my job a little easier every day."
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="ratings">
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                    </div>
-                    <p class="bz-text reviewer-name">Sania Williams</p>
-                  </div>
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="review-card">
-                <div class="section-headings">
-                  <h2 class="section-title review-banner-title">
-                    People Trust Us
-                  </h2>
-                  <p class="bz-text review-text">
-                    "We've used Bizticle for Business development, graphic
-                    design, and backend web development. Working with Bizticle
-                    makes my job a little easier every day."
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="ratings">
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                    </div>
-                    <p class="bz-text reviewer-name">Sania Williams</p>
-                  </div>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div class="review-card">
-                <div class="section-headings">
-                  <h2 class="section-title review-banner-title">
-                    People Trust Us
-                  </h2>
-                  <p class="bz-text review-text">
-                    "We've used Bizticle for Business development, graphic
-                    design, and backend web development. Working with Bizticle
-                    makes my job a little easier every day."
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="ratings">
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                    </div>
-                    <p class="bz-text reviewer-name">Sania Williams</p>
-                  </div>
-                </div>
-              </div>
-              <!-- 4 -->
-              <div class="review-card">
-                <div class="section-headings">
-                  <h2 class="section-title review-banner-title">
-                    People Trust Us
-                  </h2>
-                  <p class="bz-text review-text">
-                    "We've used Bizticle for Business development, graphic
-                    design, and backend web development. Working with Bizticle
-                    makes my job a little easier every day."
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="ratings">
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                      <svg
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.41921 0.402344L10.9231 5.47485L16.5223 6.29326L12.4707 10.2394L13.4269 15.8143L8.41921 13.1809L3.41153 15.8143L4.36769 10.2394L0.316162 6.29326L5.91537 5.47485L8.41921 0.402344Z"
-                          fill="#F0B61E"
-                        />
-                      </svg>
-                    </div>
-                    <p class="bz-text reviewer-name">Sania Williams</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- review banner section ends -->
-
-      <!-- contact section starts -->
-      <section class="contact-us">
-        <div class="container">
-          <div class="contact-us-container text-center">
-            <h3 class="contact-us-title">
-              Have Questions in Mind? <br />
-              Lets Chat!
-            </h3>
-            <div class="btn-container">
-              <a
-                href="#"
-                class="bz-btn contact-btn bz-btn-secondary d-inline-flex"
-              >
-                Contact Us
-                <img
-                  class="bz-secondary-btn-arrow"
-                  src="./assets/icons/arrow-right.svg"
-                  alt="arrow right"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- contact section ends -->
-    </main>
-    <!-- main ends -->
+        </section>
+        <!-- contact section ends -->
+      </main>
+      <!-- main ends -->
+    </div>
+    <!-- app ends -->
 
     <!-- footer starts -->
     <footer>
