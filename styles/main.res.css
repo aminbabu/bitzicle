@@ -570,3 +570,9 @@
     width: 10%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .home-bg-curve-holder {
+    display: none;
+  }
+}

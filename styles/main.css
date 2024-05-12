@@ -1830,11 +1830,11 @@ footer {
 
 .home-bg-curve-holder ,
 .selection-bg-curve-holder {
-  inset: 300px auto auto -23%;
+  inset: 300px 74% auto auto;
   width: 1044px;
   height: 1333px;
   background-size: auto 100%;
-  background-position: center center;
+  background-position: right top;
 }
 
 .selection-bg-curve-holder {
