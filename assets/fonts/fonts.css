@@ -33,9 +33,99 @@
 
 /* Open Sans */
 @font-face {
-  font-family: 'Open Sans';
-  src: url('./');
+  font-family: "Open Sans";
+  src: url('./open-sans/static/OpenSans-Regular.ttf');
   font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('./open-sans/static/OpenSans-Medium.ttf');
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('./open-sans/static/OpenSans-SemiBold.ttf');
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('./open-sans/static/OpenSans-Bold.ttf');
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Work Sans */
+@font-face {
+  font-family: "Work Sans";
+  src: url('./work-sans/static/WorkSans-Regular.ttf');
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url('./work-sans/static/WorkSans-Medium.ttf');
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url('./work-sans/static/WorkSans-SemiBold.ttf');
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url('./work-sans/static/WorkSans-Bold.ttf');
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Red Hat Text */
+@font-face {
+  font-family: "Red Hat Text";
+  src: url('./red-hat-text/static/RedHatText-Regular.ttf');
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url('./red-hat-text/static/RedHatText-Medium.ttf');
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url('./red-hat-text/static/RedHatText-SemiBold.ttf');
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url('./red-hat-text/static/RedHatText-Bold.ttf');
+  font-weight: 700;
   font-optical-sizing: auto;
   font-style: normal;
 }
