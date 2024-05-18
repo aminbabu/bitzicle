@@ -1,3 +1,4 @@
+/* Somar Sans */
 @font-face {
   font-family: 'Somar Sans';
   src: url('./somar-sans/SomarSans-Regular.ttf');
@@ -30,3 +31,11 @@
   font-style: normal;
 }
 
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./');
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
