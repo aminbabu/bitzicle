@@ -1045,7 +1045,7 @@ footer {
 
 .selection-card-container,
 .select-card,
-.card__content {
+.card--content {
   display: flex;
   flex-direction: column;
 }
@@ -1104,7 +1104,7 @@ footer {
   min-width: 6em;
 }
 
-.card__content {
+.card--content {
   align-items: center;
   position: absolute;
   bottom: 5rem;
@@ -1158,7 +1158,7 @@ footer {
   }
 }
 
-.checkbox-control__target {
+.checkbox-control--target {
   cursor: pointer;
   opacity: 0;
   position: absolute;
