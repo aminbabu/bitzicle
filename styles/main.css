@@ -1750,7 +1750,7 @@ footer {
   opacity: 0;
 }
 
-.category-list-card:hover .category-card-overlay {
+.category-card-img-container:hover .category-card-overlay {
   top: 0;
   opacity: 1;
 }
@@ -1810,9 +1810,7 @@ footer {
 
 .category-badge-arrow {
   transform: rotate(270deg);
-  opacity: 0;
-  display: none;
-  transition: all 0.3s;
+  transition: 50ms;
 }
 
 .category-card-badge-item:hover {

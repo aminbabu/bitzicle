@@ -1,4 +1,4 @@
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 576px) {
   /* navbar  */
 
   .navbar {
@@ -430,7 +430,7 @@
 
   .business-card-container,
   .category-cards-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* category filter */
@@ -457,7 +457,7 @@
     padding-block: 0.635rem;
   }
 }
-@media only screen and (min-width: 1199px) {
+@media only screen and (min-width: 1200px) {
   /* hero  */
   .hero-slogan {
     font-size: 3.125rem;
@@ -486,8 +486,14 @@
   .wcu-cards-container {
     gap: 3rem;
   }
+
+  /* business cards */
+  .business-card-container,
+  .category-cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-@media only screen and (min-width: 1369px) {
+@media only screen and (min-width: 1370px) {
   /* common styles */
   .navbar {
     padding-block: 0.65rem;
