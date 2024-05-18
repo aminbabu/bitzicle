@@ -2,6 +2,7 @@
   font-family: 'Somar Sans';
   src: url('./somar-sans/SomarSans-Regular.ttf');
   font-weight: 400;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -9,6 +10,7 @@
   font-family: 'Somar Sans';
   src: url('./somar-sans/SomarSans-Medium.ttf');
   font-weight: 500;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -16,6 +18,7 @@
   font-family: 'Somar Sans';
   src: url('./somar-sans/SomarSans-SemiBold.ttf');
   font-weight: 600;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -23,6 +26,7 @@
   font-family: 'Somar Sans';
   src: url('./somar-sans/SomarSans-Bold.ttf');
   font-weight: 700;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
