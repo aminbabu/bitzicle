@@ -95,6 +95,7 @@ a {
 }
 
 .bz-btn {
+  display: inline-block;
   color: var(--white);
   border: none;
   border-radius: 5rem;
