@@ -1051,7 +1051,7 @@ footer {
 
 .selection-card-container,
 .select-card,
-.card--content {
+.card-content {
   display: flex;
   flex-direction: column;
 }
@@ -1104,13 +1104,13 @@ footer {
     url(../assets/images/businesses.png);
 }
 
-.card--image {
+.card-image {
   border-radius: 0.25em;
   height: 6em;
   min-width: 6em;
 }
 
-.card--content {
+.card-content {
   align-items: center;
   position: absolute;
   bottom: 5rem;
@@ -1164,7 +1164,7 @@ footer {
   }
 }
 
-.checkbox-control--target {
+.checkbox-control-target {
   cursor: pointer;
   opacity: 0;
   position: absolute;
