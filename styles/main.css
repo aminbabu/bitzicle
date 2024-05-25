@@ -103,6 +103,11 @@ a {
   line-height: 1.375;
 }
 
+.bz-btn-arrow {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
 .bz-btn-primary {
   background-color: var(--primary);
   padding: 0.5rem 2rem;
