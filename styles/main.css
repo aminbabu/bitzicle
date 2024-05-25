@@ -1787,6 +1787,16 @@ footer {
   font-weight: 600;
 }
 
+.category-list-card-title a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.category-list-card-title a:hover {
+  color: var(--mulberry);
+}
+
 .category-card-badge-list {
   display: flex;
   flex-wrap: wrap;
