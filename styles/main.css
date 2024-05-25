@@ -1104,7 +1104,7 @@ footer {
     url(../assets/images/businesses.png);
 }
 
-.card__image {
+.card--image {
   border-radius: 0.25em;
   height: 6em;
   min-width: 6em;
