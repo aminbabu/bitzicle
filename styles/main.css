@@ -815,6 +815,13 @@ a {
   line-height: 1.44;
 }
 
+.rating-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .ratings {
   display: flex;
 }
@@ -1239,6 +1246,8 @@ footer {
 }
 
 .purple-hero-search-btn {
+  display: inline-flex;
+  gap: 0.5rem;
   border: 0;
   background: transparent;
   position: absolute;
