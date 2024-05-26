@@ -191,6 +191,10 @@ a {
   padding: 0;
 }
 
+.custom-toggler {
+  border: none !important;
+}
+
 .custom-toggler.navbar-toggler,
 .custom-toggler.navbar-toggler:focus {
   border: none;
