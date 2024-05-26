@@ -279,6 +279,10 @@
     padding: 0;
   }
 
+  .search-top {
+    display: flex;
+  }
+
   /* hero  */
 
   .hero-text-container {

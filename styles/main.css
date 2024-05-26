@@ -237,6 +237,7 @@ a {
 
 .search-top {
   position: relative;
+  display: none;
 }
 
 .search-bar {
