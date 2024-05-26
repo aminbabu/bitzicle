@@ -1078,6 +1078,7 @@ footer {
   gap: 2.5rem;
   margin-block: 2rem;
   padding: 0;
+  margin-bottom: 1.5rem;
 }
 
 /* Card Styles */
@@ -1763,6 +1764,7 @@ footer {
   top: 100%;
   bottom: 0;
   left: 0;
+  z-index: 1;
   padding: 1.125rem 1.25rem 6.625rem 1.125rem;
   color: var(--white);
   border-radius: 5px;
@@ -1772,6 +1774,7 @@ footer {
   transition: all 0.4s;
   opacity: 0;
 }
+
 
 .category-card-img-container:hover .category-card-overlay {
   top: 0;
