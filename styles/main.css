@@ -242,6 +242,7 @@ a {
 
 .search-bar {
   padding-left: 2.8125rem;
+  margin-right: 0.5rem;
 }
 
 .search-bar::placeholder {
