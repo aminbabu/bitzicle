@@ -211,3 +211,36 @@ $(document).ready(function () {
     languageContainer.append(newLanguageItem);
   });
 });
+
+// add skill tag
+$(document).ready(function () {
+  const tagContainer = $(".tag-container").first();
+  const skillInput = $(".skill-input");
+
+  function addTag(tagText) {
+    if (tagText) {
+      const newTag = $('<div class="skill-tag"></div>').text(tagText.trim());
+      const icon = $(
+        '<svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.67188 0.807129L0.632812 5.84619" stroke="#535353" stroke-linecap="round" stroke-linejoin="round"/><path d="M0.632812 0.807129L5.67188 5.84619" stroke="#535353" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+      );
+      newTag.append(icon);
+      tagContainer.append(newTag);
+      skillInput.val("");
+
+      icon.click(function () {
+        newTag.remove();
+      });
+    }
+  }
+
+  skillInput.keypress(function (e) {
+    if (e.which === 13) {
+      // Enter key pressed
+      addTag(skillInput.val());
+    }
+  });
+
+  $(".suggested-tag").click(function () {
+    addTag($(this).text().trim().replace(/^\+/, "").trim());
+  });
+});

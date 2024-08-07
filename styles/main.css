@@ -2392,6 +2392,9 @@ footer {
 .suggested-skill-tag-container {
   margin-top: 5px;
 }
+.suggested-tag {
+  cursor: pointer;
+}
 .tag-container {
   display: flex;
   gap: 0.5rem;
