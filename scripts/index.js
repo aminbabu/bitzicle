@@ -199,3 +199,15 @@ $(document).ready(function () {
     fixedContentPos: false,
   });
 });
+
+// add language
+$(document).ready(function () {
+  const addLanguageBtn = $("#add-language-btn");
+  const languageContainer = $(".language-container");
+  const languageItem = $(".language-selection");
+
+  addLanguageBtn.click(function () {
+    const newLanguageItem = languageItem.clone().removeAttr("style");
+    languageContainer.append(newLanguageItem);
+  });
+});

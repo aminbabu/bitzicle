@@ -348,10 +348,6 @@
                     </a>
                   </div>
                   <div class="next-btn-container">
-                    <!-- Skip button -->
-                    <button type="button" class="btn skip-btn">
-                      Skip for now
-                    </button>
                     <!-- Next button -->
                     <button
                       type="button"
@@ -679,18 +675,18 @@
               <div class="step">
                 <div class="container">
                   <div class="login-form-container">
-                    <div class="language-container">
-                      <div class="form-heading">
-                        <p class="count-breadcrumb">5/10</p>
-                        <div class="form-headline">
-                          Looking good. Next, tell us which languages you speak.
-                        </div>
-                        <p class="form-text">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
-                        </p>
+                    <div class="form-heading">
+                      <p class="count-breadcrumb">5/10</p>
+                      <div class="form-headline">
+                        Looking good. Next, tell us which languages you speak.
                       </div>
-                      <div class="language-selection">
+                      <p class="form-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                    <div class="language-container">
+                      <div class="language-selection" id="language-select">
                         <div class="language-type">
                           <div class="form-group">
                             <label class="language-label" for="name"
@@ -717,8 +713,10 @@
                           </select>
                         </div>
                       </div>
-                      <div class="btn-container">
-                        <div class="btn language-btn">+ Add a language</div>
+                    </div>
+                    <div class="btn-container">
+                      <div class="btn language-btn" id="add-language-btn">
+                        + Add a language
                       </div>
                     </div>
                   </div>

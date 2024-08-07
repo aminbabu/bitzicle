@@ -2319,6 +2319,7 @@ footer {
   grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem;
   border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 26px;
 }
 .language-type,
 .language-selection .proficiency-dropdown {
@@ -2347,7 +2348,6 @@ footer {
   font-weight: 500;
   max-width: 180px;
   padding: 0.625rem 2rem;
-  margin-top: 26px;
 }
 
 .language-btn:hover {
