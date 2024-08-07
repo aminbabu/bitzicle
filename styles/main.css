@@ -2893,7 +2893,6 @@ footer {
 .work-xp-modal .modal-body label {
   font-size: 0.875rem;
   line-height: 1.86;
-  padding-bottom: 2px;
 }
 
 .location-form-group,
@@ -2931,6 +2930,17 @@ footer {
   outline: 0;
   box-shadow: none;
   border: 1px solid #dbdbdb;
+}
+
+.work-xp-modal .form-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.work-xp-modal .form-check-input {
+  margin-top: 0;
+  height: 1.125rem;
+  width: 1.125rem;
 }
 .work-xp-modal .modal-footer button {
   padding: 0.5rem 1.5rem;
