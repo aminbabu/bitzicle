@@ -242,5 +242,6 @@ $(document).ready(function () {
 
   $(".suggested-tag").click(function () {
     addTag($(this).text().trim().replace(/^\+/, "").trim());
+    $(this).remove();
   });
 });
