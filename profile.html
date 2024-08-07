@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizticle</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
+    <!-- slick carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick-theme.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.res.css" />
+  </head>
+  <body>
+    <!-- app starts -->
+    <div id="app">
+      <!-- background holder starts -->
+      <div
+        class="bg-holder home-bg-curve-holder"
+        style="background-image: url('./assets/images/home-bg-curves.svg')"
+      ></div>
+      <!-- background holder ends -->
+
+      <!-- header starts -->
+      <header>
+        <!-- navbar -->
+        <nav
+          id="navbar"
+          class="navbar navbar-expand-lg bg-body-tertiary sticky"
+        >
+          <div class="container-fluid container">
+            <!-- brand logo -->
+            <a class="navbar-brand" href="/">
+              <img
+                class="img-fluid"
+                src="./assets/images/logo.png"
+                alt="brand logo"
+              />
+            </a>
+
+            <!-- navbar toggler -->
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img src="./assets/icons/toggler.svg" alt="toggler" />
+            </button>
+
+            <!-- collapsible for large devices -->
+            <div class="collapse navbar-collapse navbar-show-content">
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="search-top" role="search">
+                <input
+                  class="form-control search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a href="#" class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <a
+                href="./login-page.html"
+                class="bz-btn bz-btn-primary"
+                type="submit"
+                >Login</a
+              >
+            </div>
+          </div>
+
+          <!-- collapsible for small devices-->
+          <div
+            class="collapse navbar-collapse navbar-show-content navbar-sm"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="search-top" role="search">
+                <input
+                  class="form-control search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <div class="btn-container">
+                <a
+                  href="./login-page.html"
+                  class="bz-btn bz-btn-primary"
+                  type="submit"
+                  >Login</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header ends -->
+
+      <!-- main starts -->
+      <main>
+        <!-- profile section starts -->
+        <section class="profile">
+          <div class="">
+            <div class="profile-container">
+              <!-- profile information starts -->
+              <div class="profile-info">
+                <div class="profile-picture-content">
+                  <img
+                    src="./assets/images/profile-pricture.png"
+                    alt="profile picture"
+                    class="profile-picture"
+                  />
+                  <span class="profile-status">Online</span>
+                </div>
+                <h4 class="profile-name">David Laid</h4>
+                <h5 class="profile-price-ratio">
+                  <svg
+                    width="18"
+                    height="21"
+                    viewBox="0 0 18 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.207031 20.1584L8.67231 18.7387L17.207 20.1584V0.158447H0.207031V20.1584Z"
+                      fill="#52C35D"
+                    />
+                    <g clip-path="url(#clip0_1262_69)">
+                      <path
+                        d="M8.21581 12.6691V11.6737C8.21581 11.1066 8.20892 10.5395 8.21984 9.97239C8.22328 9.79145 8.1572 9.70881 7.97794 9.63536C7.54184 9.45605 7.09252 9.28375 6.70124 9.03531C5.93591 8.54921 5.53659 7.85572 5.49464 6.96995C5.45212 6.13334 5.60955 5.38097 6.25997 4.76201C6.73169 4.31319 7.31546 4.08689 7.95668 3.97833C8.1641 3.94322 8.22213 3.86328 8.22213 3.67749C8.22213 3.15791 8.23017 3.15791 8.7967 3.15845C9.1989 3.15845 9.1989 3.15845 9.1989 3.52194C9.1989 3.92216 9.1989 3.92756 9.63902 4.01991C10.7554 4.25432 11.4914 4.87165 11.8149 5.91027C11.8302 5.96206 11.8417 6.01475 11.8494 6.06798C11.8569 6.11173 11.858 6.15656 11.8649 6.23433C11.3415 6.30779 10.8267 6.38664 10.309 6.44335C10.2475 6.44984 10.1561 6.34235 10.1038 6.2716C9.94814 6.0588 9.82288 5.8244 9.64994 5.62348C9.55973 5.5187 9.3954 5.47117 9.1989 5.36099V6.57406C9.1989 7.00614 9.20867 7.43822 9.19546 7.87031C9.18971 8.06312 9.25981 8.1463 9.45574 8.21867C9.98837 8.41419 10.5273 8.60863 11.0243 8.8668C11.7902 9.26809 12.1074 9.95402 12.1901 10.7447C12.2803 11.6019 12.0838 12.3893 11.4955 13.0672C10.9904 13.6516 10.3297 13.9897 9.54996 14.1198C9.3052 14.1603 9.1696 14.2327 9.19201 14.4979C9.20924 14.701 9.17018 14.9089 9.15351 15.1514C8.89323 15.1514 8.6364 15.1606 8.38301 15.1444C8.32556 15.1412 8.27212 15.0531 8.22443 14.998C8.21007 14.9818 8.22443 14.944 8.22041 14.9186C8.20432 14.6977 8.26695 14.4201 8.14744 14.2732C8.03712 14.1371 7.73087 14.1431 7.51139 14.0831C6.32605 13.759 5.64173 12.9867 5.30733 11.9022C5.14071 11.3621 5.14013 11.3583 5.7147 11.2848C6.07496 11.2389 6.43579 11.1979 6.79835 11.1768C6.87189 11.173 6.99312 11.2638 7.023 11.3361C7.21146 11.7985 7.45565 12.2187 7.90612 12.5028C7.97564 12.5562 8.05953 12.5897 8.21581 12.6691ZM9.22131 10.0491C9.21154 10.1333 9.19718 10.203 9.19603 10.2727C9.18339 10.8916 9.16443 11.5106 9.16845 12.1296C9.16845 12.3343 9.23223 12.539 9.2667 12.7437C9.48217 12.6578 9.71601 12.5984 9.90964 12.4812C10.394 12.1868 10.6325 11.5317 10.4785 11.004C10.3302 10.4947 9.81714 10.0939 9.22246 10.0469L9.22131 10.0491ZM8.18823 5.4069C7.61021 5.49223 7.18676 6.00101 7.18503 6.57892C7.18331 7.15683 7.63262 7.70017 8.18823 7.77957V5.4069Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1262_69">
+                        <rect
+                          width="7"
+                          height="12"
+                          fill="white"
+                          transform="translate(5.20703 3.15845)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  $40/hr
+                </h5>
+                <div class="profile-review-content">
+                  <div class="profile-review-stars">
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                        fill="#FFCB1D"
+                      />
+                    </svg>
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                        fill="#FFCB1D"
+                      />
+                    </svg>
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                        fill="#FFCB1D"
+                      />
+                    </svg>
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                        fill="#FFCB1D"
+                      />
+                    </svg>
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                        fill="#FFCB1D"
+                      />
+                    </svg>
+                  </div>
+                  <div class="review-counter">
+                    <p class="review-count">5.0 <span>(15 reviews)</span></p>
+                  </div>
+                </div>
+                <div class="btn-container">
+                  <button class="bz-btn bz-btn-secondary profile-contact-btn">
+                    Contact
+                  </button>
+                </div>
+                <p class="profile-description">
+                  Passionate and detail-oriented Frontend Developer with 7 years
+                  of experience in building and optimizing user-focused web
+                  applications. Proficient in translating design wireframes into
+                  high-quality code and ensuring the technical feasibility of
+                  UI/UX designs.
+                </p>
+                <div>
+                  <a href="#" class="view-full-profile-btn"
+                    >View Full Profile</a
+                  >
+                </div>
+                <hr />
+                <ul class="profile-specs-list">
+                  <li class="profile-spec-item">
+                    <div class="profile-spec-name">
+                      <svg
+                        width="12"
+                        height="16"
+                        viewBox="0 0 12 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1262_130)">
+                          <path
+                            d="M6.06509 15.9999C5.36608 15.072 4.80116 14.3308 4.24492 13.5823C3.2144 12.191 2.12428 10.8372 1.17819 9.39493C-0.0770657 7.48318 -0.435888 5.44042 0.625675 3.29213C1.99143 0.530036 5.3847 -0.737591 8.32355 0.441484C11.2041 1.59872 12.7287 4.78659 11.6684 7.65058C11.2742 8.64958 10.7532 9.59629 10.1177 10.4685C8.89965 12.2007 7.58356 13.865 6.31217 15.5632C6.2218 15.7043 6.13932 15.8501 6.06509 15.9999ZM6.01046 3.22056C5.62438 3.21937 5.24665 3.33028 4.92521 3.53922C4.60378 3.74816 4.35313 4.04571 4.20511 4.39409C4.05708 4.74246 4.01835 5.12596 4.09382 5.49588C4.1693 5.8658 4.35558 6.20548 4.62902 6.47177C4.90245 6.73807 5.25072 6.91897 5.62959 6.99153C6.00846 7.06408 6.40085 7.02501 6.75695 6.87928C7.11305 6.73354 7.4168 6.48771 7.62963 6.173C7.84246 5.85828 7.95478 5.48888 7.95232 5.11169C7.94712 4.61066 7.74067 4.13167 7.37744 3.77794C7.01422 3.4242 6.5233 3.22403 6.01046 3.22056Z"
+                            fill="#272727"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1262_130">
+                            <rect width="12" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      &nbsp;From
+                    </div>
+                    <div class="profile-spec-data">
+                      <img
+                        src="./assets/images/canada-flag.png"
+                        alt="country flag"
+                      />
+                      Canada
+                    </div>
+                  </li>
+                  <li class="profile-spec-item">
+                    <div class="profile-spec-name">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1262_132)">
+                          <path
+                            d="M0.000702766 6.59688C0.000702766 4.91008 0.000702766 3.22244 0.000702766 1.53398C0.000702766 0.579529 0.581983 0.00198252 1.53952 0.000732422C2.99791 0.000732422 4.4563 0.000732422 5.91469 0.000732422C7.06286 0.000732422 7.53974 0.419515 7.67849 1.56335C8.01892 4.33857 8.35873 7.114 8.69791 9.88964C8.80979 10.7972 8.93105 11.7023 9.04668 12.6111C9.09106 12.9567 8.88792 13.1886 8.54165 13.1893C6.19865 13.1893 3.85542 13.1893 1.51199 13.1893C0.581956 13.1893 0.00257906 12.5998 0.00195404 11.6585C-0.000129379 9.97005 -0.000547282 8.28284 0.000702766 6.59688ZM3.57457 7.09691C3.97271 7.09691 4.3371 7.08379 4.69962 7.10629C4.75163 7.11874 4.79984 7.14369 4.84003 7.17898C4.88022 7.21427 4.91121 7.25884 4.93028 7.30881C5.03403 7.73196 5.10152 8.16387 5.19777 8.58891C5.22486 8.70763 5.29715 8.81113 5.39929 8.87744C5.50143 8.94375 5.62539 8.96764 5.74485 8.94406C5.86432 8.92047 5.9699 8.85126 6.03918 8.75111C6.10846 8.65096 6.13599 8.52775 6.11593 8.40764C5.80925 6.84877 5.49674 5.29115 5.17839 3.73477C5.16326 3.62987 5.11057 3.53403 5.0301 3.46505C4.94964 3.39608 4.84686 3.35866 4.74088 3.35974C4.47024 3.34912 4.19961 3.346 3.92835 3.34787C3.46833 3.35225 3.34084 3.46538 3.25333 3.91042C3.09708 4.70548 2.93456 5.49866 2.77706 6.2931C2.64018 6.98566 2.49642 7.67696 2.37454 8.37201C2.31579 8.70704 2.46205 8.91268 2.73644 8.95581C3.01082 8.99894 3.20394 8.85955 3.2877 8.5339C3.30082 8.4839 3.30644 8.43202 3.31644 8.38077C3.39895 7.96011 3.48333 7.5432 3.57271 7.09691H3.57457Z"
+                            fill="#272727"
+                          />
+                          <path
+                            d="M7.58984 16C7.99423 15.5331 8.35237 15.1199 8.71113 14.7074C8.90989 14.4799 9.09366 14.2361 9.31367 14.0311C9.91994 13.4685 10.0512 12.7966 9.92932 11.9897C9.68556 10.3758 9.51241 8.75191 9.31052 7.13241C9.13968 5.76063 8.97031 4.38844 8.80239 3.01584C8.79738 2.97583 8.80239 2.93458 8.80239 2.85583C8.90614 2.85145 9.00491 2.84332 9.10367 2.84332C10.8537 2.84332 12.6038 2.84332 14.3539 2.84332C15.4464 2.84332 16.0008 3.40587 16.0014 4.4997C16.0014 7.80163 16.0014 11.1036 16.0014 14.4055C16.0014 15.4443 15.4426 15.9994 14.3976 16H7.58984ZM11.9575 10.1558C11.7075 10.3608 11.395 10.6171 11.0825 10.8746C10.79 11.1165 10.7325 11.3627 10.9131 11.5953C11.0937 11.8278 11.3863 11.8303 11.6819 11.5953C11.9494 11.3802 12.22 11.1677 12.4732 10.9365C12.6244 10.7977 12.7288 10.7833 12.89 10.9283C13.1607 11.1709 13.4526 11.3896 13.7426 11.6109C14.0326 11.8322 14.3126 11.8253 14.487 11.6034C14.6689 11.3721 14.597 11.0915 14.2995 10.8577C13.9826 10.6077 13.6676 10.3577 13.4169 10.1608C13.7726 9.45634 14.0982 8.80004 14.4395 8.15187C14.4757 8.08249 14.5964 8.04436 14.6857 8.01748C14.9432 7.9406 15.1089 7.71995 15.0533 7.48494C14.9908 7.21054 14.7939 7.09929 14.5233 7.09929H13.1844C13.1063 6.71801 13.2838 6.19046 12.6963 6.18234C12.0832 6.17421 12.2782 6.72738 12.1825 7.10491C11.7188 7.10491 11.2625 7.09616 10.8075 7.10491C10.5443 7.11116 10.3749 7.25742 10.3587 7.52932C10.3424 7.80122 10.4724 7.95623 10.7387 8.01998C10.8275 8.04123 10.9425 8.09499 10.9794 8.16749C11.3069 8.81004 11.6187 9.46134 11.9575 10.1558Z"
+                            fill="#272727"
+                          />
+                          <path
+                            d="M6.37503 15.8544C5.64563 15.4919 5.51625 14.8612 5.5 14.1486H7.91635L6.37503 15.8544Z"
+                            fill="#272727"
+                          />
+                          <path
+                            d="M4.70316 6.1367H3.76562C3.88563 5.54791 3.99752 4.98411 4.1194 4.42219C4.13107 4.39308 4.14888 4.36683 4.17165 4.34526C4.19441 4.32368 4.22157 4.30728 4.25127 4.29718C4.2744 4.28905 4.35503 4.36406 4.3644 4.41094C4.47878 4.97161 4.58691 5.53978 4.70316 6.1367Z"
+                            fill="#272727"
+                          />
+                          <path
+                            d="M13.5235 8.05377L12.6903 9.462L11.8828 8.05377H13.5235Z"
+                            fill="#272727"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1262_132">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Languages
+                    </div>
+                    <div class="profile-spec-data">English, French</div>
+                  </li>
+                  <li class="profile-spec-item">
+                    <div class="profile-spec-name">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1262_138)">
+                          <path
+                            d="M0 7.48573C0.0588258 3.31579 3.34131 -0.00720591 7.51736 -0.00249744C11.6746 0.00279958 15.0053 3.3205 14.9994 7.50927C14.9935 11.6739 11.6781 15.004 7.49441 14.9975C3.31071 14.991 0.0482372 11.6563 0 7.48573ZM8.11797 5.55114C8.11797 5.07088 8.11797 4.59002 8.11797 4.10976C8.11797 3.71307 7.86148 3.42291 7.515 3.41526C7.16852 3.40761 6.8926 3.70954 6.89202 4.11859C6.89202 5.22685 6.89789 6.3351 6.8873 7.44336C6.88037 7.57041 6.90604 7.69714 6.96184 7.81148C7.01765 7.92582 7.10176 8.02398 7.20616 8.09665C7.94325 8.64813 8.67679 9.20609 9.41564 9.75404C9.74389 9.99711 10.1174 9.95591 10.3286 9.67458C10.558 9.3697 10.491 9.01422 10.1521 8.75585C9.54329 8.295 8.9374 7.82945 8.31915 7.38097C8.25034 7.33677 8.19508 7.27442 8.15947 7.20078C8.12386 7.12714 8.10929 7.04508 8.11736 6.96367C8.1256 6.49518 8.11914 6.02434 8.11914 5.5535L8.11797 5.55114Z"
+                            fill="#272727"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1262_138">
+                            <rect width="15" height="15" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      &nbsp;Average response time
+                    </div>
+                    <div class="profile-spec-data">2 days</div>
+                  </li>
+                </ul>
+              </div>
+              <!-- profile information ends -->
+              <!-- services and review starts  -->
+              <div class="profile-services-review-container">
+                <!-- profile services starts -->
+                <div class="profile-services-container">
+                  <h5 class="profile-service-title">Services</h5>
+                  <div class="profile-services-card-container">
+                    <!-- profile-service-card  -->
+                    <div class="profile-service-card">
+                      <img
+                        src="./assets/images/website-design.png"
+                        alt="card img"
+                        class="profile-card-img"
+                      />
+                      <div class="profile-card-text-content">
+                        <div class="card-review">
+                          <svg
+                            width="15"
+                            height="14"
+                            viewBox="0 0 15 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.76172 0.953033L9.92472 5.23169L14.7617 5.92201L11.2617 9.25062L12.0877 13.953L7.76172 11.7317L3.43572 13.953L4.26172 9.25062L0.761719 5.92201L5.59872 5.23169L7.76172 0.953033Z"
+                              fill="#F0B61E"
+                            />
+                          </svg>
+                          4.7 (1K)
+                        </div>
+                        <h6 class="card-title">Website Design</h6>
+                        <p class="card-info-text">
+                          Lorem Ipsum is simply dummy text of the printing
+                          industry
+                        </p>
+                        <p class="card-price">From $70</p>
+                      </div>
+                    </div>
+
+                    <!-- profile-service-card  -->
+                    <div class="profile-service-card">
+                      <img
+                        src="./assets/images/website-design.png"
+                        alt="card img"
+                        class="profile-card-img"
+                      />
+                      <div class="profile-card-text-content">
+                        <div class="card-review">
+                          <svg
+                            width="15"
+                            height="14"
+                            viewBox="0 0 15 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.76172 0.953033L9.92472 5.23169L14.7617 5.92201L11.2617 9.25062L12.0877 13.953L7.76172 11.7317L3.43572 13.953L4.26172 9.25062L0.761719 5.92201L5.59872 5.23169L7.76172 0.953033Z"
+                              fill="#F0B61E"
+                            />
+                          </svg>
+                          <span> 4.7 (1K)</span>
+                        </div>
+                        <h6 class="card-title">Website Design</h6>
+                        <p class="card-info-text">
+                          Lorem Ipsum is simply dummy text of the printing
+                          industry
+                        </p>
+                        <p class="card-price">From $70</p>
+                      </div>
+                    </div>
+
+                    <!-- profile-service-card  -->
+                    <div class="profile-service-card">
+                      <img
+                        src="./assets/images/website-design.png"
+                        alt="card img"
+                        class="profile-card-img"
+                      />
+                      <div class="profile-card-text-content">
+                        <div class="card-review">
+                          <svg
+                            width="15"
+                            height="14"
+                            viewBox="0 0 15 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.76172 0.953033L9.92472 5.23169L14.7617 5.92201L11.2617 9.25062L12.0877 13.953L7.76172 11.7317L3.43572 13.953L4.26172 9.25062L0.761719 5.92201L5.59872 5.23169L7.76172 0.953033Z"
+                              fill="#F0B61E"
+                            />
+                          </svg>
+                          4.7 (1K)
+                        </div>
+                        <h6 class="card-title">Website Design</h6>
+                        <p class="card-info-text">
+                          Lorem Ipsum is simply dummy text of the printing
+                          industry
+                        </p>
+                        <p class="card-price">From $70</p>
+                      </div>
+                    </div>
+
+                    <!-- profile-service-card  -->
+                    <div class="profile-service-card">
+                      <img
+                        src="./assets/images/website-design.png"
+                        alt="card img"
+                        class="profile-card-img"
+                      />
+                      <div class="profile-card-text-content">
+                        <div class="card-review">
+                          <svg
+                            width="15"
+                            height="14"
+                            viewBox="0 0 15 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.76172 0.953033L9.92472 5.23169L14.7617 5.92201L11.2617 9.25062L12.0877 13.953L7.76172 11.7317L3.43572 13.953L4.26172 9.25062L0.761719 5.92201L5.59872 5.23169L7.76172 0.953033Z"
+                              fill="#F0B61E"
+                            />
+                          </svg>
+                          4.7 (1K)
+                        </div>
+                        <h6 class="card-title">Website Design</h6>
+                        <p class="card-info-text">
+                          Lorem Ipsum is simply dummy text of the printing
+                          industry
+                        </p>
+                        <p class="card-price">From $70</p>
+                      </div>
+                    </div>
+
+                    <!-- profile-service-card  -->
+                    <div class="profile-service-card">
+                      <img
+                        src="./assets/images/website-design.png"
+                        alt="card img"
+                        class="profile-card-img"
+                      />
+                      <div class="profile-card-text-content">
+                        <div class="card-review">
+                          <svg
+                            width="15"
+                            height="14"
+                            viewBox="0 0 15 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.76172 0.953033L9.92472 5.23169L14.7617 5.92201L11.2617 9.25062L12.0877 13.953L7.76172 11.7317L3.43572 13.953L4.26172 9.25062L0.761719 5.92201L5.59872 5.23169L7.76172 0.953033Z"
+                              fill="#F0B61E"
+                            />
+                          </svg>
+                          4.7 (1K)
+                        </div>
+                        <h6 class="card-title">Website Design</h6>
+                        <p class="card-info-text">
+                          Lorem Ipsum is simply dummy text of the printing
+                          industry
+                        </p>
+                        <p class="card-price">From $70</p>
+                      </div>
+                    </div>
+
+                    <div class="service-msg-container">
+                      <img
+                        src="./assets/images/service-msg-img.png"
+                        alt="service message img"
+                      />
+                      <p class="service-msg-text">Message from David</p>
+                      <div class="servcie-msg-status"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- profile services ends -->
+                <hr />
+                <!-- profile reviews starts -->
+                <div class="profile-reviews-container">
+                  <h5 class="profile-reviews-title">Reviews</h5>
+                  <div class="profile-reviews-content">
+                    <div class="profile-review">
+                      <div class="profile-review-title-content">
+                        <h6 class="profile-review-title">Website Design</h6>
+                        <div class="profile-review-stars">
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                        </div>
+                        <span class="profile-review-counter"> 5.0 </span>
+                      </div>
+                      <div class="profile-review-text-content">
+                        <p class="profile-review-text">
+                          David was incredibly easy to work with, providing
+                          regular updates and being open to feedback throughout
+                          the process. Their creativity, attention to detail,
+                          and technical expertise ensured that the project was
+                          completed on time and exceeded my expectations.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="profile-review">
+                      <div class="profile-review-title-content">
+                        <h6 class="profile-review-title">Website Design</h6>
+                        <div class="profile-review-stars">
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8.81618 0.756805L11.3424 5.8747L16.9917 6.70043L12.904 10.6819L13.8687 16.3067L8.81618 13.6497L3.76369 16.3067L4.7284 10.6819L0.640625 6.70043L6.28993 5.8747L8.81618 0.756805Z"
+                              fill="#FFCB1D"
+                            />
+                          </svg>
+                        </div>
+                        <span class="profile-review-counter"> 5.0 </span>
+                      </div>
+                      <div class="profile-review-text-content">
+                        <p class="profile-review-text">
+                          David was incredibly easy to work with, providing
+                          regular updates and being open to feedback throughout
+                          the process. Their creativity, attention to detail,
+                          and technical expertise ensured that the project was
+                          completed on time and exceeded my expectations.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- profile reviews ends -->
+              </div>
+              <!-- services and review ends -->
+            </div>
+          </div>
+        </section>
+        <!-- profile section end -->
+      </main>
+      <!-- main ends -->
+    </div>
+    <!-- app ends -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer-blue-ellipse"></div>
+      <div class="footer-pink-ellipse"></div>
+      <div class="footer-bg-prop"></div>
+
+      <!-- footer content -->
+      <div class="container">
+        <!-- footer logo -->
+        <div class="d-flex justify-content-center justify-content-sm-start">
+          <a href="#">
+            <img
+              class="footer-logo"
+              src="./assets/images/logo-dark.png"
+              alt="footer logo"
+            />
+          </a>
+        </div>
+
+        <!-- footer.container -->
+        <div class="footer-container">
+          <!-- social icons with footer text  -->
+          <div class="footer-text-social">
+            <p class="footer-text bz-text">
+              Solutions tailored for businesses to find and manage top people
+              and talent
+            </p>
+            <ul
+              class="social-icon-container d-flex justify-content-center justify-content-sm-start"
+            >
+              <!-- facebook  -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="13"
+                    height="24"
+                    viewBox="0 0 13 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.3876 4.4171H12.575V0.758961C11.5167 0.647501 10.4527 0.593547 9.38804 0.597356C6.23409 0.597356 4.07377 2.50158 4.07377 6.00263V9.22455H0.592529V13.3133H4.07377V23.5972H8.34143V13.3133H11.6814L12.2112 9.22455H8.34026V6.40834C8.34143 5.23077 8.67225 4.4171 10.3876 4.4171Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- twitter -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="24"
+                    height="20"
+                    viewBox="0 0 24 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.8679 3.10754C23.0005 3.48634 22.083 3.73807 21.1439 3.85497C22.1339 3.267 22.8741 2.33581 23.2243 1.23783C22.2974 1.78713 21.2834 2.17365 20.2264 2.38068C19.5779 1.68721 18.7361 1.20515 17.8104 0.997166C16.8848 0.789185 15.918 0.864908 15.0359 1.21449C14.1537 1.56406 13.397 2.17133 12.864 2.95734C12.3311 3.74335 12.0466 4.67174 12.0475 5.62183C12.0453 5.98496 12.0836 6.34721 12.1617 6.70183C10.2808 6.60935 8.44068 6.12036 6.7615 5.26683C5.08231 4.41331 3.60192 3.21447 2.4171 1.74869C1.80788 2.78985 1.6185 4.02465 1.88764 5.20092C2.15679 6.37719 2.86414 7.4062 3.86526 8.07783C3.11679 8.05791 2.38409 7.858 1.72896 7.49497V7.5464C1.72994 8.63991 2.10711 9.69969 2.79698 10.5473C3.48685 11.3949 4.44727 11.9786 5.51655 12.2001C5.11215 12.3067 4.69539 12.359 4.27722 12.3555C3.97695 12.3608 3.67699 12.3335 3.38254 12.2744C3.68822 13.2139 4.27714 14.0354 5.06824 14.6258C5.85934 15.2163 6.81373 15.5467 7.80006 15.5715C6.12646 16.8823 4.0624 17.5933 1.9378 17.591C1.55985 17.5938 1.1821 17.5725 0.806885 17.527C2.96858 18.9219 5.48752 19.6599 8.05911 19.6515C9.82956 19.664 11.5848 19.324 13.223 18.6513C14.8611 17.9786 16.3494 16.9866 17.6015 15.7329C18.8535 14.4793 19.8443 12.9889 20.5163 11.3485C21.1883 9.70811 21.5281 7.95031 21.5159 6.17726C21.5159 5.96812 21.5091 5.76583 21.4988 5.56469C22.4311 4.89662 23.2339 4.06396 23.8679 3.10754Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- instagram -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.8631 7.15117C21.8451 6.24885 21.6742 5.35616 21.3576 4.51117C21.0784 3.78496 20.6507 3.12517 20.102 2.57412C19.5533 2.02306 18.8958 1.59289 18.1714 1.31117C17.3255 0.99504 16.4322 0.825005 15.5296 0.808318C14.3644 0.752318 13.9935 0.739746 11.0379 0.739746C8.08219 0.739746 7.71131 0.752318 6.54958 0.803746C5.64698 0.821673 4.75401 0.993264 3.90888 1.31117C3.18081 1.58366 2.5213 2.0128 1.97686 2.56832C1.42396 3.11326 0.995678 3.77183 0.721556 4.4986C0.404483 5.34622 0.233535 6.24163 0.216012 7.1466C0.161235 8.3146 0.148682 8.68489 0.148682 11.646C0.148682 14.6072 0.161235 14.9775 0.206882 16.1397C0.22607 17.0443 0.398959 17.939 0.718132 18.7855C0.998367 19.51 1.42648 20.1681 1.97511 20.7175C2.52374 21.2669 3.18081 21.6957 3.90432 21.9763C4.7499 22.294 5.64321 22.4656 6.54616 22.4837C7.70674 22.5352 8.07763 22.5477 11.0333 22.5477C13.989 22.5477 14.3598 22.5352 15.5204 22.4837C16.4234 22.466 17.3168 22.2944 18.1623 21.9763C18.886 21.696 19.5432 21.2674 20.0919 20.7179C20.6406 20.1685 21.0686 19.5102 21.3485 18.7855C21.6655 17.9386 21.8368 17.044 21.8551 16.1397C21.9065 14.9763 21.919 14.606 21.919 11.6449C21.919 8.68375 21.919 8.31346 21.8643 7.15003L21.8631 7.15117ZM19.9026 16.054C19.8956 16.7453 19.769 17.4301 19.5283 18.078C19.3468 18.5485 19.0691 18.9758 18.713 19.3324C18.3569 19.689 17.9302 19.9672 17.4604 20.1489C16.8134 20.3895 16.1296 20.5164 15.4394 20.5237C14.2914 20.5752 13.9467 20.5877 11.0413 20.5877C8.13583 20.5877 7.78662 20.5752 6.64316 20.5237C5.9529 20.5168 5.26907 20.39 4.62212 20.1489C4.14782 19.9758 3.7187 19.6977 3.36682 19.3352C3.00581 18.982 2.7282 18.5525 2.5543 18.078C2.31598 17.4296 2.19128 16.7449 2.18569 16.054C2.13434 14.9112 2.12179 14.5683 2.12179 11.654C2.12179 8.73975 2.13434 8.39689 2.18569 7.25403C2.19261 6.56276 2.31925 5.87793 2.56 5.23003C2.73285 4.75396 3.01237 4.32389 3.37709 3.97289C3.72962 3.6112 4.15855 3.33316 4.63239 3.15917C5.27949 2.91861 5.96322 2.79179 6.65343 2.78432C7.7969 2.73403 8.14153 2.72032 11.0481 2.72032C13.9547 2.72032 14.3028 2.73289 15.4463 2.78432C16.1365 2.79128 16.8203 2.91812 17.4673 3.15917C17.9416 3.33217 18.3708 3.61035 18.7226 3.97289C19.0836 4.32603 19.3612 4.75556 19.5351 5.23003C19.773 5.87849 19.8973 6.56321 19.9026 7.25403C19.9494 8.39689 19.9665 8.73975 19.9665 11.654C19.9665 14.5683 19.9539 14.9043 19.9026 16.0552V16.054Z"
+                    />
+                    <path
+                      d="M11.0386 6.04346C9.93263 6.04346 8.85151 6.37189 7.93195 6.98723C7.01238 7.60256 6.29566 8.47716 5.87243 9.50043C5.4492 10.5237 5.33846 11.6497 5.55422 12.736C5.76999 13.8223 6.30255 14.8201 7.08458 15.6033C7.86661 16.3864 8.86296 16.9198 9.94767 17.1358C11.0324 17.3519 12.1567 17.241 13.1785 16.8172C14.2002 16.3933 15.0736 15.6756 15.688 14.7547C16.3024 13.8337 16.6304 12.751 16.6304 11.6434C16.6304 10.1582 16.0413 8.73386 14.9926 7.68365C13.9439 6.63345 12.5216 6.04346 11.0386 6.04346ZM11.0386 15.28C10.3208 15.28 9.61922 15.0669 9.02244 14.6675C8.42566 14.2682 7.96052 13.7006 7.68586 13.0365C7.41119 12.3724 7.33932 11.6417 7.47935 10.9367C7.61937 10.2318 7.965 9.58418 8.47252 9.07592C8.98004 8.56765 9.62665 8.22152 10.3306 8.08129C11.0345 7.94106 11.7642 8.01303 12.4273 8.2881C13.0904 8.56317 13.6572 9.02898 14.056 9.62664C14.4547 10.2243 14.6676 10.9269 14.6676 11.6457C14.6676 12.6096 14.2852 13.534 13.6046 14.2156C12.9241 14.8971 12.001 15.28 11.0386 15.28Z"
+                    />
+                    <path
+                      d="M18.1591 5.82159C18.1591 6.08018 18.0826 6.33295 17.9391 6.54796C17.7956 6.76296 17.5918 6.93054 17.3532 7.0295C17.1147 7.12845 16.8522 7.15435 16.5989 7.1039C16.3457 7.05345 16.113 6.92893 15.9305 6.74608C15.7479 6.56324 15.6236 6.33028 15.5732 6.07666C15.5228 5.82304 15.5487 5.56016 15.6475 5.32126C15.7463 5.08236 15.9136 4.87817 16.1283 4.73451C16.343 4.59084 16.5954 4.51416 16.8536 4.51416C17.1998 4.51416 17.5319 4.65191 17.7767 4.8971C18.0216 5.14229 18.1591 5.47484 18.1591 5.82159Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- youtube -->
+              <li>
+                <a href="#" class="social-icon">
+                  <svg
+                    width="29"
+                    height="21"
+                    viewBox="0 0 29 21"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.839 3.96964C27.6784 3.37638 27.3655 2.83554 26.9315 2.40089C26.4975 1.96624 25.9574 1.6529 25.365 1.49202C23.1702 0.889272 14.3839 0.889272 14.3839 0.889272C10.7144 0.845836 7.04598 1.03943 3.40138 1.46883C2.80969 1.63833 2.27147 1.95738 1.83846 2.39534C1.40545 2.8333 1.09221 3.37544 0.928828 3.96964C0.530179 6.20075 0.336465 8.46374 0.350114 10.7302C0.335699 12.9968 0.529419 15.2598 0.928828 17.4908C1.08947 18.0841 1.40235 18.6249 1.83637 19.0596C2.27039 19.4942 2.81043 19.8076 3.40283 19.9685C5.6222 20.5698 14.3854 20.5698 14.3854 20.5698C18.0548 20.6132 21.7233 20.4196 25.3679 19.9902C25.9596 19.829 26.4989 19.5157 26.9324 19.0813C27.3659 18.647 27.6784 18.1067 27.839 17.514C28.2377 15.2829 28.4314 13.0199 28.4177 10.7534C28.444 8.47875 28.2502 6.20688 27.839 3.96964Z"
+                    />
+                    <path
+                      d="M11.5857 14.9439L18.892 10.729L11.5857 6.51416V14.9439Z"
+                      fill="#262626"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- links -->
+          <div class="menu-container">
+            <ul class="menu-list">
+              <li>
+                <a class="bz-text" href="#">Home</a>
+              </li>
+              <li>
+                <a class="bz-text" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="bz-text" class="bz-text" href="#">Solutions</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- links -->
+          <div class="menu-container">
+            <ul class="menu-list">
+              <li>
+                <a class="bz-text" href="#">Purple Page</a>
+              </li>
+              <li>
+                <a class="bz-text" href="#">Collab</a>
+              </li>
+              <li>
+                <a class="bz-text" href="#">Library</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- newsletter -->
+          <div class="newsletter">
+            <p class="bz-text newsletter-text">Subscribe to our Newsletter</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Name*"
+              />
+              <div class="btn-container text-center text-sm-start">
+                <button type="submit" class="bz-btn bz-btn-secondary">
+                  Subscribe
+                  <img
+                    class="bz-secondary-btn-arrow"
+                    src="./assets/icons/arrow-right.svg"
+                    alt="arrow right"
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- footer bottom -->
+        <div class="footer-bottom">
+          <p class="fb-text">All Rights Reserved @Bizticle 2023</p>
+          <div class="terms-and-conditions">
+            <a href="#">
+              <p class="fb-text">Terms & Conditions</p>
+            </a>
+            <a href="#">
+              <p class="fb-text">Privacy Policy</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    <!-- javscripts -->
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- slick carousel -->
+    <script
+      type="text/javascript"
+      src="./libs/slick-carousel/slick.min.js"
+    ></script>
+    <script src="./scripts/slick-carousel.js"></script>
+    <!-- amcharts -->
+    <script src="./libs/amcharts5/index.js"></script>
+    <script src="./libs/amcharts5/map.js"></script>
+    <script src="./libs/amcharts5/geodata/worldLow.js"></script>
+    <script src="./libs/amcharts5/themes/Animated.js"></script>
+    <script src="./scripts/chart-globe.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

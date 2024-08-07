@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizticle</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
+    <!-- slick carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick-theme.css"
+    />
+    <!-- intl-tel-input CSS -->
+    <link rel="stylesheet" href="./libs/intl-tel-input/css/intlTelInput.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    /> -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.res.css" />
+    <link rel="stylesheet" href="./styles/multi-form.css" />
+  </head>
+  <body>
+    <!-- app starts -->
+    <div id="app">
+      <!-- header starts -->
+      <header>
+        <!-- navbar -->
+        <nav
+          id="navbar"
+          class="navbar navbar-expand-lg bg-body-tertiary sticky"
+        >
+          <div class="container-fluid container">
+            <!-- brand logo -->
+            <a class="navbar-brand" href="/">
+              <img
+                class="img-fluid"
+                src="./assets/images/logo.png"
+                alt="brand logo"
+              />
+            </a>
+
+            <!-- navbar toggler -->
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img src="./assets/icons/toggler.svg" alt="toggler" />
+            </button>
+
+            <!-- collapsible for large devices -->
+            <div class="collapse navbar-collapse navbar-show-content">
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="search-top" role="search">
+                <input
+                  class="form-control search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a href="#" class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <a href="#" class="bz-btn bz-btn-primary" type="submit">Login</a>
+            </div>
+          </div>
+
+          <!-- collapsible for small devices-->
+          <div
+            class="collapse navbar-collapse navbar-show-content navbar-sm"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="search-top" role="search">
+                <input
+                  class="form-control search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <div class="btn-container">
+                <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header ends -->
+
+      <!-- main starts -->
+      <main>
+        <!-- login form section starts -->
+        <section class="login-form-section">
+          <div class="">
+            <form id="multiStepForm">
+              <!-- Step 1:: Personal Information -->
+              <div class="step active">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="form-heading">
+                      <p class="count-breadcrumb">1/10</p>
+                      <div class="form-headline">
+                        A few details, then you can move forward and proceed for
+                        next steps.
+                      </div>
+                      <p class="form-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                    <div class="personal-info-form">
+                      <div class="picture-content">
+                        <div class="row">
+                          <div>
+                            <div class="circle">
+                              <img
+                                class="profile-pic"
+                                src="./assets/images/profile-demo.png"
+                              />
+                            </div>
+                            <div class="p-image">
+                              <svg
+                                class="upload-button"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512"
+                              >
+                                <path
+                                  d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                                />
+                              </svg>
+                              <input
+                                class="file-upload"
+                                type="file"
+                                accept="image/*"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="personal-input-content">
+                        <div class="form-group name-form-group">
+                          <label for="name">Name*</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            required
+                          />
+                        </div>
+                        <div class="form-group phone-form-group">
+                          <label for="phone">Phone Number*</label>
+                          <input type="tel" id="phone" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label for="address">Address*</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="address"
+                            required
+                          />
+                        </div>
+                        <div class="form-group country-form-group">
+                          <label for="country">Country*</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="country"
+                            required
+                          />
+                        </div>
+                        <div class="form-group state-form-group">
+                          <label for="state">State/Province</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="state"
+                            required
+                          />
+                        </div>
+                        <div class="form-group zip-form-group">
+                          <label for="postal-code">Zip/Postal Code*</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="postal-code"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <a
+                      href="./login-page.html"
+                      type="button"
+                      class="btn prev-btn"
+                    >
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </a>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- Step - 2 :: Resume submit -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="resume-container">
+                      <div class="resume-submit-content">
+                        <div class="form-heading">
+                          <p class="count-breadcrumb">2/10</p>
+                          <div class="form-headline">
+                            How would you like to tell us about yourself?
+                          </div>
+                          <p class="form-text">
+                            It has survived not only five centuries, but also
+                            the leap into typesetting, remaining essentially
+                            unchanged It was popularised in the 1960s
+                          </p>
+                        </div>
+                        <div class="resume-btn-container">
+                          <a
+                            class="resume-btn"
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#uploadResume"
+                          >
+                            <svg
+                              width="18"
+                              height="18"
+                              viewBox="0 0 18 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_1171_50)">
+                                <path
+                                  d="M0.689557 9.2537C0.689557 7.5915 0.673926 5.92929 0.693278 4.26858C0.716351 2.22989 2.05611 0.816198 4.08063 0.792389C7.47963 0.750722 10.8786 0.750722 14.2776 0.792389C16.2672 0.815454 17.6427 2.21278 17.6605 4.1979C17.6913 7.57091 17.6913 10.9452 17.6605 14.3207C17.6427 16.3259 16.253 17.7247 14.2546 17.7433C10.8925 17.7753 7.53049 17.7574 4.16845 17.7433C3.46657 17.7433 2.79074 17.5878 2.19455 17.1838C1.23216 16.5312 0.720072 15.6138 0.701464 14.4613C0.673925 12.7247 0.694768 10.9881 0.694768 9.25296L0.689557 9.2537ZM16.9899 9.28421H16.9966C16.9966 7.622 17.0182 5.95906 16.9907 4.29909C16.9624 2.55057 15.8742 1.48435 14.1347 1.45608C12.9935 1.43773 11.8522 1.43004 10.7109 1.43301C8.50331 1.43673 6.2942 1.42557 4.08658 1.46575C2.50344 1.49477 1.37953 2.59447 1.36762 4.13168C1.34231 7.50519 1.33562 10.8794 1.36762 14.2507C1.38251 15.997 2.44538 17.0521 4.20046 17.0669C7.56175 17.0967 10.9238 17.0863 14.2851 17.0617C14.7168 17.0504 15.1409 16.9455 15.5281 16.7544C16.4793 16.2887 16.9624 15.465 16.981 14.4196C17.0167 12.7083 16.9914 10.9963 16.9914 9.28421H16.9899Z"
+                                  fill="#469C99"
+                                />
+                                <path
+                                  d="M9.44282 7.57587V8.4918C9.59168 8.35043 9.67951 8.26412 9.7718 8.1845C10.6724 7.40772 11.6981 7.22766 12.7848 7.67111C13.8715 8.11456 14.2838 9.03421 14.3039 10.1406C14.3292 11.5409 14.3099 12.9419 14.3099 14.3735H12.2317V12.5878C12.2317 11.9925 12.2317 11.3973 12.2317 10.8021C12.2317 9.8787 11.768 9.35117 10.9612 9.34968C10.1328 9.34968 9.57084 9.9226 9.56265 10.805C9.55298 11.8839 9.56265 12.9628 9.56265 14.0431C9.56265 14.151 9.55149 14.2589 9.54479 14.3839H7.53516V7.57587H9.44282Z"
+                                  fill="#469C99"
+                                />
+                                <path
+                                  d="M6.32161 7.59076V14.378H4.22266V7.59076H6.32161Z"
+                                  fill="#469C99"
+                                />
+                                <path
+                                  d="M5.27734 6.56173C4.95725 6.56336 4.64937 6.439 4.42026 6.21554C4.19115 5.99208 4.05921 5.68746 4.05295 5.36754C4.04838 5.12614 4.11572 4.88884 4.24642 4.6858C4.37711 4.48277 4.56525 4.32317 4.78692 4.2273C5.00858 4.13143 5.25377 4.10363 5.49128 4.14742C5.7288 4.19121 5.94793 4.30462 6.1208 4.47323C6.29367 4.64184 6.41248 4.85803 6.46211 5.09431C6.51175 5.3306 6.48998 5.5763 6.39956 5.80018C6.30915 6.02407 6.15418 6.21601 5.95435 6.35162C5.75452 6.48722 5.51886 6.56036 5.27734 6.56173Z"
+                                  fill="#469C99"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1171_50">
+                                  <rect
+                                    width="17"
+                                    height="17"
+                                    fill="white"
+                                    transform="translate(0.683594 0.761139)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            Import from LinkedIn
+                          </a>
+                          <a
+                            class="resume-btn"
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#uploadResume"
+                          >
+                            <svg
+                              width="17"
+                              height="17"
+                              viewBox="0 0 17 17"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_1173_57)">
+                                <path
+                                  d="M8.48087 16.9967C6.63545 16.9967 4.79003 16.9967 2.94462 16.9967C1.20858 16.9967 0.00671061 15.8309 0.00201318 14.1457C-0.000671061 13.1628 -0.000671061 12.1804 0.00201318 11.1984C0.00201318 10.7399 0.264393 10.4413 0.650924 10.4433C1.03746 10.4452 1.29716 10.738 1.2985 11.201C1.2985 12.1723 1.2985 13.1443 1.2985 14.1162C1.2985 15.0882 1.9293 15.7169 2.92985 15.7176C6.63143 15.7215 10.3335 15.7215 14.0359 15.7176C15.0808 15.7176 15.6975 15.1046 15.7001 14.0802C15.7001 13.0866 15.7002 12.0931 15.7049 11.0995C15.7049 10.7622 15.9062 10.5212 16.2175 10.4583C16.3496 10.4257 16.4891 10.438 16.613 10.4931C16.7369 10.5482 16.8379 10.6429 16.8993 10.7616C16.964 10.8872 16.9958 11.0264 16.9919 11.167C17 12.1935 17.0011 13.2196 16.9953 14.2453C16.9832 15.7883 15.7639 16.9856 14.1842 16.9961C12.2844 17.0046 10.3833 16.9974 8.48087 16.9967Z"
+                                  fill="#469C98"
+                                />
+                                <path
+                                  d="M7.84636 2.15678C7.41151 2.57791 7.05047 2.9257 6.69146 3.2761C6.16132 3.79286 5.63454 4.31289 5.10239 4.82703C4.87221 5.04906 4.59909 5.11193 4.30584 4.96129C4.05419 4.8303 3.92602 4.61024 3.97836 4.33581C4.00915 4.18775 4.08273 4.05138 4.19041 3.94284C5.45693 2.69406 6.72859 1.44965 8.0054 0.2096C8.30067 -0.0772702 8.65901 -0.0779251 8.95427 0.2096C10.2306 1.44877 11.5034 2.69144 12.7726 3.9376C13.0618 4.2212 13.0672 4.58601 12.8109 4.84275C12.5424 5.11062 12.1606 5.11324 11.856 4.82048C11.0433 4.03977 10.2407 3.24859 9.43408 2.46264C9.35758 2.38929 9.2784 2.31855 9.13211 2.18298V2.68074C9.13211 5.83588 9.13211 8.99101 9.13211 12.1461C9.13928 12.3194 9.11123 12.4924 9.04957 12.655C8.93012 12.9262 8.68048 13.033 8.38656 12.9878C8.2511 12.974 8.12477 12.9146 8.02926 12.8198C7.93376 12.7251 7.87502 12.6008 7.86314 12.4684C7.84847 12.3272 7.8442 12.1851 7.85038 12.0433C7.85038 8.89954 7.85038 5.75575 7.85038 2.61197L7.84636 2.15678Z"
+                                  fill="#469C98"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1173_57">
+                                  <rect width="17" height="17" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            Upload your resume
+                          </a>
+                          <a
+                            class="resume-btn"
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#uploadResume"
+                          >
+                            Fill out manually (15 min)
+                          </a>
+                        </div>
+                      </div>
+                      <div class="resume-tip-content">
+                        <div class="resume-tip-layout">
+                          <img
+                            class="resume-tip-img"
+                            src="./assets/images/tip-img.png"
+                            alt="resume tip img"
+                          />
+                          <p class="resume-tip-text">
+                            “ Your profile is how you stand out from the crowd.
+                            I's what you use to win work, so let's make it a
+                            good game.”
+                          </p>
+                          <p class="resume-tip-owner">Bizticle Pro Tip</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- /* Step - 3 :: professional role */ -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="professional-rule-container">
+                      <div class="form-heading">
+                        <p class="count-breadcrumb">3/10</p>
+                        <div class="form-headline">
+                          Got it. Now, add a title to tell the world what you
+                          do.
+                        </div>
+                        <p class="form-text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Your professional role</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Software engineer, designer, Management"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- /* Step - 4 :: experience container */ -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="experience-container">
+                      <div class="form-heading">
+                        <p class="count-breadcrumb">4/10</p>
+                        <div class="form-headline">
+                          If you have a relevant work experience, add it here.
+                        </div>
+                        <p class="form-text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn experience-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#experienceModal"
+                      >
+                        <div class="experience-btn-plus">
+                          <svg
+                            class="upload-button"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                            />
+                          </svg>
+                        </div>
+                        <span>Add experience</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- Step 5 :: language selection -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="language-container">
+                      <div class="form-heading">
+                        <p class="count-breadcrumb">5/10</p>
+                        <div class="form-headline">
+                          Looking good. Next, tell us which languages you speak.
+                        </div>
+                        <p class="form-text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                      <div class="language-selection">
+                        <div class="language-type">
+                          <div class="form-group">
+                            <label class="language-label" for="name"
+                              >Language</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="name"
+                              placeholder="English (all profiles include this)"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="proficiency-dropdown">
+                          <p class="language-label">Proficiency</p>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Basic</option>
+                            <option value="1">Intermediate</option>
+                            <option value="2">Advance</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="btn-container">
+                        <div class="btn language-btn">+ Add a language</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- Step 6 :: skill selection -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="skill-container">
+                      <div class="skill-submit-content">
+                        <div class="form-heading">
+                          <p class="count-breadcrumb">6/10</p>
+                          <div class="form-headline">
+                            Nearly there! What work are you here to do?
+                          </div>
+                          <p class="form-text skill-form-text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.
+                          </p>
+                          <a class="why-choose-us" href="#">
+                            Why choosing carefully matters
+                          </a>
+                        </div>
+
+                        <div class="select-skill-container">
+                          <div class="select-skill-content">
+                            <p class="skill-label">Your skills</p>
+                            <div class="skill-tag-container">
+                              <div class="tag-container">
+                                <div class="skill-tag">
+                                  Web Designing
+                                  <svg
+                                    width="7"
+                                    height="7"
+                                    viewBox="0 0 7 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5.67188 0.807129L0.632812 5.84619"
+                                      stroke="#535353"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M0.632812 0.807129L5.67188 5.84619"
+                                      stroke="#535353"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </div>
+                                <div class="skill-tag">
+                                  HTML 5
+                                  <svg
+                                    width="7"
+                                    height="7"
+                                    viewBox="0 0 7 7"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M5.67188 0.807129L0.632812 5.84619"
+                                      stroke="#535353"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                    <path
+                                      d="M0.632812 0.807129L5.67188 5.84619"
+                                      stroke="#535353"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                              <input
+                                class="skill-input"
+                                placeholder="Enter skills here"
+                                type="text"
+                              />
+                            </div>
+                            <div class="max-word-content">
+                              <small>Max 15 skills</small>
+                            </div>
+                          </div>
+                          <div class="skill-tag-content">
+                            <p class="skill-label">Suggested Skills</p>
+                            <div
+                              class="suggested-skill-tag-container tag-container"
+                            >
+                              <div class="skill-tag">+ Development</div>
+                              <div class="skill-tag">+ Marketing</div>
+                              <div class="skill-tag">+ Digital Marketing</div>
+                              <div class="skill-tag">+ Script Writing</div>
+                              <div class="skill-tag">+ App Development</div>
+                              <div class="skill-tag">+ Google Ads</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="resume-tip-content">
+                        <div class="resume-tip-layout">
+                          <img
+                            class="resume-tip-img"
+                            src="./assets/images/tip-img.png"
+                            alt="resume tip img"
+                          />
+                          <p class="resume-tip-text">
+                            “ Your profile is how you stand out from the crowd.
+                            I's what you use to win work, so let's make it a
+                            good game.”
+                          </p>
+                          <p class="resume-tip-owner">Bizticle Pro Tip</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- Step 7 :: about yourself -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="skill-container">
+                      <div class="skill-submit-content">
+                        <div class="form-heading">
+                          <p class="count-breadcrumb">7/10</p>
+                          <div class="form-headline">
+                            Great. Now write a bio to tell the world about
+                            yourself.
+                          </div>
+                          <p class="form-text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. It has survived not only five
+                            centuries, but also the leap into typesetting.
+                          </p>
+                        </div>
+                        <div class="select-skill-container">
+                          <div class="select-skill-content">
+                            <textarea
+                              class="about-yourself-input"
+                              id="aboutYourselfTextArea"
+                              rows="7"
+                              placeholder="Enter bio here"
+                            ></textarea>
+                            <div class="max-word-content">
+                              <small>At least 100 characters</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="about-yourself-content">
+                        <div class="about-yourself-card">
+                          <div class="about-yourself-img-content">
+                            <img
+                              class="about-yourself-img"
+                              src="./assets/images/about-profile.png"
+                              alt="about profile img"
+                            />
+                            <div
+                              class="about-yourself-active-icon-content"
+                            ></div>
+                          </div>
+                          <h5 class="about-yourself-title">Martin G.</h5>
+                          <ul class="about-yourself-specs-list">
+                            <li class="about-yourself-specs-item">
+                              <svg
+                                width="14"
+                                height="13"
+                                viewBox="0 0 14 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M7 1L8.854 4.6204L13 5.20452L10 8.02103L10.708 12L7 10.1204L3.292 12L4 8.02103L1 5.20452L5.146 4.6204L7 1Z"
+                                  stroke="#8B8B8B"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              5.0
+                            </li>
+                            <li class="about-yourself-specs-item">$75.00/hr</li>
+                            <li class="about-yourself-specs-item">
+                              <svg
+                                width="14"
+                                height="13"
+                                viewBox="0 0 14 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12 3.44443H2.22222C1.54721 3.44443 1 3.99163 1 4.66665V10.7778C1 11.4528 1.54721 12 2.22222 12H12C12.675 12 13.2222 11.4528 13.2222 10.7778V4.66665C13.2222 3.99163 12.675 3.44443 12 3.44443Z"
+                                  stroke="#8B8B8B"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M9.55686 12V2.22222C9.55686 1.89807 9.42809 1.58719 9.19888 1.35798C8.96967 1.12877 8.65879 1 8.33464 1H5.89019C5.56604 1 5.25516 1.12877 5.02595 1.35798C4.79674 1.58719 4.66797 1.89807 4.66797 2.22222V12"
+                                  stroke="#8B8B8B"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+
+                              14 Jobs
+                            </li>
+                          </ul>
+                          <p class="about-yourself-text">
+                            Passionate and detail-oriented Frontend Developer
+                            with 7 years of experience in building and
+                            optimizing user-focused web applications. Proficient
+                            in translating design wireframes into high-quality
+                            code and ensuring the technical feasibility of UI/UX
+                            designs.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- Step 8 :: main services -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="skill-container main-services-container">
+                      <div class="skill-submit-content">
+                        <div class="form-heading">
+                          <p class="count-breadcrumb">8/10</p>
+                          <div class="form-headline">
+                            What are the main services you offer?
+                          </div>
+                          <p class="form-text">
+                            It has survived not only five centuries, but also
+                            the leap into typesetting, remaining essentially
+                            unchanged It was popularised in the 1960s
+                          </p>
+                        </div>
+                        <div class="select-skill-container">
+                          <div class="proficiency-dropdown">
+                            <p class="language-label">Select Service</p>
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>
+                                Data Analysis and Testing
+                              </option>
+                              <option value="1">Marketing</option>
+                              <option value="2">Digital Marketing</option>
+                              <option value="3">Script Writing</option>
+                              <option value="4">App Development</option>
+                              <option value="5">Google Ads</option>
+                            </select>
+                          </div>
+                          <div class="skill-tag-content">
+                            <p class="skill-label">Selected Services</p>
+                            <div
+                              class="suggested-skill-tag-container tag-container"
+                            >
+                              <div class="skill-tag">
+                                Data Analysis and Testing
+                                <svg
+                                  width="7"
+                                  height="7"
+                                  viewBox="0 0 7 7"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M5.67188 0.807129L0.632812 5.84619"
+                                    stroke="#535353"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M0.632812 0.807129L5.67188 5.84619"
+                                    stroke="#535353"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <button
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+
+              <!-- Step 9 :: price setup -->
+              <div class="step">
+                <div class="container">
+                  <div class="login-form-container">
+                    <div class="price-setup-container">
+                      <div class="form-heading">
+                        <p class="count-breadcrumb">9/10</p>
+                        <div class="form-headline">
+                          Now, let's set your hourly rate.
+                        </div>
+                        <p class="form-text">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                      </div>
+                      <div class="price-rate-selection">
+                        <div class="price-rate-type-content">
+                          <div class="form-group">
+                            <h6 class="price-rate-label">Hourly Rate</h6>
+                            <p class="price-rate-text">
+                              Total amount the client will see.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="price-input-content">
+                          <input type="text" placeholder="$0.00" />
+                          <span>/hr </span>
+                        </div>
+                      </div>
+                      <div class="price-rate-selection">
+                        <div class="price-rate-type-content">
+                          <div class="form-group">
+                            <h6 class="price-rate-label">Hourly Rate</h6>
+                            <p class="price-rate-text">
+                              Total amount the client will see.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="price-input-content">
+                          <input
+                            class="bg-skyblue"
+                            type="text"
+                            placeholder="$0.00"
+                          />
+                          <span>/hr </span>
+                        </div>
+                      </div>
+                      <div class="price-rate-selection">
+                        <div class="price-rate-type-content">
+                          <div class="form-group">
+                            <h6 class="price-rate-label">Hourly Rate</h6>
+                            <p class="price-rate-text">
+                              Total amount the client will see.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="price-input-content">
+                          <input type="text" placeholder="$0.00" />
+                          <span>/hr </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- form button container starts -->
+                <div class="form-btn-container container">
+                  <div>
+                    <!-- Back button -->
+                    <button type="button" class="btn prev-btn">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.70312 8.59991L1.95312 4.84991L5.70312 1.09991"
+                          stroke="#8B8B8B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      Back
+                    </button>
+                  </div>
+                  <div class="next-btn-container">
+                    <!-- Skip button -->
+                    <button type="button" class="btn skip-btn">
+                      Skip for now
+                    </button>
+                    <!-- Next button -->
+                    <a
+                      href="./profile.html"
+                      type="button"
+                      class="bz-btn bz-btn-secondary next-btn"
+                    >
+                      Continue
+                    </a>
+                  </div>
+                </div>
+                <!-- form button container -->
+              </div>
+            </form>
+
+            <!-- Progress bar starts -->
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 10%"
+                id="progressBar"
+              ></div>
+            </div>
+            <!-- Progress bar  ends -->
+          </div>
+        </section>
+        <!-- login form section ends -->
+      </main>
+      <!-- main ends -->
+
+      <!-- Modal::  resume upload -->
+      <div
+        class="modal fade resume-modal"
+        id="uploadResume"
+        tabindex="-1"
+        aria-labelledby="uploadResumeLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="uploadResumeLabel">
+                Upload your LinkedIn profile
+              </h1>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body upload-profile-modal">
+              <p class="intruction-text">
+                Step 1: If you haven't already, save your LinkedIn profile as a
+                PDF. Here's how:
+              </p>
+              <img
+                src="./assets/images/linked-profile-demo.png"
+                alt="demo image"
+                class="linkedin-profile-demo-img"
+              />
+              <p class="intruction-text">
+                Step 2: Come back here to upload it.
+              </p>
+              <div class="btn-container">
+                <form
+                  class="upload-resume-btn-container"
+                  id="upload_form"
+                  enctype="multipart/form-data"
+                  method="post"
+                >
+                  <input
+                    type="file"
+                    name="resume_file"
+                    class="resume-file-input"
+                    id="resume_file"
+                    onchange="uploadFile()"
+                  />
+                  <label for="file" class="upload-btn">
+                    <svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1173_57)">
+                        <path
+                          d="M8.48087 16.9967C6.63545 16.9967 4.79003 16.9967 2.94462 16.9967C1.20858 16.9967 0.00671061 15.8309 0.00201318 14.1457C-0.000671061 13.1628 -0.000671061 12.1804 0.00201318 11.1984C0.00201318 10.7399 0.264393 10.4413 0.650924 10.4433C1.03746 10.4452 1.29716 10.738 1.2985 11.201C1.2985 12.1723 1.2985 13.1443 1.2985 14.1162C1.2985 15.0882 1.9293 15.7169 2.92985 15.7176C6.63143 15.7215 10.3335 15.7215 14.0359 15.7176C15.0808 15.7176 15.6975 15.1046 15.7001 14.0802C15.7001 13.0866 15.7002 12.0931 15.7049 11.0995C15.7049 10.7622 15.9062 10.5212 16.2175 10.4583C16.3496 10.4257 16.4891 10.438 16.613 10.4931C16.7369 10.5482 16.8379 10.6429 16.8993 10.7616C16.964 10.8872 16.9958 11.0264 16.9919 11.167C17 12.1935 17.0011 13.2196 16.9953 14.2453C16.9832 15.7883 15.7639 16.9856 14.1842 16.9961C12.2844 17.0046 10.3833 16.9974 8.48087 16.9967Z"
+                          fill="#469C98"
+                        />
+                        <path
+                          d="M7.84636 2.15678C7.41151 2.57791 7.05047 2.9257 6.69146 3.2761C6.16132 3.79286 5.63454 4.31289 5.10239 4.82703C4.87221 5.04906 4.59909 5.11193 4.30584 4.96129C4.05419 4.8303 3.92602 4.61024 3.97836 4.33581C4.00915 4.18775 4.08273 4.05138 4.19041 3.94284C5.45693 2.69406 6.72859 1.44965 8.0054 0.2096C8.30067 -0.0772702 8.65901 -0.0779251 8.95427 0.2096C10.2306 1.44877 11.5034 2.69144 12.7726 3.9376C13.0618 4.2212 13.0672 4.58601 12.8109 4.84275C12.5424 5.11062 12.1606 5.11324 11.856 4.82048C11.0433 4.03977 10.2407 3.24859 9.43408 2.46264C9.35758 2.38929 9.2784 2.31855 9.13211 2.18298V2.68074C9.13211 5.83588 9.13211 8.99101 9.13211 12.1461C9.13928 12.3194 9.11123 12.4924 9.04957 12.655C8.93012 12.9262 8.68048 13.033 8.38656 12.9878C8.2511 12.974 8.12477 12.9146 8.02926 12.8198C7.93376 12.7251 7.87502 12.6008 7.86314 12.4684C7.84847 12.3272 7.8442 12.1851 7.85038 12.0433C7.85038 8.89954 7.85038 5.75575 7.85038 2.61197L7.84636 2.15678Z"
+                          fill="#469C98"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1173_57">
+                          <rect width="17" height="17" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Upload your LinkedIn PDF
+                  </label>
+                  <br />
+                </form>
+              </div>
+              <div class="resume-progress-bar-container">
+                <progress
+                  id="resumeProgressBar"
+                  value="0"
+                  max="100"
+                  style="width: 100%"
+                ></progress>
+                <h3 id="status"></h3>
+                <p id="loaded_n_total"></p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="bz-btn bz-btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal:: work experience -->
+      <div
+        class="modal fade work-xp-modal"
+        id="experienceModal"
+        tabindex="-1"
+        aria-labelledby="experienceModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">
+                Add work experience
+              </h1>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="title">Title*</label>
+                <input
+                  type="text"
+                  placeholder="Ex: Software engineer"
+                  class="form-control"
+                  id="title"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="company">Company*</label>
+                <input
+                  type="text"
+                  placeholder="Ex: Microsoft"
+                  class="form-control"
+                  id="company"
+                  required
+                />
+              </div>
+              <div class="location-content form-group">
+                <label for="location">Location*</label>
+                <div class="location-form-group">
+                  <input
+                    type="text"
+                    placeholder="Ex: London"
+                    class="form-control"
+                    id="location"
+                    required
+                  />
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>UK</option>
+                    <option value="1">USA</option>
+                    <option value="2">Canada</option>
+                    <option value="3">Kenya</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  I am currently working in this role
+                </label>
+              </div>
+              <div class="date-content">
+                <div class="date-group-content">
+                  <div class="start-date-content">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Start date
+                    </label>
+                    <div class="start-date-form-group">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Month</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                      </select>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Year</option>
+                        <option value="1">2024</option>
+                        <option value="2">2025</option>
+                        <option value="3">2026</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="end-date-content">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      End date
+                    </label>
+                    <div class="end-date-form-group">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Month</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                      </select>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Year</option>
+                        <option value="1">2024</option>
+                        <option value="2">2025</option>
+                        <option value="3">2026</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Description</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="4"
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">
+                Cancel
+              </button>
+              <button type="button" class="bz-btn bz-btn-secondary">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- app ends -->
+
+    <!-- javscripts -->
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- slick carousel -->
+    <script
+      type="text/javascript"
+      src="./libs/slick-carousel/slick.min.js"
+    ></script>
+    <script src="./scripts/slick-carousel.js"></script>
+    <!-- amcharts -->
+    <script src="./libs/amcharts5/index.js"></script>
+    <script src="./libs/amcharts5/map.js"></script>
+    <script src="./libs/amcharts5/geodata/worldLow.js"></script>
+    <script src="./libs/amcharts5/themes/Animated.js"></script>
+    <script src="./scripts/chart-globe.js"></script>
+    <!-- intl-tel-input JS -->
+    <script src="./libs/intl-tel-input/js/intlTelInput.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizticle</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png" />
+    <!-- custom fonts -->
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
+    <!-- slick carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/slick-carousel/slick-theme.css"
+    />
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="./libs/magnific-popup/magnific-popup.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.res.css" />
+  </head>
+  <body>
+    <!-- app starts -->
+    <div id="app">
+      <!-- header starts -->
+      <header>
+        <!-- navbar -->
+        <nav
+          id="navbar"
+          class="navbar navbar-expand-lg bg-body-tertiary sticky"
+        >
+          <div class="container-fluid container">
+            <!-- brand logo -->
+            <a class="navbar-brand" href="/">
+              <img
+                class="img-fluid"
+                src="./assets/images/logo.png"
+                alt="brand logo"
+              />
+            </a>
+
+            <!-- navbar toggler -->
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img src="./assets/icons/toggler.svg" alt="toggler" />
+            </button>
+
+            <!-- collapsible for large devices -->
+            <div class="collapse navbar-collapse navbar-show-content">
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="search-top" role="search">
+                <input
+                  class="form-control search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a href="#" class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <a href="#" class="bz-btn bz-btn-primary" type="submit">Login</a>
+            </div>
+          </div>
+
+          <!-- collapsible for small devices-->
+          <div
+            class="collapse navbar-collapse navbar-show-content navbar-sm"
+            id="navbarSupportedContent"
+          >
+            <div class="container">
+              <!-- menu links -->
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Freelancers
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    For Business
+                    <img src="./assets/icons/arrow-down.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown-menu border-0">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Explore </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Why Bizticle</a>
+                </li>
+              </ul>
+              <!-- search bar -->
+              <form class="search-top" role="search">
+                <input
+                  class="form-control search-bar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a class="search-icon" type="submit">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </a>
+              </form>
+              <!-- login button -->
+              <div class="btn-container">
+                <a class="bz-btn bz-btn-primary" type="submit">Login</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header ends -->
+
+      <!-- main starts -->
+      <main>
+        <!-- get started starts -->
+        <section class="get-started">
+          <div class="container">
+            <div class="get-started-container">
+              <div class="get-started-text-container">
+                <h3 class="get-started-headline">
+                  Hey John, Ready for your next big opportunity?
+                </h3>
+                <ul class="starting-requirement-list">
+                  <li
+                    class="starting-requirement-list-item first-requirement-list-item"
+                  >
+                    <svg
+                      width="24"
+                      height="21"
+                      viewBox="0 0 24 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="10.9668"
+                        y="10.864"
+                        width="2.68563"
+                        height="3.34518"
+                        fill="#72D9D4"
+                        stroke="#4C6563"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M14.36 12.6207C14.36 13.1841 14.3511 13.6967 14.36 14.2084C14.3689 14.6079 14.1716 14.8071 13.8028 14.8108C12.811 14.8234 11.8192 14.8225 10.8275 14.8108C10.44 14.8108 10.2303 14.6115 10.2418 14.1876C10.256 13.6759 10.2418 13.1641 10.2418 12.608C9.29535 12.3888 8.36488 12.1714 7.43442 11.9586C5.7059 11.5646 3.9765 11.176 2.24976 10.7811C1.36729 10.5783 0.926494 10.0031 0.923828 9.07202C0.923828 8.121 0.923828 7.16998 0.923828 6.21986C0.923828 4.81507 1.47215 4.26347 2.8683 4.26347H20.2788C20.8555 4.26347 21.4341 4.25623 22.0108 4.26347C23.0479 4.28068 23.6665 4.9156 23.6709 5.96354C23.6753 7.01147 23.6753 8.07662 23.6709 9.13361C23.6709 9.99043 23.2017 10.5828 22.3734 10.7757C19.8537 11.3536 17.3336 11.9272 14.8133 12.4966C14.6764 12.5337 14.5351 12.5745 14.36 12.6207ZM14.3885 11.4849C14.4815 11.4946 14.5753 11.4946 14.6684 11.4849C17.1443 10.9203 19.6205 10.3554 22.097 9.79027C22.4783 9.69969 22.6409 9.49319 22.6365 9.09557C22.6249 8.07028 22.6365 7.04408 22.6311 6.01607C22.6311 5.47807 22.4943 5.34039 21.9788 5.34039C15.5251 5.34039 9.07169 5.34039 2.61857 5.34039C2.12535 5.34039 1.98138 5.48259 1.97782 5.98346C1.96982 7.00876 1.98493 8.03495 1.97072 9.06296C1.96361 9.50224 2.14223 9.70875 2.56614 9.80114C4.55593 10.2386 6.54128 10.7005 8.52751 11.1543L10.1938 11.5329C10.3209 10.7114 10.3716 10.6127 10.7999 10.6072C11.8068 10.5955 12.8128 10.6 13.8215 10.6072C14.1521 10.6072 14.344 10.7811 14.36 11.1317C14.3636 11.244 14.3778 11.3608 14.3885 11.4849ZM11.2878 13.7429H13.3194V11.6887H11.2878V13.7429Z"
+                        fill="#4C6563"
+                        stroke="#4C6563"
+                        stroke-width="0.2"
+                      />
+                      <path
+                        d="M12.3061 20.6174C9.29989 20.6174 6.29402 20.6174 3.28845 20.6174C2.29756 20.6174 1.75457 20.2705 1.52528 19.4979C1.47974 19.3397 1.45698 19.1756 1.45774 19.0107C1.453 16.7765 1.453 14.5424 1.45774 12.3082C1.45774 12.2177 1.43286 12.0899 1.47996 12.0437C1.62659 11.9025 1.80077 11.6987 1.96607 11.6978C2.13137 11.6969 2.33488 11.8871 2.43353 12.0501C2.51529 12.185 2.47707 12.4015 2.47707 12.5818C2.47707 14.6191 2.47707 16.6561 2.47707 18.6927C2.47707 19.4355 2.60327 19.5604 3.32933 19.5604H21.2694C21.9982 19.5604 22.1262 19.4355 22.127 18.6982C22.127 16.6766 22.127 14.6538 22.127 12.6298C22.127 12.4785 22.127 12.3282 22.1377 12.1769C22.1555 11.8291 22.3306 11.6498 22.6789 11.6697C23.0095 11.6887 23.1455 11.8925 23.1455 12.2086C23.1455 13.2804 23.1455 14.3516 23.1455 15.4221C23.1455 16.5996 23.1517 17.7771 23.1455 18.9545C23.1384 19.9191 22.6123 20.4943 21.6711 20.5948C21.4938 20.6097 21.3158 20.6154 21.1379 20.612L12.3061 20.6174Z"
+                        fill="#4C6563"
+                        stroke="#4C6563"
+                        stroke-width="0.2"
+                      />
+                      <path
+                        d="M12.3067 0.579865C13.0923 0.579865 13.877 0.571714 14.6617 0.579865C15.9059 0.594357 16.5591 1.34431 16.4445 2.61686C16.4142 2.95651 16.2907 3.21193 15.9112 3.20106C15.5318 3.19019 15.4153 2.95561 15.4073 2.59875C15.386 1.68214 15.33 1.63323 14.4298 1.63323H10.1249C9.29756 1.63323 9.22913 1.71747 9.18469 2.55618C9.17403 2.75544 9.07983 3.01357 8.93586 3.1277C8.65858 3.34779 8.25334 3.15034 8.19646 2.78714C8.01872 1.64863 8.46307 0.613377 9.81922 0.582582C10.6484 0.564468 11.4775 0.579865 12.3067 0.579865Z"
+                        fill="#4C6563"
+                        stroke="#4C6563"
+                        stroke-width="0.2"
+                      />
+                    </svg>
+                    <span class="starting-requirement-list-text">
+                      Answer a few question and star building your profile
+                    </span>
+                  </li>
+                  <hr />
+                  <li
+                    class="starting-requirement-list-item second-requirement-list-item"
+                  >
+                    <svg
+                      width="23"
+                      height="22"
+                      viewBox="0 0 23 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.339 0.150514C17.3264 0.150514 22.155 5.03082 22.1491 11.0716C22.144 17.0243 17.2543 21.8546 11.2381 21.8495C5.26425 21.8453 0.442444 16.9556 0.449226 10.9072C0.456008 4.98165 5.34988 0.147971 11.339 0.150514ZM17.8062 17.967C20.3349 15.7705 21.7176 11.6727 20.3222 7.79437C18.8871 3.80502 15.0664 1.24661 10.8007 1.43057C6.75962 1.60435 3.15259 4.51795 2.06073 8.45728C0.984983 12.339 2.6143 16.1715 4.79716 17.9517C5.44482 15.9307 6.73844 14.484 8.67801 13.6114C5.94836 11.6015 6.13486 8.25807 7.81418 6.46685C9.64101 4.52219 12.6012 4.39503 14.4993 6.18032C15.4758 7.09839 16.004 8.23095 16.0192 9.55762C16.0396 11.2531 15.2944 12.5907 13.8999 13.6029C15.8607 14.4837 17.1484 15.9189 17.8062 17.967ZM10.8888 20.5796C13.0556 20.5796 14.7883 20.0778 16.3041 19.1733C16.655 18.9639 16.7033 18.7613 16.5991 18.3959C15.8794 15.8706 13.66 14.2785 10.9719 14.3811C8.61782 14.471 6.47904 16.2461 5.95515 18.5298C5.89242 18.8037 5.94327 18.9537 6.1925 19.1097C7.75823 20.0718 9.45197 20.5601 10.8888 20.5796ZM11.2788 6.17947C9.39687 6.19219 7.83283 7.76724 7.83707 9.64408C7.84787 10.5566 8.21539 11.4286 8.861 12.0736C9.5066 12.7186 10.379 13.0852 11.2915 13.0951C13.1845 13.0994 14.7807 11.493 14.7544 9.60933C14.7282 7.72571 13.1582 6.16675 11.2822 6.17947H11.2788Z"
+                        fill="#4C6563"
+                      />
+                    </svg>
+
+                    <span class="starting-requirement-list-text"
+                      >Apply for open roles or list services for clients to
+                      buy</span
+                    >
+                  </li>
+                  <hr />
+                  <li
+                    class="starting-requirement-list-item third-requirement-list-item"
+                  >
+                    <svg
+                      width="31"
+                      height="31"
+                      viewBox="0 0 31 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="15.2429"
+                        cy="9.85998"
+                        r="1.75366"
+                        fill="#72D9D4"
+                      />
+                      <path
+                        d="M20.0256 20.2868C19.874 20.7441 19.7409 21.1666 19.5933 21.5847C19.325 22.345 18.8107 22.7182 18.0156 22.7161C16.1658 22.7127 14.3175 22.7032 12.4708 22.6876C11.7174 22.6782 11.2036 22.3055 10.9561 21.5964C10.8051 21.1616 10.6726 20.72 10.515 20.2277C9.83133 20.5709 9.15907 20.9079 8.48806 21.2462C8.18299 21.4009 7.88543 21.5708 7.57349 21.7084C6.82533 22.04 6.03561 21.5805 6.05864 20.7721C6.09971 19.2699 6.1958 17.7685 6.29253 16.2678C6.41052 14.4388 7.48827 13.353 9.12286 12.7431C9.50885 12.5989 9.61499 12.3742 9.64728 11.991C9.96202 8.27025 11.2781 4.94674 13.6548 2.05113C13.8567 1.81202 14.0732 1.58557 14.3029 1.37306C14.9468 0.760746 15.8382 0.762058 16.4549 1.40537C18.0616 3.069 19.1753 5.03571 19.9616 7.1969C20.5401 8.77953 20.8851 10.438 20.9857 12.12C21.0062 12.4611 21.1261 12.6433 21.4404 12.784C21.8846 12.99 22.3165 13.2215 22.7338 13.4776C23.4523 13.8993 23.885 14.531 24.0834 15.3367C24.5403 17.197 24.5245 19.0884 24.4745 20.981C24.4542 21.7387 23.616 22.1204 22.8897 21.7543C22.0018 21.3064 21.1242 20.837 20.2421 20.3771C20.1859 20.3509 20.1303 20.3316 20.0256 20.2868ZM15.0409 2.43513C13.6628 3.95371 12.5965 5.72834 11.9028 7.65813C10.2707 12.1833 10.6613 16.6737 12.1724 21.1349C12.2148 21.2604 12.4513 21.3964 12.5993 21.3984C14.3724 21.4256 16.1476 21.4219 17.9188 21.4409C18.1807 21.4435 18.3216 21.3594 18.4083 21.1023C19.4677 17.9926 20.0169 14.8177 19.645 11.5262C19.2665 8.17081 18.0219 5.18176 15.8296 2.59851C15.4233 2.11948 15.3417 2.11211 15.0371 2.43132L15.0409 2.43513ZM9.47389 14.0196C8.51805 14.3868 7.73021 14.9364 7.62497 16.1144C7.55862 16.8562 7.45307 17.5939 7.39937 18.3357C7.35178 18.9946 7.34908 19.657 7.32514 20.3945L10.1088 18.9819L9.47389 14.0196ZM23.2061 20.4653C23.2132 18.9211 23.1611 17.4583 22.935 15.9951C22.7622 14.891 21.9914 14.4392 21.1398 14.0712L20.45 19.0344C21.3075 19.4797 22.2243 19.9543 23.2023 20.4615L23.2061 20.4653Z"
+                        fill="#4C6563"
+                      />
+                      <path
+                        d="M15.227 27.3043C15.8747 26.5423 16.382 25.6714 16.7253 24.732C16.7817 24.5792 16.823 24.42 16.8782 24.2659C17.0135 23.894 17.2856 23.7657 17.6546 23.8447C17.7397 23.8617 17.8202 23.8969 17.8903 23.9481C17.9604 23.9992 18.0186 24.065 18.0607 24.1409C18.1029 24.2167 18.1281 24.3009 18.1345 24.3874C18.1409 24.474 18.1284 24.5609 18.0979 24.6421C17.8261 25.3607 17.5523 26.0925 17.1662 26.7529C16.7719 27.4266 16.2646 28.0396 15.7649 28.6438C15.4066 29.0778 15.0651 29.0546 14.675 28.6377C13.6528 27.5508 12.8899 26.2467 12.4432 24.8231C12.2795 24.3042 12.4198 23.9462 12.8095 23.8235C13.1992 23.7009 13.5182 23.9214 13.6725 24.4282C13.9906 25.468 14.5116 26.391 15.227 27.3043Z"
+                        fill="#4C6563"
+                      />
+                      <path
+                        d="M17.2495 7.95372C17.7399 8.46641 18.0095 9.15113 18.0002 9.86056C17.9909 10.57 17.7035 11.2474 17.1998 11.7471C16.6961 12.2467 16.0164 12.5287 15.3069 12.5323C14.5974 12.5359 13.9149 12.2608 13.4062 11.7662C12.9157 11.2535 12.6462 10.5688 12.6554 9.85939C12.6647 9.14996 12.9522 8.47253 13.4559 7.97287C13.9596 7.47322 14.6393 7.19126 15.3488 7.18768C16.0582 7.1841 16.7408 7.45918 17.2495 7.95372ZM14.3343 10.8586C14.5317 11.053 14.7822 11.1845 15.0542 11.2367C15.3262 11.2889 15.6076 11.2594 15.8629 11.1519C16.1182 11.0445 16.336 10.8638 16.4887 10.6327C16.6415 10.4017 16.7224 10.1306 16.7214 9.85361C16.7203 9.57662 16.6372 9.30616 16.4827 9.0763C16.3281 8.84644 16.109 8.66748 15.8529 8.56198C15.5968 8.45648 15.3152 8.42916 15.0435 8.48346C14.7719 8.53776 14.5225 8.67125 14.3266 8.86711C14.1937 8.99691 14.0883 9.15207 14.0165 9.32341C13.9448 9.49474 13.9081 9.67876 13.9089 9.86451C13.9096 10.0503 13.9476 10.234 14.0207 10.4048C14.0938 10.5755 14.2004 10.7299 14.3343 10.8586Z"
+                        fill="#4C6563"
+                      />
+                    </svg>
+
+                    <span class="starting-requirement-list-text"
+                      >Get paid safely and know we're there to help</span
+                    >
+                  </li>
+                  <hr />
+                </ul>
+                <div class="btn-container get-started-btn-container">
+                  <a href="./login-form.html" class="bz-btn bz-btn-secondary"
+                    >Get Started</a
+                  >
+                </div>
+                <p class="get-started-text">
+                  It only takes 5-10 minutes and you can edit it later. We'll
+                  save as you go.
+                </p>
+              </div>
+              <div class="get-started-vdo-content">
+                <div class="get-started-vdo-bg-layer">
+                  <a
+                    class="get-started-img-link"
+                    href="https://www.youtube.com/watch?v=ZVO8Wt_PCgE"
+                  >
+                    <img
+                      class="get-started-img"
+                      src="./assets/images/get-started-img.png"
+                      alt="get started"
+                    /> </a
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- get started ends -->
+      </main>
+      <!-- main ends -->
+    </div>
+    <!-- app ends -->
+
+    <!-- javscripts -->
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- slick carousel -->
+    <script
+      type="text/javascript"
+      src="./libs/slick-carousel/slick.min.js"
+    ></script>
+    <script src="./scripts/slick-carousel.js"></script>
+    <!-- amcharts -->
+    <script src="./libs/amcharts5/index.js"></script>
+    <script src="./libs/amcharts5/map.js"></script>
+    <script src="./libs/amcharts5/geodata/worldLow.js"></script>
+    <script src="./libs/amcharts5/themes/Animated.js"></script>
+    <script src="./scripts/chart-globe.js"></script>
+    <script src="./libs/magnific-popup/query.magnific-popup.js"></script>
+    <script src="./scripts/multi-step.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

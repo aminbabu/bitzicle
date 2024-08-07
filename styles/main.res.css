@@ -125,6 +125,33 @@
   .category-cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* login form */
+  .progress {
+    bottom: 97px;
+  }
+  .form-btn-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .form-btn-container,
+  .next-btn-container {
+    flex-direction: row;
+  }
+  .resume-modal .modal-content {
+    padding: 1.875rem 1.25rem 1.6875rem 2.6875rem;
+  }
+
+  .work-xp-modal .modal-content {
+    padding: 2rem 2.6875rem 1.25rem;
+  }
+
+  .resume-modal .modal-title,
+  .work-xp-modal .modal-title {
+    font-size: 1.625rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
@@ -257,6 +284,69 @@
 
   .selection-card-container {
     flex-direction: row;
+  }
+
+  /* get started page */
+  .get-started-container {
+    padding-block: 83px;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .get-started-text-container {
+    width: 60%;
+  }
+  .get-started-vdo-content {
+    width: 40%;
+  }
+
+  /* Step - 2 :: Resume submit */
+  .resume-tip-layout,
+  .resume-btn-container {
+    margin-inline: 0;
+  }
+
+  .language-type,
+  .proficiency-dropdown {
+    grid-column: span 6 / span 6;
+  }
+
+  /* Step 9 :: price setup */
+  .price-rate-selection {
+    max-width: 924px;
+    flex-direction: row;
+  }
+  .price-input-content {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    width: 40%;
+  }
+
+  /* profile section */
+  .profile-info {
+    grid-column: span 5 / span 5;
+    border-radius: 0;
+  }
+  .profile-services-review-container {
+    grid-column: span 7 / span 7;
+  }
+
+  .profile-services-container,
+  .profile-reviews-container {
+    margin-left: 27px;
+    margin-right: 84px;
+  }
+  .profile-services-review-container hr {
+    display: block;
+    border: 11px solid #fff;
+    opacity: 1;
+  }
+  .location-form-group,
+  .date-group-content,
+  .start-date-form-group,
+  .end-date-form-group {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 992px) {
@@ -460,6 +550,95 @@
     filter: drop-shadow(#00000015 0px 4px 10px);
     padding-block: 0.635rem;
   }
+
+  /* get started page */
+  .get-started-container {
+    gap: 6rem;
+  }
+  .get-started-headline {
+    font-size: 1.625rem;
+    margin-bottom: 4.1875rem;
+  }
+
+  .starting-requirement-list-item,
+  .get-started-text {
+    font-size: 0.875rem;
+  }
+
+  .starting-requirement-list hr {
+    margin-block: 1.25rem;
+  }
+
+  .get-started-btn-container {
+    margin-bottom: 1.5rem;
+  }
+
+  /* login form */
+  .login-form-container {
+    max-width: 88%;
+    margin-inline: auto;
+  }
+  .count-breadcrumb,
+  .form-text {
+    font-size: 0.875rem;
+  }
+  .form-headline {
+    font-size: 1.625rem;
+  }
+
+  /* Step - 1 :: Personal Information */
+  .personal-info-form {
+    flex-direction: row;
+    align-items: start;
+    gap: 3.75rem;
+    max-width: 88%;
+  }
+  .personal-input-content {
+    column-gap: 1.25rem;
+  }
+
+  .name-form-group,
+  .phone-form-group {
+    max-width: 370px;
+  }
+  .country-form-group,
+  .state-form-group,
+  .zip-form-group {
+    grid-column: span 4 / span 4;
+  }
+  /* Step - 2 :: Resume submit */
+  .resume-container {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .resume-btn-container {
+    padding-bottom: 59px;
+  }
+
+  .language-type {
+    grid-column: span 7 / span 7;
+  }
+  .proficiency-dropdown {
+    grid-column: span 5 / span 5;
+  }
+  /* Step - 2 :: Resume submit */
+  .skill-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* profile section */
+
+  .profile-info {
+    grid-column: span 3 / span 3;
+  }
+  .profile-services-review-container {
+    grid-column: span 9 / span 9;
+  }
+  .profile-services-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (min-width: 1200px) {
   /* hero  */
@@ -495,6 +674,19 @@
   .business-card-container,
   .category-cards-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .get-started-container {
+    padding-block: 83px;
+    gap: 7.8125rem;
+    max-width: 88%;
+    margin-inline: auto;
+  }
+
+  /* profile section */
+
+  .profile-services-card-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (min-width: 1370px) {
