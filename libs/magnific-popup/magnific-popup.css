@@ -63,8 +63,7 @@
   cursor: progress;
 }
 
-.mfp-zoom-out-cur,
-.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
   cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
@@ -99,7 +98,7 @@
 }
 
 .mfp-preloader {
-  color: #ccc;
+  color: #CCC;
   position: absolute;
   top: 50%;
   width: auto;
@@ -110,10 +109,10 @@
   z-index: 1044;
 }
 .mfp-preloader a {
-  color: #ccc;
+  color: #CCC;
 }
 .mfp-preloader a:hover {
-  color: #fff;
+  color: #FFF;
 }
 
 .mfp-s-ready .mfp-preloader {
@@ -124,8 +123,7 @@
   display: none;
 }
 
-button.mfp-close,
-button.mfp-arrow {
+button.mfp-close, button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
   background: transparent;
@@ -154,13 +152,12 @@ button::-moz-focus-inner {
   text-align: center;
   opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #fff;
+  color: #FFF;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace;
 }
-.mfp-close:hover,
-.mfp-close:focus {
+.mfp-close:hover, .mfp-close:focus {
   opacity: 1;
 }
 .mfp-close:active {
@@ -173,7 +170,7 @@ button::-moz-focus-inner {
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-  color: #fff;
+  color: #FFF;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -184,7 +181,7 @@ button::-moz-focus-inner {
   position: absolute;
   top: 0;
   right: 0;
-  color: #ccc;
+  color: #CCC;
   font-size: 12px;
   line-height: 18px;
   white-space: nowrap;
@@ -204,12 +201,10 @@ button::-moz-focus-inner {
 .mfp-arrow:active {
   margin-top: -54px;
 }
-.mfp-arrow:hover,
-.mfp-arrow:focus {
+.mfp-arrow:hover, .mfp-arrow:focus {
   opacity: 1;
 }
-.mfp-arrow:before,
-.mfp-arrow:after {
+.mfp-arrow:before, .mfp-arrow:after {
   content: "";
   display: block;
   width: 0;
@@ -236,23 +231,23 @@ button::-moz-focus-inner {
   left: 0;
 }
 .mfp-arrow-left:after {
-  border-right: 17px solid #fff;
+  border-right: 17px solid #FFF;
   margin-left: 31px;
 }
 .mfp-arrow-left:before {
   margin-left: 25px;
-  border-right: 27px solid #3f3f3f;
+  border-right: 27px solid #3F3F3F;
 }
 
 .mfp-arrow-right {
   right: 0;
 }
 .mfp-arrow-right:after {
-  border-left: 17px solid #fff;
+  border-left: 17px solid #FFF;
   margin-left: 39px;
 }
 .mfp-arrow-right:before {
-  border-left: 27px solid #3f3f3f;
+  border-left: 27px solid #3F3F3F;
 }
 
 .mfp-iframe-holder {
@@ -316,7 +311,7 @@ img.mfp-img {
   background: #444;
 }
 .mfp-figure small {
-  color: #bdbdbd;
+  color: #BDBDBD;
   display: block;
   font-size: 12px;
   line-height: 14px;
@@ -337,7 +332,7 @@ img.mfp-img {
 .mfp-title {
   text-align: left;
   line-height: 18px;
-  color: #f3f3f3;
+  color: #F3F3F3;
   word-wrap: break-word;
   padding-right: 36px;
 }
@@ -350,11 +345,10 @@ img.mfp-img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape),
-  screen and (max-height: 300px) {
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
-     * Remove all paddings around the image on small screen
-     */
+   * Remove all paddings around the image on small screen
+   */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0;

@@ -9,6 +9,7 @@
   .hero-text-container {
     gap: 2.5rem;
   }
+
   .hero-slogan {
     font-size: 2.5rem;
   }
@@ -120,7 +121,6 @@
   }
 
   /* business cards */
-
   .business-card-container,
   .category-cards-container {
     grid-template-columns: repeat(2, 1fr);
@@ -130,18 +130,17 @@
   .progress {
     bottom: 97px;
   }
+
   .form-btn-container {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
   }
+
   .form-btn-container,
   .next-btn-container {
     flex-direction: row;
-  }
-  .resume-modal .modal-content {
-    padding: 1.875rem 1.25rem 1.6875rem 2.6875rem;
   }
 
   .work-xp-modal .modal-content {
@@ -177,6 +176,7 @@
     padding-top: 60px;
     padding-bottom: 70px;
   }
+
   .hero-slogan {
     font-size: 2.875rem;
   }
@@ -296,6 +296,7 @@
   .get-started-text-container {
     width: 60%;
   }
+
   .get-started-vdo-content {
     width: 40%;
   }
@@ -316,6 +317,7 @@
     max-width: 924px;
     flex-direction: row;
   }
+
   .price-input-content {
     display: flex;
     align-items: center;
@@ -328,6 +330,7 @@
     grid-column: span 5 / span 5;
     border-radius: 0;
   }
+
   .profile-services-review-container {
     grid-column: span 7 / span 7;
   }
@@ -337,11 +340,13 @@
     margin-left: 27px;
     margin-right: 84px;
   }
+
   .profile-services-review-container hr {
     display: block;
     border: 11px solid #fff;
     opacity: 1;
   }
+
   .location-form-group,
   .date-group-content,
   .start-date-form-group,
@@ -555,6 +560,7 @@
   .get-started-container {
     gap: 6rem;
   }
+
   .get-started-headline {
     font-size: 1.625rem;
     margin-bottom: 4.1875rem;
@@ -578,10 +584,12 @@
     max-width: 88%;
     margin-inline: auto;
   }
+
   .count-breadcrumb,
   .form-text {
     font-size: 0.875rem;
   }
+
   .form-headline {
     font-size: 1.625rem;
   }
@@ -593,6 +601,7 @@
     gap: 3.75rem;
     max-width: 88%;
   }
+
   .personal-input-content {
     column-gap: 1.25rem;
   }
@@ -601,11 +610,13 @@
   .phone-form-group {
     max-width: 370px;
   }
+
   .country-form-group,
   .state-form-group,
   .zip-form-group {
     grid-column: span 4 / span 4;
   }
+
   /* Step - 2 :: Resume submit */
   .resume-container {
     flex-direction: row;
@@ -620,22 +631,27 @@
   .language-type {
     grid-column: span 7 / span 7;
   }
+
   .proficiency-dropdown {
     grid-column: span 5 / span 5;
   }
+
   /* Step - 2 :: Resume submit */
   .skill-container {
     flex-direction: row;
     justify-content: space-between;
   }
+
   /* profile section */
 
   .profile-info {
     grid-column: span 3 / span 3;
   }
+
   .profile-services-review-container {
     grid-column: span 9 / span 9;
   }
+
   .profile-services-card-container {
     grid-template-columns: repeat(2, 1fr);
   }
