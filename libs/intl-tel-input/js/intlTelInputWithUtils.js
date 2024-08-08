@@ -1,5 +1,5 @@
 /*
- * International Telephone Input v23.8.0
+ * International Telephone Input v23.8.1
  * https://github.com/jackocnr/intl-tel-input.git
  * Licensed under the MIT license
  */
@@ -1996,6 +1996,9 @@ var factoryOutput = (() => {
     _initTelInputListeners() {
       const { strictMode, formatAsYouType, separateDialCode, formatOnDisplay } = this.options;
       let userOverrideFormatting = false;
+      if (/\p{L}/u.test(this.telInput.value)) {
+        userOverrideFormatting = true;
+      }
       const openDropdownWithPlus = () => {
         this._openDropdown();
         this.searchInput.value = "+";
@@ -2736,17 +2739,31 @@ var factoryOutput = (() => {
     //* Validate the input val
     isValidNumber() {
       const val = this._getFullNumber();
-      if (/\p{L}/u.test(val)) {
-        return false;
+      const alphaCharPosition = val.search(/\p{L}/u);
+      if (alphaCharPosition > -1) {
+        const beforeAlphaChar = val.substring(0, alphaCharPosition);
+        const beforeAlphaIsValid = this._utilsIsPossibleNumber(beforeAlphaChar);
+        const isValid = this._utilsIsPossibleNumber(val);
+        return beforeAlphaIsValid && isValid;
       }
+      return this._utilsIsPossibleNumber(val);
+    }
+    _utilsIsPossibleNumber(val) {
       return intlTelInput.utils ? intlTelInput.utils.isPossibleNumber(val, this.selectedCountryData.iso2, this.options.validationNumberType) : null;
     }
     //* Validate the input val (precise)
     isValidNumberPrecise() {
       const val = this._getFullNumber();
-      if (/\p{L}/u.test(val)) {
-        return false;
+      const alphaCharPosition = val.search(/\p{L}/u);
+      if (alphaCharPosition > -1) {
+        const beforeAlphaChar = val.substring(0, alphaCharPosition);
+        const beforeAlphaIsValid = this._utilsIsValidNumber(beforeAlphaChar);
+        const isValid = this._utilsIsValidNumber(val);
+        return beforeAlphaIsValid && isValid;
       }
+      return this._utilsIsValidNumber(val);
+    }
+    _utilsIsValidNumber(val) {
       return intlTelInput.utils ? intlTelInput.utils.isValidNumber(val, this.selectedCountryData.iso2) : null;
     }
     //* Update the selected country, and update the input val accordingly.
@@ -2825,7 +2842,7 @@ var factoryOutput = (() => {
       //* A map from instance ID to instance object.
       instances: {},
       loadUtils,
-      version: "23.8.0"
+      version: "23.8.1"
     }
   );
   var intl_tel_input_default = intlTelInput;
