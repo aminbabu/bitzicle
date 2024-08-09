@@ -1991,8 +1991,9 @@ footer {
 .login-form-container {
   margin-top: 71px;
   padding-block: 2.875rem;
-  min-height: calc(100vh - 190px);
+  min-height: calc(100vh - 168px);
   font-family: var(--open-sans);
+  overflow: auto;
 }
 
 .form-heading {
@@ -2392,10 +2393,13 @@ footer {
   margin: 0;
 }
 
+.language-modal .form-select,
 .proficiency-dropdown .form-select {
-  max-width: 240px;
   border: 1px solid #dbdbdb;
   box-shadow: none;
+}
+.proficiency-dropdown .form-select {
+  max-width: 240px;
 }
 
 .language-type .form-control {
@@ -2426,6 +2430,14 @@ footer {
   font-weight: 500;
   line-height: 1.86;
   letter-spacing: -2%;
+}
+
+.language-modal .modal-content {
+  padding: 2rem;
+}
+
+.language-modal .form-group {
+  margin-block: 1.5rem;
 }
 
 /* Step 6 :: skill selection */
@@ -2943,6 +2955,9 @@ footer {
   padding: 2.5rem;
 }
 
+.language-modal .modal-header,
+.language-modal .modal-footer,
+.language-modal .modal-body,
 .resume-modal .modal-header,
 .resume-modal .modal-footer,
 .resume-modal .modal-body,
@@ -2960,6 +2975,7 @@ footer {
   top: 17px;
 }
 
+.language-modal .modal-title,
 .resume-modal .modal-title,
 .work-xp-modal .modal-title {
   font-family: var(--somar-sans);

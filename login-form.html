@@ -530,11 +530,11 @@
                         </p>
                       </div>
                       <div class="form-group">
-                        <label for="name">Your professional role</label>
+                        <label for="profession">Your professional role</label>
                         <input
                           type="text"
                           class="form-control"
-                          id="name"
+                          id="profession"
                           placeholder="Software engineer, designer, Management"
                           required
                         />
@@ -680,15 +680,17 @@
                       <div class="language-selection" id="language-select">
                         <div class="language-type">
                           <div class="form-group">
-                            <label class="language-label" for="name"
+                            <label class="language-label" for="language"
                               >Language</label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="name"
+                              id="language"
+                              value="English (all profiles include this)"
                               placeholder="English (all profiles include this)"
                               required
+                              readonly
                             />
                           </div>
                         </div>
@@ -706,9 +708,14 @@
                       </div>
                     </div>
                     <div class="btn-container">
-                      <div class="btn language-btn" id="add-language-btn">
+                      <button
+                        type="button"
+                        class="btn language-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#languageModal"
+                      >
                         + Add a language
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1365,10 +1372,10 @@
         aria-labelledby="experienceModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title" id="exampleModalLabel">
+              <h1 class="modal-title" id="languageModalLabel">
                 Add work experience
               </h1>
             </div>
@@ -1502,6 +1509,50 @@
               </button>
               <button type="button" class="bz-btn bz-btn-secondary">
                 Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal:: language Selection -->
+      <div
+        class="modal fade language-modal"
+        id="languageModal"
+        tabindex="-1"
+        aria-labelledby="languageModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Select a Language</h4>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="form-group">
+                <select
+                  id="languageSelect"
+                  name="select-language"
+                  class="form-select"
+                >
+                  <option value="1">German</option>
+                  <option value="2">Chinese</option>
+                  <option value="3">Bengali</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="bz-btn bz-btn-secondary"
+                id="submitButton"
+              >
+                Submit
               </button>
             </div>
           </div>

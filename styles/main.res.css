@@ -131,13 +131,6 @@
     bottom: 97px;
   }
 
-  .form-btn-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
   .form-btn-container,
   .next-btn-container {
     flex-direction: row;

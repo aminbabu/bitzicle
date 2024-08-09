@@ -268,13 +268,57 @@ BIZTICLE.magnificPopup = function () {
 
 // add language
 BIZTICLE.addLanguage = function () {
-  const addLanguageBtn = $("#add-language-btn");
-  const languageContainer = $(".language-container");
-  const languageItem = $(".language-selection");
+  let languageCounter = 0;
 
-  addLanguageBtn.click(function () {
-    const newLanguageItem = languageItem.clone().removeAttr("style");
-    languageContainer.append(newLanguageItem);
+  $("#submitButton").click(function () {
+    const selectedText = $("#languageSelect option:selected").text();
+
+    $(".selected-language-input").val(selectedText);
+
+    languageCounter++;
+    const uniqueId = `language-${languageCounter}`;
+
+    const newLanguageInput = `<div class="language-selection" id="${uniqueId}">
+                        <div class="language-type">
+                          <div class="form-group">
+                            <label class="language-label" for="language"
+                              >Language</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control selected-skill-input"
+                              id="language"
+                              value="${selectedText}"
+                              placeholder="English (all profiles include this)"
+                              required
+                              readonly
+                            />
+                          </div>
+                        </div>
+                        <div class="proficiency-dropdown">
+                          <p class="language-label">Proficiency</p>
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Basic</option>
+                            <option value="1">Intermediate</option>
+                            <option value="2">Advance</option>
+                          </select>
+                        </div>
+
+                        <!-- dummy text -->
+                        <!-- <input
+                          type="text"
+                          class="selected-skill-input"
+                          placeholder="Selected skill will appear here"
+                          readonly
+                        /> -->
+                      </div>`;
+
+    $(".language-container").append(newLanguageInput);
+
+    $("#languageModal").modal("hide");
   });
 };
 
