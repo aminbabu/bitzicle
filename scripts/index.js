@@ -280,10 +280,11 @@ BIZTICLE.addLanguage = function () {
 
 // add skills
 BIZTICLE.addSkills = function () {
-  const tagContainer = $(".tag-container").first();
+  const tagContainer = $(".skill-tag-container .tag-container").first();
+  const suggestedContainer = $(".suggested-skill-tag-container");
   const skillInput = $(".skill-input");
 
-  function addTag(tagText) {
+  function addTag(tagText, isFromSuggested = false) {
     if (tagText) {
       const newTag = $('<div class="skill-tag"></div>').text(tagText.trim());
       const icon = $(
@@ -295,19 +296,35 @@ BIZTICLE.addSkills = function () {
 
       icon.click(function () {
         newTag.remove();
+
+        if (isFromSuggested) {
+          const suggestedTag = $(
+            '<div class="skill-tag suggested-tag"></div>'
+          ).text("+ " + tagText);
+          suggestedContainer.append(suggestedTag);
+
+          suggestedTag.click(function () {
+            const tagText = $(this).text().trim().replace(/^\+/, "").trim();
+            addTag(tagText, true);
+            $(this).remove();
+          });
+        }
       });
     }
   }
 
   skillInput.keypress(function (e) {
     if (e.which === 13) {
-      // Enter key pressed
-      addTag(skillInput.val());
+      const inputText = skillInput.val();
+      const tags = inputText.split(",");
+      tags.forEach((tag) => addTag(tag.trim()));
+      skillInput.val("");
     }
   });
 
   $(".suggested-tag").click(function () {
-    addTag($(this).text().trim().replace(/^\+/, "").trim());
+    const tagText = $(this).text().trim().replace(/^\+/, "").trim();
+    addTag(tagText, true);
     $(this).remove();
   });
 };
