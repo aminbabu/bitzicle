@@ -266,7 +266,7 @@ BIZTICLE.magnificPopup = function () {
   });
 };
 
-// add language
+// init add language
 BIZTICLE.addLanguage = function () {
   let languageCounter = 0;
 
@@ -322,7 +322,7 @@ BIZTICLE.addLanguage = function () {
   });
 };
 
-// add skills
+// init add skills
 BIZTICLE.addSkills = function () {
   const tagContainer = $(".skill-tag-container .tag-container").first();
   const suggestedContainer = $(".suggested-skill-tag-container");
@@ -370,6 +370,55 @@ BIZTICLE.addSkills = function () {
     const tagText = $(this).text().trim().replace(/^\+/, "").trim();
     addTag(tagText, true);
     $(this).remove();
+  });
+};
+
+// init add services
+BIZTICLE.addServices = function () {
+  $("#selectService").change(function () {
+    const selectedServiceText = $("#selectService option:selected").text();
+
+    if (
+      $(".service-tag-container .service-tag").filter(function () {
+        return $(this).text() === selectedServiceText;
+      }).length > 0
+    ) {
+      alert("Service already added!");
+      return;
+    }
+
+    const newServiceTag = `
+        <div class="skill-tag">
+            ${selectedServiceText}
+            <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="remove-service-tag"
+                style="cursor: pointer;"
+            >
+                <path
+                    d="M5.67188 0.807129L0.632812 5.84619"
+                    stroke="#535353"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M0.632812 0.807129L5.67188 5.84619"
+                    stroke="#535353"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </div>`;
+
+    $(".service-tag-container").append(newServiceTag);
+  });
+
+  $(document).on("click", ".remove-service-tag", function () {
+    $(this).closest(".skill-tag").remove();
   });
 };
 
@@ -428,4 +477,5 @@ document.addEventListener("DOMContentLoaded", function () {
   BIZTICLE.addLanguage();
   BIZTICLE.addSkills();
   BIZTICLE.initResumeUploader();
+  BIZTICLE.addServices();
 });

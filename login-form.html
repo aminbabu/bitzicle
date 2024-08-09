@@ -1093,29 +1093,35 @@
                         </div>
                         <div class="select-skill-container">
                           <div class="proficiency-dropdown">
-                            <p class="language-label">Select Service</p>
+                            <p class="service-label">Select Service</p>
                             <select
                               class="form-select"
+                              id="selectService"
                               aria-label="Default select example"
                             >
                               <option selected>
                                 Data Analysis and Testing
                               </option>
-                              <option value="1">Marketing</option>
-                              <option value="2">Digital Marketing</option>
-                              <option value="3">Script Writing</option>
-                              <option value="4">App Development</option>
-                              <option value="5">Google Ads</option>
+                              <option value="Marketing">Marketing</option>
+                              <option value="Digital Marketing">
+                                Digital Marketing
+                              </option>
+                              <option value="Script Writing">
+                                Script Writing
+                              </option>
+                              <option value="App Development">
+                                App Development
+                              </option>
+                              <option value="Google Ads">Google Ads</option>
                             </select>
                           </div>
                           <div class="skill-tag-content">
                             <p class="skill-label">Selected Services</p>
-                            <div
-                              class="suggested-skill-tag-container tag-container"
-                            >
+                            <div class="service-tag-container tag-container">
                               <div class="skill-tag">
                                 Data Analysis and Testing
                                 <svg
+                                  class="remove-service-tag"
                                   width="7"
                                   height="7"
                                   viewBox="0 0 7 7"
@@ -1283,7 +1289,7 @@
                       type="button"
                       class="bz-btn bz-btn-secondary next-btn"
                     >
-                      Continue
+                      Submit
                     </a>
                   </div>
                 </div>
