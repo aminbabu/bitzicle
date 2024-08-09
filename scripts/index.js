@@ -273,6 +273,15 @@ BIZTICLE.addLanguage = function () {
   $("#submitButton").click(function () {
     const selectedText = $("#languageSelect option:selected").text();
 
+    const existingInput = $(".selected-skill-input").filter(function () {
+      return $(this).val() === selectedText;
+    });
+
+    if (existingInput.length > 0) {
+      alert("This language is already added.");
+      return;
+    }
+
     $(".selected-language-input").val(selectedText);
 
     languageCounter++;
@@ -417,7 +426,7 @@ BIZTICLE.addServices = function () {
     }
 
     const newServiceTag = `
-        <div class="skill-tag">
+        <div class="skill-tag remove-service-tag">
             ${selectedServiceText}
             <svg
                 width="7"
@@ -425,7 +434,6 @@ BIZTICLE.addServices = function () {
                 viewBox="0 0 7 7"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="remove-service-tag"
                 style="cursor: pointer;"
             >
                 <path
