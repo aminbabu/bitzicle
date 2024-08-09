@@ -315,19 +315,21 @@ BIZTICLE.addLanguage = function () {
                             <option value="2">Advance</option>
                           </select>
                         </div>
-
-                        <!-- dummy text -->
-                        <!-- <input
-                          type="text"
-                          class="selected-skill-input"
-                          placeholder="Selected skill will appear here"
-                          readonly
-                        /> -->
+                        <!-- X icon for removal -->
+                        <div class="remove-language" style="cursor: pointer;">
+                         &times;
+                        </div>
                       </div>`;
 
     $(".language-container").append(newLanguageInput);
 
     $("#languageModal").modal("hide");
+
+    $(".remove-language")
+      .last()
+      .click(function () {
+        $(this).closest(".language-selection").remove();
+      });
   });
 };
 

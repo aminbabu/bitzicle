@@ -2079,6 +2079,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .personal-input-content .form-group input:focus {
@@ -2387,6 +2388,15 @@ footer {
 .language-selection .proficiency-dropdown {
   grid-column: span 5 / span 5;
   padding-bottom: 0.75rem;
+}
+
+.remove-language {
+  grid-column: span 2 / span 2;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-bottom: 0.875rem;
 }
 
 .language-type .form-group {

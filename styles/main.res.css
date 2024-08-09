@@ -300,9 +300,16 @@
     margin-inline: 0;
   }
 
-  .language-type,
-  .proficiency-dropdown {
+  .language-type {
     grid-column: span 6 / span 6;
+  }
+
+  .proficiency-dropdown {
+    grid-column: span 5 / span 5;
+  }
+
+  .remove-language {
+    grid-column: span 1 / span 1;
   }
 
   /* Step 9 :: price setup */
@@ -619,14 +626,6 @@
 
   .resume-btn-container {
     padding-bottom: 59px;
-  }
-
-  .language-type {
-    grid-column: span 7 / span 7;
-  }
-
-  .proficiency-dropdown {
-    grid-column: span 5 / span 5;
   }
 
   /* Step - 2 :: Resume submit */
