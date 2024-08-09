@@ -213,7 +213,7 @@
           <div class="">
             <form id="multiStepForm">
               <!-- Step 1:: Personal Information -->
-              <div class="step active">
+              <div class="step">
                 <div class="container">
                   <div class="login-form-container">
                     <div class="form-heading">
@@ -352,7 +352,7 @@
               </div>
 
               <!-- Step - 2 :: Resume submit -->
-              <div class="step">
+              <div class="step active">
                 <div class="container">
                   <div class="login-form-container">
                     <div class="resume-container">
@@ -784,54 +784,7 @@
                           <div class="select-skill-content">
                             <p class="skill-label">Your skills</p>
                             <div class="skill-tag-container">
-                              <div class="tag-container">
-                                <div class="skill-tag">
-                                  Web Designing
-                                  <svg
-                                    width="7"
-                                    height="7"
-                                    viewBox="0 0 7 7"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M5.67188 0.807129L0.632812 5.84619"
-                                      stroke="#535353"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M0.632812 0.807129L5.67188 5.84619"
-                                      stroke="#535353"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                  </svg>
-                                </div>
-                                <div class="skill-tag">
-                                  HTML 5
-                                  <svg
-                                    width="7"
-                                    height="7"
-                                    viewBox="0 0 7 7"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M5.67188 0.807129L0.632812 5.84619"
-                                      stroke="#535353"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M0.632812 0.807129L5.67188 5.84619"
-                                      stroke="#535353"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
+                              <div class="tag-container"></div>
                               <input
                                 class="skill-input"
                                 placeholder="Enter skills here"
@@ -1298,7 +1251,7 @@
             </form>
 
             <!-- Progress bar starts -->
-            <div class="progress">
+            <div class="progress bz-progress">
               <div
                 class="progress-bar"
                 role="progressbar"
@@ -1347,14 +1300,148 @@
               <p class="intruction-text">
                 Step 2: Come back here to upload it.
               </p>
-              <div class="btn-container">
+              <div class="resume-uploader">
                 <input
                   type="file"
                   name="resume_file"
                   accept=".pdf"
                   class="resume-file-input"
                   id="resume_file"
+                  hidden
                 />
+                <label for="resume_file" class="resume-uploader-btn">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1173_57)">
+                      <path
+                        d="M8.48087 16.9967C6.63545 16.9967 4.79003 16.9967 2.94462 16.9967C1.20858 16.9967 0.00671061 15.8309 0.00201318 14.1457C-0.000671061 13.1628 -0.000671061 12.1804 0.00201318 11.1984C0.00201318 10.7399 0.264393 10.4413 0.650924 10.4433C1.03746 10.4452 1.29716 10.738 1.2985 11.201C1.2985 12.1723 1.2985 13.1443 1.2985 14.1162C1.2985 15.0882 1.9293 15.7169 2.92985 15.7176C6.63143 15.7215 10.3335 15.7215 14.0359 15.7176C15.0808 15.7176 15.6975 15.1046 15.7001 14.0802C15.7001 13.0866 15.7002 12.0931 15.7049 11.0995C15.7049 10.7622 15.9062 10.5212 16.2175 10.4583C16.3496 10.4257 16.4891 10.438 16.613 10.4931C16.7369 10.5482 16.8379 10.6429 16.8993 10.7616C16.964 10.8872 16.9958 11.0264 16.9919 11.167C17 12.1935 17.0011 13.2196 16.9953 14.2453C16.9832 15.7883 15.7639 16.9856 14.1842 16.9961C12.2844 17.0046 10.3833 16.9974 8.48087 16.9967Z"
+                        fill="#469C98"
+                      />
+                      <path
+                        d="M7.84636 2.15678C7.41151 2.57791 7.05047 2.9257 6.69146 3.2761C6.16132 3.79286 5.63454 4.31289 5.10239 4.82703C4.87221 5.04906 4.59909 5.11193 4.30584 4.96129C4.05419 4.8303 3.92602 4.61024 3.97836 4.33581C4.00915 4.18775 4.08273 4.05138 4.19041 3.94284C5.45693 2.69406 6.72859 1.44965 8.0054 0.2096C8.30067 -0.0772702 8.65901 -0.0779251 8.95427 0.2096C10.2306 1.44877 11.5034 2.69144 12.7726 3.9376C13.0618 4.2212 13.0672 4.58601 12.8109 4.84275C12.5424 5.11062 12.1606 5.11324 11.856 4.82048C11.0433 4.03977 10.2407 3.24859 9.43408 2.46264C9.35758 2.38929 9.2784 2.31855 9.13211 2.18298V2.68074C9.13211 5.83588 9.13211 8.99101 9.13211 12.1461C9.13928 12.3194 9.11123 12.4924 9.04957 12.655C8.93012 12.9262 8.68048 13.033 8.38656 12.9878C8.2511 12.974 8.12477 12.9146 8.02926 12.8198C7.93376 12.7251 7.87502 12.6008 7.86314 12.4684C7.84847 12.3272 7.8442 12.1851 7.85038 12.0433C7.85038 8.89954 7.85038 5.75575 7.85038 2.61197L7.84636 2.15678Z"
+                        fill="#469C98"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1173_57">
+                        <rect width="17" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Upload your LinkedIn PDF
+                </label>
+                <div class="resume-uploader-progress">
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Resume Uploader Progress"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 0%"></div>
+                  </div>
+                  <button type="button" class="btn">
+                    <svg
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.2969 0.5L1.29688 9.5"
+                        stroke="#535353"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.29688 0.5L10.2969 9.5"
+                        stroke="#535353"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="resume-uploader-output">
+                  <svg
+                    width="11"
+                    height="18"
+                    viewBox="0 0 11 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.34043 3.48532L9.32409 12.2338C9.32208 13.3056 8.89441 14.3326 8.13515 15.0891C7.37589 15.8455 6.34723 16.2693 5.27547 16.2673C4.20372 16.2653 3.17665 15.8377 2.42022 15.0784C1.66379 14.3191 1.23995 13.2905 1.24196 12.2187L1.2583 3.47022C1.25963 2.75571 1.54475 2.071 2.05092 1.56672C2.5571 1.06243 3.24287 0.779873 3.95737 0.781208C4.67188 0.782543 5.35659 1.06766 5.86088 1.57383C6.36516 2.08001 6.64772 2.76578 6.64639 3.48028L6.62527 12.2335C6.62461 12.5908 6.48205 12.9331 6.22896 13.1853C5.97587 13.4374 5.63299 13.5787 5.27574 13.578C4.91848 13.5774 4.57613 13.4348 4.32399 13.1817C4.07184 12.9286 3.93056 12.5858 3.93123 12.2285L3.95108 4.15114"
+                      stroke="#535353"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="content">
+                    <span class="file-name"></span>
+                    <svg
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.998 1.73248L4.20093 8.5296L1.11133 5.44"
+                        stroke="#535353"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <button type="button" class="btn">
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.47461 3.78107H2.9246H14.5245"
+                        stroke="#535353"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.0737 3.78108V13.931C13.0737 14.3156 12.921 14.6844 12.6491 14.9563C12.3771 15.2282 12.0083 15.381 11.6238 15.381H4.37382C3.98926 15.381 3.62045 15.2282 3.34852 14.9563C3.07659 14.6844 2.92383 14.3156 2.92383 13.931V3.78108M5.09881 3.78108V2.33109C5.09881 1.94653 5.25158 1.57772 5.5235 1.3058C5.79543 1.03387 6.16424 0.881104 6.5488 0.881104H9.44877C9.83333 0.881104 10.2021 1.03387 10.4741 1.3058C10.746 1.57772 10.8988 1.94653 10.8988 2.33109V3.78108"
+                        stroke="#535353"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.54883 7.40607V11.756"
+                        stroke="#535353"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.44922 7.40607V11.756"
+                        stroke="#535353"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="modal-footer">
@@ -1585,8 +1672,6 @@
     <script src="./libs/intl-tel-input/js/intlTelInput.min.js"></script>
     <!-- magnific popup -->
     <script src="./libs/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- pekebyte pekeupload -->
-    <script src="./libs/pekebyte-pekeUpload/js/pekeUpload.min.js"></script>
     <!-- custom scripts -->
     <script src="./scripts/index.js"></script>
   </body>
