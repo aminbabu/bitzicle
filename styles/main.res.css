@@ -128,7 +128,7 @@
 
   /* login form */
   .bz-progress {
-    bottom: 97px;
+    bottom: 6.0625rem;
   }
 
   .form-btn-container,
@@ -143,6 +143,12 @@
   .resume-modal .modal-title,
   .work-xp-modal .modal-title {
     font-size: 1.625rem;
+  }
+
+  /* gallery card */
+  .gallery-card-img-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1.625rem 2.1875rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -166,8 +172,8 @@
 
   .hero-text-container {
     gap: 2.75rem;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 3.75rem;
+    padding-bottom: 4.375rem;
   }
 
   .hero-slogan {
@@ -281,7 +287,7 @@
 
   /* get started page */
   .get-started-container {
-    padding-block: 83px;
+    padding-block: 5.1875rem;
     flex-direction: row;
     gap: 4rem;
   }
@@ -314,7 +320,7 @@
 
   /* Step 9 :: price setup */
   .price-rate-selection {
-    max-width: 924px;
+    max-width: 57.75rem;
     flex-direction: row;
   }
 
@@ -337,8 +343,8 @@
 
   .profile-services-container,
   .profile-reviews-container {
-    margin-left: 27px;
-    margin-right: 84px;
+    margin-left: 1.6875rem;
+    margin-right: 5.25rem;
   }
 
   .profile-services-review-container hr {
@@ -352,6 +358,90 @@
   .start-date-form-group,
   .end-date-form-group {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* business profile card container   */
+
+  .business-profile-card-title {
+    padding: 0.875rem 1.625rem 1rem;
+  }
+
+  /* business profile details container */
+  .business-profile-details-container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .bookmarks-card-container,
+  .contact-card-container {
+    grid-column: span 6 / span 6;
+  }
+  /* business profile card */
+  .business-main-card-content {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1.5625rem 3.125rem 2.5rem;
+  }
+  .business-main-card-img {
+    width: 100%;
+    min-width: 9.375rem;
+  }
+  .business-main-card-text-container {
+    padding-bottom: 2rem;
+  }
+  .business-main-card-title-content,
+  .business-main-card-reviews {
+    flex-direction: row;
+  }
+  .business-main-card-title {
+    padding-right: 0.625rem;
+  }
+  .business-main-card-reviews {
+    margin-bottom: 0.375rem;
+  }
+  .business-main-card-badge {
+    margin: 0.25rem 0 0.75rem;
+  }
+  .business-card-text {
+    text-align: left;
+  }
+  .bookmark-container {
+    display: inline-flex;
+    margin: 0;
+    gap: 2.75rem;
+    position: absolute;
+    bottom: 0;
+  }
+  /* about card */
+  .about-business-card-info {
+    padding: 1.625rem 1.625rem 3.625rem;
+  }
+  .about-business-info-card-specs-list {
+    display: inline-flex;
+    gap: 2.875rem;
+  }
+
+  /* services card */
+  .services-business-card-content {
+    padding: 1.5rem 1.625rem 2.3125rem;
+  }
+  .business-card-service {
+    display: flex;
+    align-items: start;
+    gap: 1.625rem;
+  }
+  .business-card-service-img {
+    width: 10.375rem;
+  }
+  .business-card-service-text-content {
+    margin-top: 0.625rem;
+  }
+
+  /* business profile card */
+  .business-card-reviews-content {
+    padding: 1rem 1.625rem;
+  }
+  /* contact card */
+  .contact-business-profile-card-content {
+    padding: 1.125rem 1.625rem 1.5rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -381,8 +471,8 @@
   /* hero  */
 
   .hero-text-container {
-    padding-top: 100px;
-    padding-bottom: 104px;
+    padding-top: 6.15rem;
+    padding-bottom: 6.5rem;
   }
 
   .hero-slogan {
@@ -421,7 +511,7 @@
   .get-started-text-content {
     width: 47.5%;
     padding: 2rem;
-    min-height: 616px;
+    min-height: 38.5rem;
   }
 
   .get-started-title {
@@ -540,16 +630,16 @@
   }
 
   .category-list {
-    height: 392px;
+    height: 24.5rem;
   }
 
   .sub-category-item-list {
     position: absolute;
     left: 0;
     top: -1px;
-    margin-left: 248px;
-    height: 393px;
-    width: 250px;
+    margin-left: 15.5rem;
+    height: 24.5625rem;
+    width: 15.625rem;
     border: 1px solid var(--light-silver);
     border-radius: 0 0.5rem 0.5rem 0;
     filter: drop-shadow(#00000015 0px 4px 10px);
@@ -608,7 +698,7 @@
 
   .name-form-group,
   .phone-form-group {
-    max-width: 370px;
+    max-width: 23.125rem;
   }
 
   .country-form-group,
@@ -625,7 +715,7 @@
   }
 
   .resume-btn-container {
-    padding-bottom: 59px;
+    padding-bottom: 3.6875rem;
   }
 
   /* Step - 2 :: Resume submit */
@@ -646,6 +736,44 @@
 
   .profile-services-card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* business profile card container */
+  .business-profile-card-content {
+    top: -5.9375rem;
+  }
+
+  .bookmarks-card-container {
+    grid-column: span 8 / span 8;
+  }
+  .contact-card-container {
+    grid-column: span 4 / span 4;
+  }
+
+  /* business profile card */
+  .business-main-card-content {
+    gap: 2.375rem;
+  }
+
+  /* gallery card */
+  .gallery-card-img-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* about card */
+  .about-deal-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.75rem;
+  }
+
+  /* already viewed services */
+  .aleadry-viewed-services-container {
+    margin-top: -5rem;
+  }
+
+  .aleadry-viewed-services-title {
+    font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -692,8 +820,12 @@
   }
 
   /* profile section */
-
   .profile-services-card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* about card */
+  .about-deal-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }

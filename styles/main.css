@@ -1698,7 +1698,9 @@ footer {
   line-height: 1.15;
   padding: 7px 0 4px;
 }
-
+.business-card-info-container .business-card-text {
+  text-align: left;
+}
 .business-card-text {
   font-size: 0.875rem;
   line-height: 1.43;
@@ -2191,9 +2193,9 @@ footer {
 
 .personal-input-content .form-area {
   background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
-  padding: 40px;
-  border-radius: 6px;
+  box-shadow: 0px 0.3125rem 0.625rem rgba(90, 116, 148, 0.3);
+  padding: 2.5rem;
+  border-radius: 0.37rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2462,7 +2464,7 @@ footer {
   gap: 0.875rem;
 }
 
-.why-choose-us {
+.skill-submit-content .why-choose-us {
   font-size: 0.875rem;
   line-height: 1.86;
   color: #cc4faf;
@@ -2900,16 +2902,16 @@ footer {
 }
 
 .service-msg-container {
-  width: 225px;
+  width: 14.0625rem;
   background: #272727;
   height: 2.5rem;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0.625rem 0.625rem 0 0;
   padding: 0.5rem 1rem 0.5rem 0.75rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  bottom: 45px;
+  bottom: 2.8125rem;
   right: 0;
 }
 
@@ -2961,14 +2963,14 @@ footer {
 .profile-review-text {
   font-size: 0.875rem;
   line-height: 1.6;
-  max-width: 793px;
+  max-width: 49.5625rem;
 }
 
 /* Modals */
 
 /* Modal:: Resume upload */
 .resume-modal .modal-dialog {
-  max-width: 600px;
+  max-width: 37.5rem;
   font-family: var(--open-sans);
 }
 
@@ -3273,4 +3275,375 @@ footer {
   background-color: #ff4d6d;
   color: #fff;
   border: none;
+}
+
+/* Business hero section */
+.business-main-card,
+.business-profile-card-container,
+.aleadry-viewed-services-container {
+  background-color: #f8f9fa;
+  font-family: var(--open-sans);
+}
+
+.business-hero-banner {
+  width: 100%;
+  height: auto;
+  min-height: 9.375rem;
+  max-height: 16.5625rem;
+  object-fit: cover;
+  object-position: left;
+}
+
+/* business profile card container   */
+.business-profile-card-content {
+  position: relative;
+  top: -3.5rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.business-profile-card-title,
+.contact-business-profile-card-content {
+  padding: 1rem;
+}
+.business-profile-card-container hr {
+  border: 1px solid #e3e3e3;
+  margin: 0 0.5rem;
+}
+
+/* business profile card */
+.business-profile-card {
+  box-shadow: 0px 2px 15px 0px #0000000d;
+  border-radius: 0.9375rem;
+}
+.business-main-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  position: relative;
+  background-color: #fff;
+}
+.business-main-card-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.business-main-card-img {
+  border-radius: 50rem;
+  width: 70%;
+  aspect-ratio: 1/1;
+}
+.business-main-card-text-container {
+  display: grid;
+  align-items: center;
+}
+.business-main-card-title {
+  font-family: var(--somar-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 2.3;
+}
+.business-main-card-review-text {
+  font-size: 0.875rem;
+  line-height: 1.86;
+  font-weight: 600;
+  padding-top: 0.375rem;
+}
+.business-main-card-review-text span {
+  font-weight: 400;
+}
+.business-main-card-title-content,
+.business-main-card-reviews {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.business-main-card-title-content {
+  flex-direction: column;
+}
+.business-main-card-badge {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50rem;
+  background-color: #ecf1f1;
+  width: max-content;
+  color: #484848;
+  margin: 0.25rem auto 0.75rem;
+}
+.business-card-text {
+  font-size: 0.875rem;
+  text-align: center;
+  max-width: 40.25rem;
+}
+.bookmark-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1.5rem;
+}
+.bookmark-item {
+  padding-block: 0.75rem;
+  border-bottom: 3px solid transparent;
+}
+.bookmark-item a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--primary);
+}
+.bookmark-item.active {
+  border-bottom: 3px solid #cc4faf;
+}
+
+/* business profile details container */
+.business-profile-details-container,
+.bookmarks-card-container {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* about card */
+
+.about-business-card-info,
+.business-card-reviews-content {
+  padding: 1rem;
+}
+.about-business-card-info-title,
+.about-deal-label {
+  font-weight: 600;
+  line-height: 1.375;
+  margin-bottom: 0.75rem;
+}
+.about-business-info-card-specs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.about-business-info-card-spec-name {
+  font-size: 0.75rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #959595;
+  text-transform: uppercase;
+}
+.about-business-info-card-spec-data {
+  font-size: 0.875rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.about-business-card-info .business-card-text {
+  text-align: left;
+  padding: 2rem 0 1.375rem;
+  max-width: 100%;
+}
+.about-deal-content .about-deal-label {
+  margin-bottom: 1rem;
+}
+.about-deal-list {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.about-deal-list-item {
+  font-size: 0.875rem;
+  line-height: 1.43;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* gallery card */
+.gallery-card-img-container {
+  display: grid;
+  row-gap: 1.875rem;
+  column-gap: 2rem;
+  padding: 1rem;
+}
+.gallery-card-img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+/* services card */
+.services-business-card-content {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.business-card-service {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.business-card-service-img {
+  width: 100%;
+  min-width: 7rem;
+}
+
+.business-card-service-title {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.business-card-service-text-content .business-card-text {
+  font-size: 0.875rem;
+  text-align: left;
+  line-height: 1.3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/* review card */
+.business-card-reviews-counter {
+  display: flex;
+  justify-content: space-between;
+}
+.business-card-reviews-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.36;
+}
+.business-main-card-reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.business-main-card-review-stars {
+  display: flex;
+  gap: 0.125rem;
+  align-items: center;
+}
+.business-main-card-reviews .business-card-reviews-text {
+  padding: 0;
+  text-wrap: nowrap;
+}
+.business-card-reviews-with-progressbar-content {
+  margin-bottom: 2rem;
+}
+.business-card-reviews-with-progressbar-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.business-progress {
+  height: 0.3125rem;
+  width: 60%;
+  max-width: 14.4375rem;
+}
+.business-progress-bar {
+  background-color: var(--primary);
+}
+.business-card-review-card {
+  display: flex;
+  margin: 2.25rem 0 2.875rem;
+  gap: 1rem;
+}
+.business-card-review-card-img {
+  margin-top: -0.625rem;
+}
+.business-card-review-card .business-card-review-card-title {
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+.business-card-reviews-with-time {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.business-card-reviews-with-time .business-main-card-reviews {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 2.1;
+}
+
+.business-card-review-time {
+  font-size: 0.75rem;
+  color: var(--davys-gray);
+}
+.business-card-review-card .business-main-card-review-stars {
+  display: flex;
+  margin: 0;
+}
+
+.business-card-review-card .business-main-card-review-text {
+  padding: 0;
+}
+.business-card-review-card .business-card-text {
+  text-align: left;
+  margin-top: 1.25rem;
+  line-height: 1.6;
+}
+
+/* contact card */
+
+.contact-working-hours-content {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.contact-working-hours-content .contact-working-img {
+  margin-top: -0.25rem;
+}
+.contact-btn-with-favourite {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  margin-top: 1.375rem;
+}
+.contact-btn-with-favourite .bz-btn-secondary {
+  font-size: 0.875rem;
+  flex: auto;
+}
+.favourite-icon-content {
+  height: 2.875rem;
+  width: 2.875rem;
+  border-radius: 50rem;
+  border: 1px solid #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-business-profile-card-content hr {
+  margin: 1.5rem 0 0.75rem;
+}
+.contact-business-profile-card-content .about-business-info-card-item {
+  margin-bottom: 1rem;
+}
+
+.contact-map {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+/* already viewed services */
+.aleadry-viewed-services-container {
+  margin-top: -3.5rem;
+  padding: 1.25rem 0 5rem;
+}
+.aleadry-viewed-services-container hr {
+  border: 1px solid #e3e3e3;
+}
+.aleadry-viewed-services-title {
+  font-family: var(--somar-sans);
+  /* font-size: 1.875rem; */
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 0.625rem;
+}
+
+.aleadry-viewed-services-card-container .business-card-title {
+  font-weight: 600;
+  line-height: 1.375;
+}
+.aleadry-viewed-services-card-container .business-card-text {
+  text-align: left;
 }

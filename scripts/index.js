@@ -509,6 +509,17 @@ BIZTICLE.initResumeUploader = function () {
   });
 };
 
+// init bookmarks active item
+BIZTICLE.initBookmarksActive = function () {
+  $(".bookmark-container .bookmark-item").click(function () {
+    // Remove 'active' class from all items
+    $(".bookmark-container .bookmark-item").removeClass("active");
+
+    // Add 'active' class to the clicked item
+    $(this).addClass("active");
+  });
+};
+
 // document ready
 document.addEventListener("DOMContentLoaded", function () {
   BIZTICLE.clearAllCategoryFilter();
@@ -523,4 +534,5 @@ document.addEventListener("DOMContentLoaded", function () {
   BIZTICLE.addSkills();
   BIZTICLE.initResumeUploader();
   BIZTICLE.addServices();
+  BIZTICLE.initBookmarksActive();
 });
