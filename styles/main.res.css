@@ -710,12 +710,7 @@
   /* Step - 2 :: Resume submit */
   .resume-container {
     flex-direction: row;
-    align-items: end;
     justify-content: space-between;
-  }
-
-  .resume-btn-container {
-    padding-bottom: 3.6875rem;
   }
 
   /* Step - 2 :: Resume submit */

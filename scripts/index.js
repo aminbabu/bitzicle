@@ -170,6 +170,24 @@ BIZTICLE.multiStepForm = function () {
   var currentStep = 0;
   var steps = $(".step");
   var progressBar = $("#progressBar");
+  var progressWrapper = $("#progressWrapper");
+  var stepNumberBreadcrumb = $(".count-breadcrumb");
+
+  function updateProgressBar() {
+    // Show or hide the progress bar depending on the step
+
+    console.log(currentStep, progressWrapper);
+    if (currentStep === 0) {
+      progressWrapper.hide();
+    } else {
+      progressWrapper.show();
+    }
+
+    var progress = ((currentStep + 1) / steps.length) * 100;
+    progressBar.css("width", progress + "%");
+
+    stepNumberBreadcrumb.text(currentStep + " / " + (steps.length - 1));
+  }
 
   $(".next-btn").click(function () {
     if (currentStep < steps.length - 1) {
@@ -202,11 +220,6 @@ BIZTICLE.multiStepForm = function () {
     event.preventDefault();
     alert("Form submitted!");
   });
-
-  function updateProgressBar() {
-    var progress = ((currentStep + 1) / steps.length) * 100;
-    progressBar.css("width", progress + "%");
-  }
 };
 
 // profile

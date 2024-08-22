@@ -1960,7 +1960,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.get-started-btn-container a {
+.get-started-btn-container button {
   font-size: 0.875rem;
   padding: 0.5rem 1.25rem;
   line-height: 1.375;
@@ -2041,10 +2041,12 @@ footer {
   position: absolute;
   bottom: 190px;
   width: 100%;
+  display: none;
 }
 
 .bz-progress .progress-bar {
   background-color: #72d9d4;
+  height: 100%;
 }
 
 .form-btn-container {
@@ -2263,6 +2265,7 @@ footer {
 .skill-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -2453,6 +2456,11 @@ footer {
 }
 
 /* Step 6 :: skill selection */
+
+.skill-container {
+  align-items: center;
+}
+
 .skill-form-text {
   margin-bottom: 0.25rem;
 }
