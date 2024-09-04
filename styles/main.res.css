@@ -287,6 +287,8 @@
     flex-direction: row;
   }
 
+  /* =============== BEGIN::NEWLY ADDED CSS =============== */
+
   /* get started page */
   .get-started-container {
     padding-block: 5.1875rem;
@@ -333,7 +335,6 @@
     width: 40%;
   }
 
-  /* =============== BEGIN::NEWLY ADDED CSS =============== */
   /* profile section */
   .profile-info {
     grid-column: span 5 / span 5;
@@ -813,6 +814,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
+  /* =============== START::NEWLY ADDED CSS =============== */
+
   .get-started-container {
     padding-block: 83px;
     gap: 7.8125rem;
@@ -829,6 +832,7 @@
   .about-deal-list {
     grid-template-columns: repeat(3, 1fr);
   }
+  /* =============== END::NEWLY ADDED CSS =============== */
 }
 @media only screen and (min-width: 1370px) {
   /* common styles */
