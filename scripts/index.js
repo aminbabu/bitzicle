@@ -267,9 +267,21 @@ BIZTICLE.initIntTelInput = function () {
   });
 };
 
-// magnific popup
-BIZTICLE.magnificPopup = function () {
+// magnific popup of get started
+BIZTICLE.magnificPopupGTS = function () {
   $(".get-started-img-link").magnificPopup({
+    disableOn: 700,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+  });
+};
+
+// magnific popup of business profile
+BIZTICLE.magnificPopupBP = function () {
+  $(".gallery-card-img-link").magnificPopup({
     disableOn: 700,
     type: "iframe",
     mainClass: "mfp-fade",
@@ -542,7 +554,8 @@ document.addEventListener("DOMContentLoaded", function () {
   BIZTICLE.multiStepForm();
   BIZTICLE.initProfile();
   BIZTICLE.initIntTelInput();
-  BIZTICLE.magnificPopup();
+  BIZTICLE.magnificPopupGTS();
+  BIZTICLE.magnificPopupBP();
   BIZTICLE.addLanguage();
   BIZTICLE.addSkills();
   BIZTICLE.initResumeUploader();
