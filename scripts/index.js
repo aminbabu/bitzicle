@@ -165,6 +165,7 @@ BIZTICLE.reviewBannerSlider = function () {
   });
 };
 
+/* =============== BEGIN::NEWLY ADDED JS =============== */
 // multi-step form
 BIZTICLE.multiStepForm = function () {
   var currentStep = 0;
@@ -544,6 +545,7 @@ BIZTICLE.initBookmarksActive = function () {
     $(this).addClass("active");
   });
 };
+/* =============== END::NEWLY ADDED JS =============== */
 
 // document ready
 document.addEventListener("DOMContentLoaded", function () {
@@ -551,6 +553,7 @@ document.addEventListener("DOMContentLoaded", function () {
   BIZTICLE.hideOtherSubCategory();
   BIZTICLE.initChartGlobe();
   BIZTICLE.reviewBannerSlider();
+  /* =============== BEGIN::NEWLY ADDED JS =============== */
   BIZTICLE.multiStepForm();
   BIZTICLE.initProfile();
   BIZTICLE.initIntTelInput();
@@ -561,4 +564,5 @@ document.addEventListener("DOMContentLoaded", function () {
   BIZTICLE.initResumeUploader();
   BIZTICLE.addServices();
   BIZTICLE.initBookmarksActive();
+  /* =============== END::NEWLY ADDED JS =============== */
 });

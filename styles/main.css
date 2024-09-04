@@ -1907,6 +1907,8 @@ footer {
   max-width: 100%;
 }
 
+/* =============== BEGIN::NEWLY ADDED CSS =============== */
+
 /* get started page */
 .get-started-container {
   padding-block: 60px;
@@ -3665,3 +3667,4 @@ footer {
 .aleadry-viewed-services-card-container .business-card-text {
   text-align: left;
 }
+/* =============== END::NEWLY ADDED CSS =============== */

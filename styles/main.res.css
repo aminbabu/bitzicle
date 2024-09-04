@@ -126,6 +126,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* =============== BEGIN::NEWLY ADDED CSS =============== */
   /* login form */
   .bz-progress {
     bottom: 6.0625rem;
@@ -150,6 +151,7 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 1.625rem 2.1875rem;
   }
+  /* =============== END::NEWLY ADDED CSS =============== */
 }
 @media only screen and (min-width: 768px) {
   /* common styles */
@@ -331,6 +333,7 @@
     width: 40%;
   }
 
+  /* =============== BEGIN::NEWLY ADDED CSS =============== */
   /* profile section */
   .profile-info {
     grid-column: span 5 / span 5;
@@ -443,6 +446,7 @@
   .contact-business-profile-card-content {
     padding: 1.125rem 1.625rem 1.5rem;
   }
+  /* =============== END::NEWLY ADDED CSS =============== */
 }
 @media only screen and (min-width: 992px) {
   /* common styles */
@@ -646,6 +650,7 @@
     padding-block: 0.635rem;
   }
 
+  /* =============== BEGIN::NEWLY ADDED CSS =============== */
   /* get started page */
   .get-started-container {
     gap: 6rem;
@@ -770,6 +775,7 @@
   .aleadry-viewed-services-title {
     font-size: 1.875rem;
   }
+  /* =============== END::NEWLY ADDED CSS =============== */
 }
 @media only screen and (min-width: 1200px) {
   /* hero  */
